@@ -1,0 +1,85 @@
+{
+  "startPoint": "Plaza de España",
+  "points": [
+    {
+      "id": "Plaza de España",
+      "imageResource": "Plaza de España",
+      "title": "Plaza de España",
+      "description": "Bienvenido al lobby",
+      "hotspots": [
+        {
+          "target": "Interior del teatro",
+          "position": { "x": 2, "y": -1, "z": -2.0 }
+        },
+        {
+          "target": "Plaza de los Dolores",
+          "position": { "x": 2, "y": -1, "z": 2 }
+        },
+        {
+          "target": "Calle de la Reina",
+          "position": { "x": 2, "y": -1, "z": 4}
+        }
+      ]
+    },
+    {
+      "id": "Interior del teatro",
+      "imageResource": "Interior del teatro",
+      "title": "Interior del teatro",
+      "description": "",
+      "hotspots": [
+        {
+          "target": "Plaza de España",
+          "position": { "x": -2, "y": -1, "z": 2}
+        },
+        {
+          "target": "Plaza de los Dolores",
+          "position": { "x": 2, "y": -1, "z": 2 }
+        },
+        {
+          "target": "Calle de la Reina",
+          "position": { "x": 0, "y": -1, "z": 4 }
+        }
+      ]
+    },
+    {
+      "id": "Plaza de los Dolores",
+      "imageResource": "Plaza de los Dolores",
+      "title": "Plaza de los Dolores",
+      "description": "",
+      "hotspots": [
+        {
+          "target": "Plaza de España",
+          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+        },
+        {
+          "target": "Interior del teatro",
+          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+        },
+        {
+          "target": "Calle de la Reina",
+          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+        }
+      ]
+    },
+    {
+      "id": "Calle de la Reina",
+      "imageResource": "Calle de la Reina",
+      "title": "Calle de la Reina",
+      "description": "",
+      "hotspots": [
+        {
+          "target": "Plaza de España",
+          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+        },
+        {
+          "target": "Interior del teatro",
+          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+        },
+        {
+          "target": "Plaza de los Dolores",
+          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+        }
+      ]
+    }
+  ]
+}
