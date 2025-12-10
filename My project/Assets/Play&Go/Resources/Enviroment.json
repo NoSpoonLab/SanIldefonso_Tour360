@@ -1,23 +1,26 @@
-{
-  "startPoint": "Plaza de Espa�a",
+﻿{
+  "startPoint": "Plaza de España",
   "points": [
     {
-      "id": "Plaza de Espa�a",
-      "imageResource": "Plaza de Espa�a",
-      "title": "Plaza de Espa�a",
+      "id": "Plaza de España",
+      "imageResource": "Plaza de España",
+      "title": "Plaza de España",
       "description": "Bienvenido al lobby",
       "hotspots": [
         {
           "target": "Interior del teatro",
-          "position": { "x": 2, "y": -1, "z": -2.0 }
+          "position": { "x": 2, "y": -1, "z": 1},
+          "rotation": { "x": 0, "y": 60, "z": 0 }
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": 2, "y": -1, "z": 2 }
+          "position": { "x": 0, "y": -1, "z": 2},
+          "rotation": { "x": 0, "y": 0, "z": 0 }
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": 2, "y": -1, "z": 4}
+          "position": { "x": -1.5, "y": -1, "z": 1.5},
+          "rotation": { "x": 0, "y": -50, "z": 0 }
         }
       ]
     },
@@ -28,16 +31,19 @@
       "description": "",
       "hotspots": [
         {
-          "target": "Plaza de Espa�a",
-          "position": { "x": -2, "y": -1, "z": 2}
+          "target": "Plaza de España",
+          "position": { "x": 1, "y": -1, "z": -1.5 },
+          "rotation": { "x": 0, "y": 145, "z": 0 }
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": 2, "y": -1, "z": 2 }
+          "position": { "x": -2, "y": -1, "z": -0.5},
+          "rotation": { "x": 0, "y": 255, "z": 0 }
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": 0, "y": -1, "z": 4 }
+          "position": { "x": -1, "y": -1, "z": -1.5},
+          "rotation": { "x": 0, "y": 213, "z": 0 }
         }
       ]
     },
@@ -48,16 +54,19 @@
       "description": "",
       "hotspots": [
         {
-          "target": "Plaza de Espa�a",
-          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+          "target": "Plaza de España",
+          "position": { "x": -4, "y": -1, "z": -4 },
+          "rotation": { "x": 0, "y": 90, "z": 0 }
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+          "position": { "x": -2, "y": -1, "z": -6 },
+          "rotation": { "x": 0, "y": 90, "z": 0 }
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+          "position": { "x": 0, "y": -1, "z": 2 },
+          "rotation": { "x": 0, "y": 90, "z": 0 }
         }
       ]
     },
@@ -68,16 +77,19 @@
       "description": "",
       "hotspots": [
         {
-          "target": "Plaza de Espa�a",
-          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+          "target": "Plaza de España",
+          "position": { "x": 1.5, "y": -1, "z": 0},
+          "rotation": { "x": 0, "y": 90, "z": 0 }
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+          "position": { "x": 1, "y": -1, "z": 1.5},
+          "rotation": { "x": 0, "y": 34, "z": 0 }
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": 0.5, "y": 1.1, "z": -2.0 }
+          "position": { "x": -0.5, "y": -1, "z": 1.5 },
+          "rotation": { "x": 0, "y": -20, "z": 0 }
         }
       ]
     }

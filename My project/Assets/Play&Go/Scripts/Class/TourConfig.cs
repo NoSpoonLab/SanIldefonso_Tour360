@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using static UnityEditor.FilePathAttribute;
 
 [Serializable]
 public class TourConfig
@@ -33,4 +34,13 @@ public class Hotspot
 {
     public string target;
     public Vector3 position;
+    public Rotation rotation; 
+}
+
+[System.Serializable]
+public class Rotation
+{
+    public float x;
+    public float y;
+    public float z;
 }

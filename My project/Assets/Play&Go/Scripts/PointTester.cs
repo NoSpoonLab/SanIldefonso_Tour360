@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +13,9 @@ public class PointTester : MonoBehaviour
     [Header("Fade UI")]
     public CanvasGroup fadeCanvas;
     public float fadeDuration = 1f;
+
+    [Header("UI")]
+    public TextMeshProUGUI title;
 
     [Header("Camera FOV Transition")]
     public float fovStart = 55f;
@@ -57,6 +62,7 @@ public class PointTester : MonoBehaviour
         StartCoroutine(Fade(0f, 1f)); //Cambiarlo
         StartCoroutine(ChangeFOV(fovEnd, fovStart)); //Cambiarlo
 
+        ChangeTitle(point.title);
         SpawnHotspots(point);
         LoadImageToSphere(point.imageResource);
 
@@ -109,9 +115,24 @@ public class PointTester : MonoBehaviour
                 hotspot.position.z
             );
 
-            // Guardamos el ID del target en el script del hotspot
-            //obj.GetComponent<HotspotBehaviour>().targetID = hotspot.target;
-            obj.name = hotspot.target;
+            Point targetPoint = EnvironmentService.GetPoint(hotspot.target);
+            ArrowPrefab data = obj.GetComponent<ArrowPrefab>();
+
+            data.arrow.transform.localRotation = Quaternion.Euler(
+                hotspot.rotation.x,
+                hotspot.rotation.y,
+                hotspot.rotation.z
+            );
+
+            data.id = hotspot.target;
+
+            if (targetPoint != null)
+            {
+                data.image = targetPoint.imageResource;    
+                data.description = targetPoint.description;
+            }
+
+            obj.name = "Hotspot " + hotspot.target;
 
             activeHotspots.Add(obj);
         }
@@ -123,6 +144,11 @@ public class PointTester : MonoBehaviour
             Destroy(obj);
 
         activeHotspots.Clear();
+    }
+
+    void ChangeTitle(string tittleTxt)
+    {
+        title.text = tittleTxt;
     }
 
 
