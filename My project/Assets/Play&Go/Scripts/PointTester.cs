@@ -23,9 +23,24 @@ public class PointTester : MonoBehaviour
     public float fovDuration = 1f;
 
     [Header("Hotspots")]
-    public GameObject hotspotPrefab;              
+    public GameObject hotspotPrefab;
     public Transform hotspotContainer;
     private List<GameObject> activeHotspots = new List<GameObject>();
+
+    void Start()
+    {
+        string start = EnvironmentService.GetStartPoint();
+
+        if (!string.IsNullOrEmpty(start))
+        {
+            LoadPoint(start,false);
+        }
+        else
+        {
+            Debug.LogError("No hay startPoint definido en el JSON.");
+        }
+    }
+
 
     void Update()
     {
@@ -42,7 +57,7 @@ public class PointTester : MonoBehaviour
             LoadPoint("Calle de la Reina");
     }
 
-    void LoadPoint(string id)
+    void LoadPoint(string id, bool anim = true)
     {
         var point = EnvironmentService.GetPoint(id);
 
@@ -59,15 +74,21 @@ public class PointTester : MonoBehaviour
         Debug.Log("Imagen: " + point.imageResource);
         Debug.Log("Hotspots: " + point.hotspots.Length);
 
-        StartCoroutine(Fade(0f, 1f)); //Cambiarlo
-        StartCoroutine(ChangeFOV(fovEnd, fovStart)); //Cambiarlo
+        if(anim)
+        {
+            StartCoroutine(Fade(0f, 1f)); //Cambiarlo
+            StartCoroutine(ChangeFOV(fovEnd, fovStart)); //Cambiarlo
+        }
 
         ChangeTitle(point.title);
         SpawnHotspots(point);
         LoadImageToSphere(point.imageResource);
 
-        StartCoroutine(Fade(1f, 0f)); //Cambiarlo
-        StartCoroutine(ChangeFOV(fovStart, fovEnd)); //Cambiarlo
+        if (anim)
+        {
+            StartCoroutine(Fade(1f, 0f)); //Cambiarlo
+            StartCoroutine(ChangeFOV(fovStart, fovEnd)); //Cambiarlo
+        }
     }
 
     IEnumerator Fade(float start, float end)
@@ -118,17 +139,20 @@ public class PointTester : MonoBehaviour
             Point targetPoint = EnvironmentService.GetPoint(hotspot.target);
             ArrowPrefab data = obj.GetComponent<ArrowPrefab>();
 
+            if (data.arrow != null)
+            {
             data.arrow.transform.localRotation = Quaternion.Euler(
-                hotspot.rotation.x,
-                hotspot.rotation.y,
-                hotspot.rotation.z
+                 hotspot.rotation.x,
+                 hotspot.rotation.y,
+                 hotspot.rotation.z
             );
+            }
 
             data.id = hotspot.target;
 
             if (targetPoint != null)
             {
-                data.image = targetPoint.imageResource;    
+                data.image = targetPoint.imageResource;
                 data.description = targetPoint.description;
             }
 

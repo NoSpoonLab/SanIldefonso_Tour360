@@ -492,7 +492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984839700}
   m_Layer: 0
-  m_Name: ArrowsPoints
+  m_Name: PointsContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -792,7 +792,7 @@ MonoBehaviour:
   fovStart: 55
   fovEnd: 60
   fovDuration: 1
-  hotspotPrefab: {fileID: 4079247544506384451, guid: 414d86fdc0f85e445a6a565a81f8e72a, type: 3}
+  hotspotPrefab: {fileID: 4501187014665783502, guid: c32d67699999f5c49bb2fd7fd840d7e3, type: 3}
   hotspotContainer: {fileID: 984839700}
 --- !u!1 &1744320577
 GameObject:
