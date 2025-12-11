@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: _Example
+  m_Name: Sphere
   m_Shader: {fileID: 4800000, guid: 65b857e4ace3e574fb054201d29fbf8e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0

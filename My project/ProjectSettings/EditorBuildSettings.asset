@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Play&Go/Splash/Splash.unity
+    guid: a5fe33abb6ae91e429df2a422a13f292
+  - enabled: 1
+    path: Assets/Play&Go/Menu/Scenes/Menu.unity
+    guid: 12cfeedb264a58e4297d8058e67428c4
+  - enabled: 1
+    path: Assets/Play&Go/Tour360/Scenes/Tour360.unity
+    guid: 31e60138a9cd0dc48a6e5bd19a840309
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 21769f284aeab994d85f48a60c49465c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
