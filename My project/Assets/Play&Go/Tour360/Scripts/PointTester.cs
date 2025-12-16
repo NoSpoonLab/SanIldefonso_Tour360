@@ -57,7 +57,7 @@ public class PointTester : MonoBehaviour
             LoadPoint("Calle de la Reina");
     }
 
-    void LoadPoint(string id, bool anim = true)
+    public void LoadPoint(string id, bool anim = true)
     {
         var point = EnvironmentService.GetPoint(id);
 
@@ -67,31 +67,12 @@ public class PointTester : MonoBehaviour
             return;
         }
 
-        Debug.Log("=== CARGANDO PUNTO ===");
-        Debug.Log("ID: " + point.id);
-        Debug.Log("Título: " + point.title);
-        Debug.Log("Descripción: " + point.description);
-        Debug.Log("Imagen: " + point.imageResource);
-        Debug.Log("Hotspots: " + point.hotspots.Length);
-
-        if(anim)
-        {
-            StartCoroutine(Fade(0f, 1f)); //Cambiarlo
-            StartCoroutine(ChangeFOV(fovEnd, fovStart)); //Cambiarlo
-        }
-
         ChangeTitle(point.title);
         SpawnHotspots(point);
         LoadImageToSphere(point.imageResource);
-
-        if (anim)
-        {
-            StartCoroutine(Fade(1f, 0f)); //Cambiarlo
-            StartCoroutine(ChangeFOV(fovStart, fovEnd)); //Cambiarlo
-        }
     }
 
-    IEnumerator Fade(float start, float end)
+    public IEnumerator Fade(float start, float end)
     {
         float t = 0f;
 
@@ -104,20 +85,6 @@ public class PointTester : MonoBehaviour
         }
 
         fadeCanvas.alpha = end;
-    }
-
-    IEnumerator ChangeFOV(float start, float end)
-    {
-        float t = 0f;
-
-        while (t < fovDuration)
-        {
-            t += Time.deltaTime;
-            Camera.main.fieldOfView = Mathf.Lerp(start, end, t / fovDuration);
-            yield return null;
-        }
-
-        Camera.main.fieldOfView = end;
     }
 
     void SpawnHotspots(Point point)
@@ -138,6 +105,8 @@ public class PointTester : MonoBehaviour
 
             Point targetPoint = EnvironmentService.GetPoint(hotspot.target);
             ArrowPrefab data = obj.GetComponent<ArrowPrefab>();
+
+            data.pointTester = this;
 
             if (data.arrow != null)
             {
@@ -174,7 +143,6 @@ public class PointTester : MonoBehaviour
     {
         title.text = tittleTxt;
     }
-
 
     void LoadImageToSphere(string imageName)
     {

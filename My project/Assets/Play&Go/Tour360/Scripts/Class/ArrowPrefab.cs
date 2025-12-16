@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,6 +20,9 @@ public class ArrowPrefab : MonoBehaviour
 
     private Camera _cam;
 
+    [NonSerialized]
+    public PointTester pointTester;
+
     public void Start()
     {
         _cam = Camera.main;
@@ -39,6 +43,18 @@ public class ArrowPrefab : MonoBehaviour
             canvas.transform.LookAt(lookPos);
             canvas.transform.Rotate(0, 180f, 0);
         }
+    }
+
+    public void PressButton() //Add in inspector to CirclePoint in Interactable Unity Event Wrapper
+    {
+        pointTester.StartCoroutine(pointTester.Fade(0f, 1f));
+        pointTester.LoadPoint(id,true);
+        pointTester.StartCoroutine(pointTester.Fade(1f, 0f));
+    }
+
+    public void ActiveOrDesactiveImage(bool active) //Add in inspector to CirclePoint in Interactable Unity Event Wrapper
+    {
+        imageUI.gameObject.SetActive(active);
     }
 
     private void LoadSprite()
