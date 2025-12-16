@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Play&Go/Tour360/Scenes/Tour360.unity
     guid: 31e60138a9cd0dc48a6e5bd19a840309
   - enabled: 0
-    path: "Assets/Samples/Meta XR Interaction \u200BSDK/83.0.0/Example Scenes/BodyPoseDetectionExamples.unity"
-    guid: 06a339ff5513d7f49a91ab90cbe194d4
+    path: Assets/Play&Go/View3D/View3D.unity
+    guid: 04fc1e0917e5da14aa09774b82c593ac
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 21769f284aeab994d85f48a60c49465c, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

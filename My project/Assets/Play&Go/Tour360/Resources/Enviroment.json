@@ -55,12 +55,12 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": -4, "y": -1, "z": -4 },
+          "position": { "x": -2, "y": -1, "z": 1 },
           "rotation": { "x": 0, "y": 90, "z": 0 }
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": -2, "y": -1, "z": -6 },
+          "position": { "x": -1.5, "y": -1, "z": -1 },
           "rotation": { "x": 0, "y": 90, "z": 0 }
         },
         {

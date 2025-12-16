@@ -21,7 +21,7 @@ public class ArrowPrefab : MonoBehaviour
     private Camera _cam;
 
     [NonSerialized]
-    public PointTester pointTester;
+    public Tour360Controller pointTester;
 
     public void Start()
     {
@@ -31,18 +31,6 @@ public class ArrowPrefab : MonoBehaviour
             idTxt.text = id;
 
         LoadSprite();
-    }
-
-    void Update()
-    {
-        if (canvas != null && _cam != null)
-        {
-            Vector3 camPos = Camera.main.transform.position;
-            Vector3 lookPos = new Vector3(camPos.x, canvas.transform.position.y, camPos.z);
-
-            canvas.transform.LookAt(lookPos);
-            canvas.transform.Rotate(0, 180f, 0);
-        }
     }
 
     public void PressButton() //Add in inspector to CirclePoint in Interactable Unity Event Wrapper

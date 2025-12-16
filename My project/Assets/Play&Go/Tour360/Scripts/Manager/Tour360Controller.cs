@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PointTester : MonoBehaviour
+public class Tour360Controller : MonoBehaviour
 {
     [Header("Esfera de 360° (Material)")]
     public Renderer sphereRenderer;
@@ -16,11 +16,6 @@ public class PointTester : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI title;
-
-    [Header("Camera FOV Transition")]
-    public float fovStart = 55f;
-    public float fovEnd = 60f;
-    public float fovDuration = 1f;
 
     [Header("Hotspots")]
     public GameObject hotspotPrefab;

@@ -3,15 +3,8 @@ using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
-    public Button routeButton;
-    public Button neighborHood;
-
-    private string routeScene;
-    private string neighborHoodScene = "Tour360";
-
-    private void Start()
+    public void PressButon(string scene) //Add in inspector to BarrioAlto&BajoBtn in Interactable Unity Event Wrapper
     {
-        routeButton.onClick.AddListener(() => SceneHelper.LoadScene(routeScene));
-        neighborHood.onClick.AddListener(() => SceneHelper.LoadScene(neighborHoodScene));
+        SceneHelper.LoadScene(scene);
     }
 }
