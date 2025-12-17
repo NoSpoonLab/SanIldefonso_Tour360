@@ -3855,6 +3855,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1792279043581656881, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
+      propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Calle de la Reina
+      objectReference: {fileID: 0}
     - target: {fileID: 3872166899171033288, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
       propertyPath: m_Name
       value: Map
@@ -3863,6 +3867,10 @@ PrefabInstance:
       propertyPath: Tour360Controller
       value: 
       objectReference: {fileID: 1461191082}
+    - target: {fileID: 6978484859672930494, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
+      propertyPath: m_Name
+      value: Calle de la Reina
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

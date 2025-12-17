@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Play&Go/Tour360/Scenes/Tour360.unity
     guid: 31e60138a9cd0dc48a6e5bd19a840309
   - enabled: 1
-    path: Assets/Play&Go/View3D/View3D.unity
+    path: Assets/Play&Go/View3D/Scenes/View3D.unity
     guid: 04fc1e0917e5da14aa09774b82c593ac
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 21769f284aeab994d85f48a60c49465c, type: 2}
