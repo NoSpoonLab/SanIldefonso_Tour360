@@ -35,9 +35,7 @@ public class ArrowPrefab : MonoBehaviour
 
     public void PressButton() //Add in inspector to CirclePoint in Interactable Unity Event Wrapper
     {
-        pointTester.StartCoroutine(pointTester.Fade(0f, 1f));
-        pointTester.LoadPoint(id,true);
-        pointTester.StartCoroutine(pointTester.Fade(1f, 0f));
+        pointTester.LoadPoint(id);
     }
 
     public void ActiveOrDesactiveImage(bool active) //Add in inspector to CirclePoint in Interactable Unity Event Wrapper

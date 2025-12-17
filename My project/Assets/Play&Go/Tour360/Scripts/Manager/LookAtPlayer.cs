@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class LookAtPlayer : MonoBehaviour
 {
-    // Update is called once per frame
     void Update()
     {
         Vector3 camPos = Camera.main.transform.position;

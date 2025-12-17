@@ -36,22 +36,6 @@ public class Tour360Controller : MonoBehaviour
         }
     }
 
-
-    void Update()
-    {
-        if (Keyboard.current.aKey.wasPressedThisFrame)
-            LoadPoint("Plaza de España");
-
-        if (Keyboard.current.bKey.wasPressedThisFrame)
-            LoadPoint("Interior del teatro");
-
-        if (Keyboard.current.cKey.wasPressedThisFrame)
-            LoadPoint("Plaza de los Dolores");
-
-        if (Keyboard.current.dKey.wasPressedThisFrame)
-            LoadPoint("Calle de la Reina");
-    }
-
     public void LoadPoint(string id, bool anim = true)
     {
         var point = EnvironmentService.GetPoint(id);
@@ -62,9 +46,15 @@ public class Tour360Controller : MonoBehaviour
             return;
         }
 
+        if(anim)
+            StartCoroutine(Fade(0f, 1f));
+
         ChangeTitle(point.title);
         SpawnHotspots(point);
         LoadImageToSphere(point.imageResource);
+
+        if (anim)
+            StartCoroutine(Fade(1f, 0f));
     }
 
     public IEnumerator Fade(float start, float end)

@@ -3532,7 +3532,7 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _canvas: {fileID: 835067386}
+  _canvas: {fileID: 1230233407}
 --- !u!114 &1109226125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3821,19 +3821,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 110109297831709167, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 110109297831709167, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 110109297831709167, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 110109297831709167, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 110109297831709167, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3859,10 +3859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
-    - target: {fileID: 8582942110794971651, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 4589755330450022052, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
+      propertyPath: Tour360Controller
+      value: 
+      objectReference: {fileID: 1461191082}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3871,6 +3871,11 @@ PrefabInstance:
 --- !u!224 &1230233404 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 110109297831709167, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
+  m_PrefabInstance: {fileID: 1230233403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &1230233407 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 9208930863956587813, guid: 76410036ef29fef47826bdeb44ae3033, type: 3}
   m_PrefabInstance: {fileID: 1230233403}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1243035647
