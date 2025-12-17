@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,6 +10,8 @@ public class Tour360Controller : MonoBehaviour
 {
     [Header("Esfera de 360° (Material)")]
     public Renderer sphereRenderer;
+
+    public Action<string> OnPointChanged;
 
     [Header("Fade UI")]
     public CanvasGroup fadeCanvas;
@@ -36,6 +39,21 @@ public class Tour360Controller : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Keyboard.current.aKey.wasPressedThisFrame)
+            LoadPoint("Plaza de España");
+
+        if (Keyboard.current.bKey.wasPressedThisFrame)
+            LoadPoint("Interior del teatro");
+
+        if (Keyboard.current.cKey.wasPressedThisFrame)
+            LoadPoint("Plaza de los Dolores");
+
+        if (Keyboard.current.dKey.wasPressedThisFrame)
+            LoadPoint("Calle de la Reina");
+    }
+
     public void LoadPoint(string id, bool anim = true)
     {
         var point = EnvironmentService.GetPoint(id);
@@ -46,7 +64,7 @@ public class Tour360Controller : MonoBehaviour
             return;
         }
 
-        if(anim)
+        if (anim)
             StartCoroutine(Fade(0f, 1f));
 
         ChangeTitle(point.title);
@@ -55,6 +73,8 @@ public class Tour360Controller : MonoBehaviour
 
         if (anim)
             StartCoroutine(Fade(1f, 0f));
+
+        OnPointChanged?.Invoke(id);
     }
 
     public IEnumerator Fade(float start, float end)
