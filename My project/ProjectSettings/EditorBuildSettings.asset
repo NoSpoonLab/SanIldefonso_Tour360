@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: a5fe33abb6ae91e429df2a422a13f292
   - enabled: 1
     path: Assets/Play&Go/Menu/Scenes/Menu.unity
-    guid: 12cfeedb264a58e4297d8058e67428c4
+    guid: 9006017658604b24fba6467fde8f1854
   - enabled: 1
     path: Assets/Play&Go/Tour360/Scenes/Tour360.unity
     guid: 31e60138a9cd0dc48a6e5bd19a840309
