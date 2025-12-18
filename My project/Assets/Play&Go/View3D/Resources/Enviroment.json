@@ -1,0 +1,125 @@
+﻿{
+  "startModel": "Palacio Real y Colegiata",
+  "models": [
+    {
+      "id": "Palacio de Valsaín",
+      "name": "Palacio de Valsaín",
+      "prefab": "PalacioDeValsain",
+      "teleportPoints": [
+        { "x": 10, "y": 0, "z": 5 }
+      ]
+    },
+    {
+      "id": "Capilla de San Juan Nepomuceno",
+      "name": "Capilla de San Juan Nepomuceno",
+      "prefab": "CapillaSanJuanNepomuceno",
+      "teleportPoints": []
+    },
+    {
+      "id": "Fábrica Antigua de Cristales Planos",
+      "name": "Fábrica Antigua de Cristales Planos",
+      "prefab": "FabricaCristalesPlanosAntigua",
+      "teleportPoints": [
+        { "x": -3, "y": 0, "z": 12 }
+      ]
+    },
+    {
+      "id": "La Primera Casa del Pulimento",
+      "name": "La Primera Casa del Pulimento",
+      "prefab": "CasaPulimentoPrimera",
+      "teleportPoints": []
+    },
+    {
+      "id": "Fábrica de Cristales Labrados y Entrefinos",
+      "name": "Fábrica de Cristales Labrados y Entrefinos",
+      "prefab": "FabricaCristalesLabrados",
+      "teleportPoints": [
+        { "x": 2, "y": 0, "z": -6 }
+      ]
+    },
+    {
+      "id": "Cobertizos para la Leña",
+      "name": "Cobertizos para la Leña",
+      "prefab": "CobertizosLena",
+      "teleportPoints": []
+    },
+    {
+      "id": "Puerta del Horno",
+      "name": "Puerta del Horno",
+      "prefab": "PuertaHorno",
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 3 }
+      ]
+    },
+    {
+      "id": "Real Fábrica de Cristales Planos de Carlos III",
+      "name": "Real Fábrica de Cristales Planos de Carlos III",
+      "prefab": "RealFabricaCristalesCarlosIII",
+      "teleportPoints": [
+        { "x": 8, "y": 0, "z": -4 }
+      ]
+    },
+    {
+      "id": "Fuente del Príncipe",
+      "name": "Fuente del Príncipe",
+      "prefab": "FuenteDelPrincipe",
+      "teleportPoints": []
+    },
+    {
+      "id": "Casa de la Máquina del Pulimento de Dowling",
+      "name": "Casa de la Máquina del Pulimento de Dowling",
+      "prefab": "CasaMaquinaPulimentoDowling",
+      "teleportPoints": [
+        { "x": -5, "y": 0, "z": 7 }
+      ]
+    },
+    {
+      "id": "Palacio Real y Colegiata",
+      "name": "Palacio Real y Colegiata",
+      "prefab": "PalacioRealColegiata",
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 }
+      ]
+    },
+    {
+      "id": "Iglesia del Convento",
+      "name": "Iglesia del Convento",
+      "prefab": "IglesiaConvento",
+      "teleportPoints": []
+    },
+    {
+      "id": "Iglesia de los Dolores",
+      "name": "Iglesia de los Dolores",
+      "prefab": "IglesiaDolores",
+      "teleportPoints": [
+        { "x": 4, "y": 0, "z": 9 }
+      ]
+    },
+    {
+      "id": "Ayuntamiento",
+      "name": "Ayuntamiento",
+      "prefab": "Ayuntamiento",
+      "teleportPoints": []
+    },
+    {
+      "id": "Iglesia de Nuestra Señora del Rosario o de Cristo",
+      "name": "Iglesia de Nuestra Señora del Rosario o de Cristo",
+      "prefab": "IglesiaRosarioCristo",
+      "teleportPoints": []
+    },
+    {
+      "id": "Puerta de Segovia",
+      "name": "Puerta de Segovia",
+      "prefab": "PuertaSegovia",
+      "teleportPoints": [
+        { "x": -7, "y": 0, "z": -2 }
+      ]
+    },
+    {
+      "id": "Puerta de la Reina",
+      "name": "Puerta de la Reina",
+      "prefab": "PuertaReina",
+      "teleportPoints": []
+    }
+  ]
+}
