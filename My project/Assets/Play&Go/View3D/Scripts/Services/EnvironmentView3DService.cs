@@ -23,6 +23,16 @@ public static class EnvironmentView3DService
         return _data.GetModel(id);
     }
 
+    public static string GetSize(string id)
+    {
+        return GetModel(id)?.size;
+    }
+
+    public static Vector3Data[] GetTeleportPoints(string id)
+    {
+        return GetModel(id)?.teleportPoints;
+    }
+
     public static string GetStartModel()
     {
         if (!IsInitialized)

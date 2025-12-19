@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 
 public class Tour360Controller : MonoBehaviour
 {
+    #region Variables
     [Header("Esfera de 360° (Material)")]
     public Renderer sphereRenderer;
 
@@ -24,7 +25,9 @@ public class Tour360Controller : MonoBehaviour
     public GameObject hotspotPrefab;
     public Transform hotspotContainer;
     private List<GameObject> activeHotspots = new List<GameObject>();
+    #endregion
 
+    #region MonoBehaviour Methods
     void Start()
     {
         string start = EnvironmentTour360Service.GetStartPoint();
@@ -39,21 +42,9 @@ public class Tour360Controller : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (Keyboard.current.aKey.wasPressedThisFrame)
-            LoadPoint("Plaza de España");
+    #endregion
 
-        if (Keyboard.current.bKey.wasPressedThisFrame)
-            LoadPoint("Interior del teatro");
-
-        if (Keyboard.current.cKey.wasPressedThisFrame)
-            LoadPoint("Plaza de los Dolores");
-
-        if (Keyboard.current.dKey.wasPressedThisFrame)
-            LoadPoint("Calle de la Reina");
-    }
-
+    #region Public Methods
     public void LoadPoint(string id, bool anim = true)
     {
         var point = EnvironmentTour360Service.GetPoint(id);
@@ -92,6 +83,24 @@ public class Tour360Controller : MonoBehaviour
         fadeCanvas.alpha = end;
     }
 
+    #endregion
+
+    void Update()
+    {
+        if (Keyboard.current.aKey.wasPressedThisFrame)
+            LoadPoint("Plaza de España");
+
+        if (Keyboard.current.bKey.wasPressedThisFrame)
+            LoadPoint("Interior del teatro");
+
+        if (Keyboard.current.cKey.wasPressedThisFrame)
+            LoadPoint("Plaza de los Dolores");
+
+        if (Keyboard.current.dKey.wasPressedThisFrame)
+            LoadPoint("Calle de la Reina");
+    }
+
+    #region Private Methods
     void SpawnHotspots(Point point)
     {
         ClearHotspots();
@@ -115,11 +124,11 @@ public class Tour360Controller : MonoBehaviour
 
             if (data.arrow != null)
             {
-            data.arrow.transform.localRotation = Quaternion.Euler(
-                 hotspot.rotation.x,
-                 hotspot.rotation.y,
-                 hotspot.rotation.z
-            );
+                data.arrow.transform.localRotation = Quaternion.Euler(
+                     hotspot.rotation.x,
+                     hotspot.rotation.y,
+                     hotspot.rotation.z
+                );
             }
 
             data.id = hotspot.target;
@@ -165,4 +174,5 @@ public class Tour360Controller : MonoBehaviour
 
         Debug.Log("Cubemap aplicado: " + fullPath);
     }
+    #endregion
 }
