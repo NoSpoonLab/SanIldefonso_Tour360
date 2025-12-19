@@ -1,6 +1,7 @@
 ﻿{
     "entries": [
         { "key": "ROUTE", "value": "Glass Route" },
-        { "key": "NEIGHBORHOOD", "value": "Upper Neighborhood and Lower Neighborhood" }
+        { "key": "NEIGHBORHOOD", "value": "Upper Neighborhood and Lower Neighborhood" },
+        { "key": "BACKMAP", "value": "Back to Map" }
     ]
 }

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 [System.Serializable]
 public class View3DConfig
 {
@@ -14,9 +16,24 @@ public class View3DConfig
 }
 
 [System.Serializable]
+public class Vector3Data
+{
+    public float x;
+    public float y;
+    public float z;
+
+    public Vector3 ToVector3()
+    {
+        return new Vector3(x, y, z);
+    }
+}
+
+[System.Serializable]
 public class Model3D
 {
     public string id;
     public string name;
     public string prefab;
+    public string size;
+    public Vector3Data[] teleportPoints;
 }

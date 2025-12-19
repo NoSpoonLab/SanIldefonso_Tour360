@@ -1,6 +1,7 @@
 ﻿{
     "entries": [
-        { "key": "ROUTE", "value": "Ruta del vidrio" },
-        { "key": "NEIGHBORHOOD", "value": "Barrio alto y Barrio Bajo" }
+        { "key": "ROUTE", "value": "Glass Route" },
+        { "key": "NEIGHBORHOOD", "value": "Upper Neighborhood and Lower Neighborhood" },
+        { "key": "BACKMAP", "value": "Volver al Mapa" }
     ]
 }

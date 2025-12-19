@@ -5,6 +5,7 @@
       "id": "Palacio de Valsaín",
       "name": "Palacio de Valsaín",
       "prefab": "PalacioDeValsain",
+      "size": "large",
       "teleportPoints": [
         { "x": 10, "y": 0, "z": 5 }
       ]
@@ -13,12 +14,14 @@
       "id": "Capilla de San Juan Nepomuceno",
       "name": "Capilla de San Juan Nepomuceno",
       "prefab": "CapillaSanJuanNepomuceno",
+      "size": "medium",
       "teleportPoints": []
     },
     {
       "id": "Fábrica Antigua de Cristales Planos",
       "name": "Fábrica Antigua de Cristales Planos",
       "prefab": "FabricaCristalesPlanosAntigua",
+      "size": "medium",
       "teleportPoints": [
         { "x": -3, "y": 0, "z": 12 }
       ]
@@ -27,12 +30,14 @@
       "id": "La Primera Casa del Pulimento",
       "name": "La Primera Casa del Pulimento",
       "prefab": "CasaPulimentoPrimera",
+      "size": "medium",
       "teleportPoints": []
     },
     {
       "id": "Fábrica de Cristales Labrados y Entrefinos",
       "name": "Fábrica de Cristales Labrados y Entrefinos",
       "prefab": "FabricaCristalesLabrados",
+      "size": "medium",
       "teleportPoints": [
         { "x": 2, "y": 0, "z": -6 }
       ]
@@ -41,12 +46,14 @@
       "id": "Cobertizos para la Leña",
       "name": "Cobertizos para la Leña",
       "prefab": "CobertizosLena",
+      "size": "medium",
       "teleportPoints": []
     },
     {
       "id": "Puerta del Horno",
       "name": "Puerta del Horno",
       "prefab": "PuertaHorno",
+      "size": "small",
       "teleportPoints": [
         { "x": 0, "y": 0, "z": 3 }
       ]
@@ -55,6 +62,7 @@
       "id": "Real Fábrica de Cristales Planos de Carlos III",
       "name": "Real Fábrica de Cristales Planos de Carlos III",
       "prefab": "RealFabricaCristalesCarlosIII",
+      "size": "medium",
       "teleportPoints": [
         { "x": 8, "y": 0, "z": -4 }
       ]
@@ -63,12 +71,14 @@
       "id": "Fuente del Príncipe",
       "name": "Fuente del Príncipe",
       "prefab": "FuenteDelPrincipe",
+      "size": "medium",
       "teleportPoints": []
     },
     {
       "id": "Casa de la Máquina del Pulimento de Dowling",
       "name": "Casa de la Máquina del Pulimento de Dowling",
       "prefab": "CasaMaquinaPulimentoDowling",
+      "size": "medium",
       "teleportPoints": [
         { "x": -5, "y": 0, "z": 7 }
       ]
@@ -77,6 +87,7 @@
       "id": "Palacio Real y Colegiata",
       "name": "Palacio Real y Colegiata",
       "prefab": "PalacioRealColegiata",
+      "size": "medium",
       "teleportPoints": [
         { "x": 0, "y": 0, "z": 0 }
       ]
@@ -91,26 +102,35 @@
       "id": "Iglesia de los Dolores",
       "name": "Iglesia de los Dolores",
       "prefab": "IglesiaDolores",
-      "teleportPoints": [
-        { "x": 4, "y": 0, "z": 9 }
+      "size": "medium",
+      "teleportPoints": 
+      [
+        { "x": 0, "y": 0, "z":0},
+        { "x": 0, "y": 0, "z": -9.5 },
+        { "x": -11, "y": 0, "z": -24},
+        { "x": 0, "y": 0, "z": -40},
+        { "x": 11, "y": 0, "z": -24}
       ]
     },
     {
       "id": "Ayuntamiento",
       "name": "Ayuntamiento",
       "prefab": "Ayuntamiento",
+      "size": "large",
       "teleportPoints": []
     },
     {
       "id": "Iglesia de Nuestra Señora del Rosario o de Cristo",
       "name": "Iglesia de Nuestra Señora del Rosario o de Cristo",
       "prefab": "IglesiaRosarioCristo",
+      "size": "medium",
       "teleportPoints": []
     },
     {
       "id": "Puerta de Segovia",
       "name": "Puerta de Segovia",
       "prefab": "PuertaSegovia",
+      "size": "medium",
       "teleportPoints": [
         { "x": -7, "y": 0, "z": -2 }
       ]
@@ -119,6 +139,7 @@
       "id": "Puerta de la Reina",
       "name": "Puerta de la Reina",
       "prefab": "PuertaReina",
+      "size": "medium",
       "teleportPoints": []
     }
   ]

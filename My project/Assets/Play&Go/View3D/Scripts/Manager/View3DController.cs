@@ -1,9 +1,18 @@
 using System;
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class View3DController : MonoBehaviour
 {
+    #region Variables
+    [Header("Player / Camera Rig")]
+    public Transform playerRig;
+    private Vector3Data[] _teleportPoints;
+    private int _currentTeleportIndex = 0;
+    public GameObject arrow;
+
     [Header("Model Parent")]
     public Transform modelContainerBig;
     public Transform modelContainerSmall;
@@ -12,22 +21,27 @@ public class View3DController : MonoBehaviour
     private GameObject currentModelBig;
     private GameObject currentModelSmall;
 
-    private int scaleBig;
-    private int scaleSmall;
+    [Header("Objects")]
+    public GameObject modelSanIldefonso;
+    public GameObject arrowTransform;
 
-    void Start()
+    [Header("Fade UI")]
+    public CanvasGroup fadeCanvas;
+    public float fadeDuration = 1f;
+
+    [Header("UI")]
+    public TextMeshProUGUI title;
+
+    [Header("Arrow Rotation")]
+    private readonly float[] arrowYRotations =
     {
-        string startModel = EnvironmentView3DService.GetStartModel();
-
-        if (!string.IsNullOrEmpty(startModel))
-        {
-            LoadModel(startModel);
-        }
-        else
-        {
-            Debug.LogError("No hay startModel definido en el JSON de View3D.");
-        }
-    }
+        -90f,
+         0f,
+        -90f,
+        180f,
+        90f
+    };
+    #endregion
 
     void Update()
     {
@@ -42,13 +56,19 @@ public class View3DController : MonoBehaviour
 
         if (Keyboard.current.dKey.wasPressedThisFrame)
             LoadModel("Puerta del Horno");
+
+        if (Keyboard.current.rKey.wasPressedThisFrame)
+            PressButtonReset();
+
+        if (Keyboard.current.upArrowKey.wasPressedThisFrame)
+            TeleportNext();
     }
 
-    public void LoadModel(string id)
-    {
-        Debug.Log("=== CARGANDO MODELO 3D ===");
-        Debug.Log("ID: " + id);
 
+    #region Public Methods
+
+    public void LoadModel(string id, bool anim = true)
+    {
         ClearCurrentModel();
 
         GameObject prefab = Resources.Load<GameObject>("Models3D/" + id);
@@ -59,13 +79,45 @@ public class View3DController : MonoBehaviour
             return;
         }
 
-        LoadModelBig(prefab,id);
-        LoadModelSmall(prefab,id);
+        ChangeTitle(id);
+
+        LoadModelBig(prefab, id);
+        LoadModelSmall(prefab, id);
+
+        _teleportPoints = EnvironmentView3DService.GetTeleportPoints(id);
+        _currentTeleportIndex = 0;
+
+        if (_teleportPoints != null && _teleportPoints.Length > 0)
+        {
+            arrow.gameObject.SetActive(true);
+        }
+        else
+        {
+            arrow.gameObject.SetActive(false);
+        }
     }
 
-    public void LoadModelBig(GameObject prefab,string id)
+    public void TeleportNext()
     {
-        scaleBig = 200;
+        StartCoroutine(Fade(0f, 1f));
+
+        if (_teleportPoints == null || _teleportPoints.Length == 0)
+            return;
+
+        _currentTeleportIndex++;
+        if (_currentTeleportIndex >= _teleportPoints.Length)
+            _currentTeleportIndex = 0;
+
+        TeleportToIndex(_currentTeleportIndex);
+
+        StartCoroutine(Fade(1f, 0f));
+    }
+
+
+
+    public void LoadModelBig(GameObject prefab, string id)
+    {
+        var scaleBig = 200;
 
         currentModelBig = Instantiate(prefab, modelContainerBig);
         currentModelBig.transform.localScale = new Vector3(scaleBig, scaleBig, scaleBig);
@@ -75,7 +127,25 @@ public class View3DController : MonoBehaviour
 
     public void LoadModelSmall(GameObject prefab, string id)
     {
-        scaleSmall = 8;
+        string size = EnvironmentView3DService.GetSize(id);
+
+        var scaleSmall = 0;
+
+        switch (size)
+        {
+            case "small":
+                scaleSmall = 30;
+                break;
+
+            case "medium":
+                scaleSmall = 15;
+                break;
+
+            case "large":
+                scaleSmall = 10;
+                break;
+        }
+
 
         currentModelSmall = Instantiate(prefab, modelContainerSmall);
         currentModelSmall.transform.localScale = new Vector3(scaleSmall, scaleSmall, scaleSmall);
@@ -83,8 +153,54 @@ public class View3DController : MonoBehaviour
         currentModelSmall.name = "Model3D - " + id;
     }
 
+    public IEnumerator Fade(float start, float end)
+    {
+        float t = 0f;
+
+        while (t < fadeDuration)
+        {
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(start, end, t / fadeDuration);
+            fadeCanvas.alpha = alpha;
+            yield return null;
+        }
+
+        fadeCanvas.alpha = end;
+    }
+    #endregion
+
+    #region Inputs Methods
+    public void PressButtonReset() //Add in inspector ButtonReset in Interactable Unity Events
+    {
+        ClearCurrentModel();
+        modelSanIldefonso.SetActive(true);
+        arrow.SetActive(false);
+        title.text = "";
+    }
+    #endregion
+
+    #region Private Methods
+    void TeleportToIndex(int index)
+    {
+        Vector3 pos = _teleportPoints[index].ToVector3();
+        playerRig.position = pos;
+
+        if (arrowTransform != null && arrowYRotations.Length > 0)
+        {
+            int rotIndex = index % arrowYRotations.Length;
+            Vector3 euler = arrowTransform.transform.localEulerAngles;
+            arrowTransform.transform.localRotation = Quaternion.Euler(
+                euler.x,
+                arrowYRotations[rotIndex],
+                euler.z
+            );
+        }
+    }
+
     void ClearCurrentModel()
     {
+        modelSanIldefonso.SetActive(false);
+
         if (currentModelBig != null)
         {
             Destroy(currentModelBig);
@@ -97,4 +213,10 @@ public class View3DController : MonoBehaviour
             currentModelSmall = null;
         }
     }
+
+    void ChangeTitle(string tittleTxt)
+    {
+        title.text = tittleTxt;
+    }
+    #endregion
 }
