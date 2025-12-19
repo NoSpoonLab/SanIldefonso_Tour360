@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class JsonLoader : MonoBehaviour
+public class JsonLoaderTour360 : MonoBehaviour
 {
-    private string _jsonResourceName = "Enviroment";
+    private string _jsonResourceName = "EnviromentTour360";
 
     private TourConfig _config;
 
     void Awake()
     {
         LoadFromResources();
-        EnvironmentService.Initialize(_config);
+        EnvironmentTour360Service.Initialize(_config);
     }
 
     void LoadFromResources()

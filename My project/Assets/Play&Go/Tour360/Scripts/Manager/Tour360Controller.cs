@@ -27,7 +27,7 @@ public class Tour360Controller : MonoBehaviour
 
     void Start()
     {
-        string start = EnvironmentService.GetStartPoint();
+        string start = EnvironmentTour360Service.GetStartPoint();
 
         if (!string.IsNullOrEmpty(start))
         {
@@ -56,7 +56,7 @@ public class Tour360Controller : MonoBehaviour
 
     public void LoadPoint(string id, bool anim = true)
     {
-        var point = EnvironmentService.GetPoint(id);
+        var point = EnvironmentTour360Service.GetPoint(id);
 
         if (point == null)
         {
@@ -108,7 +108,7 @@ public class Tour360Controller : MonoBehaviour
                 hotspot.position.z
             );
 
-            Point targetPoint = EnvironmentService.GetPoint(hotspot.target);
+            Point targetPoint = EnvironmentTour360Service.GetPoint(hotspot.target);
             ArrowPrefab data = obj.GetComponent<ArrowPrefab>();
 
             data.pointTester = this;

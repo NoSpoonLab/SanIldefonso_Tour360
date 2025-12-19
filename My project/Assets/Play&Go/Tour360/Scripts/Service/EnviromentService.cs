@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public static class EnvironmentService
+public static class EnvironmentTour360Service
 {
     private static TourConfig _data;
 

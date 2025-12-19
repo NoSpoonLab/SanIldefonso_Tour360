@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c09d2c42f088353498b957e34c0c5616, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c09d2c42f088353498b957e34c0c5616, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c09d2c42f088353498b957e34c0c5616, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c09d2c42f088353498b957e34c0c5616, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9e065950f914aeb4e927183b549453f1, type: 2}
     - target: {fileID: 919132149155446097, guid: c09d2c42f088353498b957e34c0c5616, type: 3}
       propertyPath: m_Name
-      value: SanJuenNepuceno_01
+      value: Capilla de San Juan Nepomuceno
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3eb854404e86e3542a15de60e7c83c77, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3eb854404e86e3542a15de60e7c83c77, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3eb854404e86e3542a15de60e7c83c77, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3eb854404e86e3542a15de60e7c83c77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c15cfd12f9e8aaf4fba99cec0c342930, type: 2}
     - target: {fileID: 919132149155446097, guid: 3eb854404e86e3542a15de60e7c83c77, type: 3}
       propertyPath: m_Name
-      value: PuertadelHorno_01
+      value: Puerta del Horno
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
