@@ -2,6 +2,8 @@
     "entries": [
         { "key": "ROUTE", "value": "Glass Route" },
         { "key": "NEIGHBORHOOD", "value": "Upper Neighborhood and Lower Neighborhood" },
-        { "key": "BACKMAP", "value": "Back to Map" }
+        { "key": "BACKMAP", "value": "Back to Map" },
+        { "key": "EN", "value": "English" },
+        { "key": "ES", "value": "Spain" }
     ]
 }

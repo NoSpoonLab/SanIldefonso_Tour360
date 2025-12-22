@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4065575073550910269}
   - component: {fileID: 6752081673615631949}
   - component: {fileID: 8381800080569278943}
+  - component: {fileID: 8164725256333897657}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -136,6 +137,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8164725256333897657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193435679598047361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c01438a023bdc4090daad548a0de2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  key: ES
 --- !u!1 &1378922396870003849
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +293,7 @@ GameObject:
   - component: {fileID: 5696028790036369784}
   - component: {fileID: 7794887510662323608}
   - component: {fileID: 9000918741926706908}
+  - component: {fileID: 6704976456856118719}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -404,6 +419,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6704976456856118719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855551363975131201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c01438a023bdc4090daad548a0de2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizedText
+  key: EN
 --- !u!1 &1886543685615871450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,7 +1151,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3463796581210822617}
         m_TargetAssemblyTypeName: LanguageManager, Assembly-CSharp
         m_MethodName: LoadLanguage
         m_Mode: 5
@@ -1243,7 +1271,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3463796581210822617}
         m_TargetAssemblyTypeName: LanguageManager, Assembly-CSharp
         m_MethodName: LoadLanguage
         m_Mode: 5
@@ -1941,6 +1969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4659487777056453844}
+  - component: {fileID: 3463796581210822617}
   m_Layer: 4
   m_Name: MenuLanguage
   m_TagString: Untagged
@@ -1956,7 +1985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8999712758456609028}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.108, y: 0.254, z: -0.065}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1964,6 +1993,19 @@ Transform:
   - {fileID: 8648988723891512683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3463796581210822617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8999712758456609028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e7159256108db468619d3559bb014c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LanguageManager
+  currentLanguage: es
 --- !u!1 &9144037158947357550
 GameObject:
   m_ObjectHideFlags: 0
