@@ -222,16 +222,16 @@ public class View3DController : MonoBehaviour
         Vector3 pos = _teleportPoints[index].ToVector3();
         playerRig.position = pos;
 
-        if (arrowTransform != null && arrowYRotations.Length > 0)
-        {
-            int rotIndex = index % arrowYRotations.Length;
-            Vector3 euler = arrowTransform.transform.localEulerAngles;
-            arrowTransform.transform.localRotation = Quaternion.Euler(
-                euler.x,
-                arrowYRotations[rotIndex],
-                euler.z
-            );
-        }
+        //if (arrowTransform != null && arrowYRotations.Length > 0)
+        //{
+        //    int rotIndex = index % arrowYRotations.Length;
+        //    Vector3 euler = arrowTransform.transform.localEulerAngles;
+        //    arrowTransform.transform.localRotation = Quaternion.Euler(
+        //        euler.x,
+        //        arrowYRotations[rotIndex],
+        //        euler.z
+        //    );
+        //}
     }
 
     void ClearCurrentModel()
