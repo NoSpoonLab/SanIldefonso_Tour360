@@ -45,19 +45,56 @@ public class View3DController : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.aKey.wasPressedThisFrame)
-            LoadModel("Capilla de San Juan Nepomuceno");
-
-        if (Keyboard.current.bKey.wasPressedThisFrame)
-            LoadModel("Iglesia de los Dolores");
-
-        if (Keyboard.current.cKey.wasPressedThisFrame)
+        if (Keyboard.current.qKey.wasPressedThisFrame)
             LoadModel("Ayuntamiento");
 
-        if (Keyboard.current.dKey.wasPressedThisFrame)
-            LoadModel("Puerta del Horno");
+        if (Keyboard.current.wKey.wasPressedThisFrame)
+            LoadModel("Capilla de San Juan Nepomuceno");
+
+        if (Keyboard.current.eKey.wasPressedThisFrame)
+            LoadModel("Casa de la Máquina del Pulimento de Dowling");
 
         if (Keyboard.current.rKey.wasPressedThisFrame)
+            LoadModel("Cobertizos para la Leña");
+
+        if (Keyboard.current.tKey.wasPressedThisFrame)
+            LoadModel("Fuente del Príncipe");
+
+        if (Keyboard.current.yKey.wasPressedThisFrame)
+            LoadModel("Fábrica de Cristales Labrados y Entrefinos");
+
+        if (Keyboard.current.uKey.wasPressedThisFrame)
+            LoadModel("Iglesia de los Dolores");
+
+        if (Keyboard.current.iKey.wasPressedThisFrame)
+            LoadModel("Iglesia de Nuestra Señora del Rosario o de Cristo");
+
+        if (Keyboard.current.oKey.wasPressedThisFrame)
+            LoadModel("Iglesia del Convento");
+
+        if (Keyboard.current.pKey.wasPressedThisFrame)
+            LoadModel("Puerta de la Reina");
+
+        if (Keyboard.current.aKey.wasPressedThisFrame)
+            LoadModel("Puerta de Segovia");
+
+        if (Keyboard.current.sKey.wasPressedThisFrame)
+            LoadModel("Puerta del Horno");
+
+        if (Keyboard.current.dKey.wasPressedThisFrame)
+            LoadModel("La Primera Casa del Pulimento");
+
+        if (Keyboard.current.fKey.wasPressedThisFrame)
+            LoadModel("Palacio de Valsaín");
+
+        if (Keyboard.current.gKey.wasPressedThisFrame)
+            LoadModel("Fábrica Antigua de Cristales Planos");
+
+        if (Keyboard.current.hKey.wasPressedThisFrame)
+            LoadModel("Real Fábrica de Cristales Planos de Carlos III");
+
+
+        if (Keyboard.current.zKey.wasPressedThisFrame)
             PressButtonReset();
 
         if (Keyboard.current.upArrowKey.wasPressedThisFrame)
@@ -117,7 +154,7 @@ public class View3DController : MonoBehaviour
 
     public void LoadModelBig(GameObject prefab, string id)
     {
-        var scaleBig = 200;
+        var scaleBig = 1;
 
         currentModelBig = Instantiate(prefab, modelContainerBig);
         currentModelBig.transform.localScale = new Vector3(scaleBig, scaleBig, scaleBig);
@@ -129,26 +166,26 @@ public class View3DController : MonoBehaviour
     {
         string size = EnvironmentView3DService.GetSize(id);
 
-        var scaleSmall = 0;
+        float scale = 0;
 
         switch (size)
         {
             case "small":
-                scaleSmall = 30;
+                scale = 0.09f;
                 break;
 
             case "medium":
-                scaleSmall = 15;
+                scale = 0.03f;
                 break;
 
             case "large":
-                scaleSmall = 10;
+                scale = 0.015f;
                 break;
         }
 
 
         currentModelSmall = Instantiate(prefab, modelContainerSmall);
-        currentModelSmall.transform.localScale = new Vector3(scaleSmall, scaleSmall, scaleSmall);
+        currentModelSmall.transform.localScale = new Vector3(scale, scale, scale);
         currentModelSmall.transform.localPosition = Vector3.zero;
         currentModelSmall.name = "Model3D - " + id;
     }
