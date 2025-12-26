@@ -4,6 +4,7 @@
         { "key": "NEIGHBORHOOD", "value": "Barrio alto y Barrio Bajo" },
         { "key": "BACKMAP", "value": "Volver al Mapa" },
         { "key": "EN", "value": "Inglés" },
-        { "key": "ES", "value": "Español" }
+        { "key": "ES", "value": "Español" },
+        { "key": "BACK", "value": "Volver al menú" }
     ]
 }

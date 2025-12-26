@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[HelpURL("https://laboratorio.atlassian.net/wiki/spaces/PG/pages/5055315981/Tour+Imagen+360D")]
 public class Tour360Controller : MonoBehaviour
 {
     #region Variables
@@ -83,6 +84,13 @@ public class Tour360Controller : MonoBehaviour
         fadeCanvas.alpha = end;
     }
 
+    #endregion
+
+    #region Inputs Methods
+    public void PressButtonBack(string scene) //Add in inspector ButtonBack in Interactable Unity Events
+    {
+        SceneHelper.LoadScene(scene);
+    }
     #endregion
 
     void Update()

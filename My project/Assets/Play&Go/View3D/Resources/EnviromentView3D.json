@@ -5,8 +5,14 @@
       "id": "Palacio de Valsaín",
       "name": "Palacio de Valsaín",
       "size": "large",
-      "teleportPoints": [
-        { "x": 10, "y": 0, "z": 5 }
+      "teleportPoints": 
+      [
+        { "x": 0, "y": 0, "z":0},
+        { "x": -11, "y": 0, "z": -28 },
+        { "x": -44, "y": 0, "z": -42},
+        { "x": -21, "y": 0, "z": -68},
+        { "x": -61, "y": 0, "z": -150},
+        { "x": 46, "y": 0, "z": -76}
       ]
     },
     {
@@ -16,7 +22,7 @@
       "teleportPoints": 
       [
         { "x": 0, "y": 0, "z":0},
-        { "x": 0, "y": 0, "z": -18.1 },
+        { "x": 0, "y": 0, "z": -18},
         { "x": -44, "y": 0, "z": -42},
         { "x": 0, "y": 0, "z": -82},
         { "x": 44, "y": 0, "z": -42}
@@ -26,15 +32,27 @@
       "id": "Fábrica Antigua de Cristales Planos",
       "name": "Fábrica Antigua de Cristales Planos",
       "size": "large",
-      "teleportPoints": [
-        { "x": -3, "y": 0, "z": 12 }
+      "teleportPoints": 
+      [
+        { "x": 0, "y": 0, "z":0},
+        { "x": 0, "y": 0, "z": -38},
+        { "x": 0, "y": 0, "z": -112},
+        { "x": 33, "y": 0, "z": -142},
+        { "x": 73, "y": 0, "z": -94}
       ]
     },
     {
       "id": "La Primera Casa del Pulimento",
       "name": "La Primera Casa del Pulimento",
-      "size": "medium",
-      "teleportPoints": []
+      "size": "large",
+      "teleportPoints": 
+      [
+        { "x": 0, "y": 0, "z":0},
+        { "x": -20, "y": 0, "z": -90},
+        { "x": -75, "y": 0, "z": -114},
+        { "x": 2, "y": 0, "z": -134},
+        { "x": 75, "y": 0, "z": -114}      
+      ]
     },
     {
       "id": "Fábrica de Cristales Labrados y Entrefinos",
@@ -68,15 +86,24 @@
       "size": "medium",
       "teleportPoints": 
       [
-
+        { "x": 0, "y": 0, "z":0},
+        { "x": 0, "y": 0, "z": -26 },
+        { "x": -18, "y": 0, "z": -44},
+        { "x": 0, "y": 0, "z": -56},
+        { "x": 18, "y": 0, "z": -44}
       ]
     },
     {
       "id": "Real Fábrica de Cristales Planos de Carlos III",
       "name": "Real Fábrica de Cristales Planos de Carlos III",
       "size": "large",
-      "teleportPoints": [
-        { "x": 8, "y": 0, "z": -4 }
+      "teleportPoints": 
+      [
+        { "x": 0, "y": 0, "z":0},
+        { "x": -50, "y": 0, "z": -13},
+        { "x": 24, "y": 0, "z": -60},
+        { "x": 41, "y": 0, "z": -90},
+        { "x": -23, "y": 0, "z": -122}
       ]
     },
     {
@@ -119,11 +146,11 @@
       "size": "medium",
       "teleportPoints": 
       [        
+        { "x": 0, "y": 0, "z":0},
         { "x": 0, "y": 0, "z": -25 },
         { "x": -30, "y": 0, "z": -44},
         { "x": 0, "y": 0, "z": -65},
-        { "x": 40, "y": 0, "z": -44}
-      
+        { "x": 40, "y": 0, "z": -44}  
       ]
     },
     {
@@ -156,14 +183,26 @@
       "id": "Iglesia de Nuestra Señora del Rosario o de Cristo",
       "name": "Iglesia de Nuestra Señora del Rosario o de Cristo",
       "size": "medium",
-      "teleportPoints": []
+      "teleportPoints": 
+      [
+        { "x": 0, "y": 0, "z":0},
+        { "x": 0, "y": 0, "z": -16 },
+        { "x": -22, "y": 0, "z": -44},
+        { "x": 0, "y": 0, "z": -80},
+        { "x": 22, "y": 0, "z": -44} 
+      ]
     },
     {
       "id": "Puerta de Segovia",
       "name": "Puerta de Segovia",
       "size": "small",
-      "teleportPoints": [
-        { "x": -7, "y": 0, "z": -2 }
+      "teleportPoints": 
+      [
+        { "x": 0, "y": 0, "z":0},
+        { "x": 0, "y": 0, "z": -26 },
+        { "x": -38, "y": 0, "z": -44},
+        { "x": 0, "y": 0, "z": -56},
+        { "x": 38, "y": 0, "z": -44}
       ]
     },
     {
@@ -173,10 +212,10 @@
       "teleportPoints": 
       [
         { "x": 0, "y": 0, "z":0},
-        { "x": 0, "y": 0, "z": -22.6 },
-        { "x": -62, "y": 0, "z": -44},
-        { "x": 0, "y": 0, "z": -73},
-        { "x": 62, "y": 0, "z": -44}
+        { "x": 0, "y": 0, "z": -26 },
+        { "x": -38, "y": 0, "z": -44},
+        { "x": 0, "y": 0, "z": -56},
+        { "x": 38, "y": 0, "z": -44}
       ]
     }
   ]

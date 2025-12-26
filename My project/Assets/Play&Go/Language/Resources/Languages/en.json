@@ -4,6 +4,7 @@
         { "key": "NEIGHBORHOOD", "value": "Upper Neighborhood and Lower Neighborhood" },
         { "key": "BACKMAP", "value": "Back to Map" },
         { "key": "EN", "value": "English" },
-        { "key": "ES", "value": "Spain" }
+        { "key": "ES", "value": "Spain" },
+        { "key": "BACK", "value": "Back to menu" }
     ]
 }

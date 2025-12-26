@@ -3,7 +3,9 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
+[HelpURL("https://laboratorio.atlassian.net/wiki/spaces/PG/pages/5055512577/Visualizador+y+Tour+Modelos+3D")]
 public class View3DController : MonoBehaviour
 {
     #region Variables
@@ -31,16 +33,6 @@ public class View3DController : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI title;
-
-    [Header("Arrow Rotation")]
-    private readonly float[] arrowYRotations =
-    {
-        -90f,
-         0f,
-        -90f,
-        180f,
-        90f
-    };
     #endregion
 
     void Update()
@@ -99,8 +91,9 @@ public class View3DController : MonoBehaviour
 
         if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             TeleportNext();
-    }
 
+        UpdateArrowMovement();
+    }
 
     #region Public Methods
 
@@ -127,6 +120,7 @@ public class View3DController : MonoBehaviour
         if (_teleportPoints != null && _teleportPoints.Length > 0)
         {
             arrow.gameObject.SetActive(true);
+            TeleportToIndex(0);
         }
         else
         {
@@ -136,10 +130,11 @@ public class View3DController : MonoBehaviour
 
     public void TeleportNext()
     {
-        StartCoroutine(Fade(0f, 1f));
 
         if (_teleportPoints == null || _teleportPoints.Length == 0)
             return;
+
+        StartCoroutine(Fade(0f, 1f));
 
         _currentTeleportIndex++;
         if (_currentTeleportIndex >= _teleportPoints.Length)
@@ -148,46 +143,6 @@ public class View3DController : MonoBehaviour
         TeleportToIndex(_currentTeleportIndex);
 
         StartCoroutine(Fade(1f, 0f));
-    }
-
-
-
-    public void LoadModelBig(GameObject prefab, string id)
-    {
-        var scaleBig = 1;
-
-        currentModelBig = Instantiate(prefab, modelContainerBig);
-        currentModelBig.transform.localScale = new Vector3(scaleBig, scaleBig, scaleBig);
-        currentModelBig.transform.localPosition = Vector3.zero;
-        currentModelBig.name = "Model3D - " + id;
-    }
-
-    public void LoadModelSmall(GameObject prefab, string id)
-    {
-        string size = EnvironmentView3DService.GetSize(id);
-
-        float scale = 0;
-
-        switch (size)
-        {
-            case "small":
-                scale = 0.09f;
-                break;
-
-            case "medium":
-                scale = 0.03f;
-                break;
-
-            case "large":
-                scale = 0.015f;
-                break;
-        }
-
-
-        currentModelSmall = Instantiate(prefab, modelContainerSmall);
-        currentModelSmall.transform.localScale = new Vector3(scale, scale, scale);
-        currentModelSmall.transform.localPosition = Vector3.zero;
-        currentModelSmall.name = "Model3D - " + id;
     }
 
     public IEnumerator Fade(float start, float end)
@@ -214,24 +169,98 @@ public class View3DController : MonoBehaviour
         arrow.SetActive(false);
         title.text = "";
     }
+
+    public void PressButtonBack(string scene) //Add in inspector ButtonBack in Interactable Unity Events
+    {
+        SceneHelper.LoadScene(scene);
+    }
     #endregion
 
     #region Private Methods
+    void UpdateArrowMovement()
+    {
+        if (arrowTransform == null || Camera.main == null)
+            return;
+
+        if (_teleportPoints == null || _teleportPoints.Length < 2)
+            return;
+
+        int nextIndex = _currentTeleportIndex + 1;
+        if (nextIndex >= _teleportPoints.Length)
+            nextIndex = 0;
+
+        Vector3 nextPos = _teleportPoints[nextIndex].ToVector3();
+
+        Vector3 camPos = Camera.main.transform.position;
+        camPos.y = arrowTransform.transform.position.y;
+
+        Vector3 direction = nextPos - camPos;
+        direction.y = 0f;
+
+        if (direction.sqrMagnitude < 0.001f)
+            return;
+
+        arrowTransform.transform.rotation = Quaternion.LookRotation(direction);
+
+    }
+    void LoadModelBig(GameObject prefab, string id)
+    {
+        var scaleBig = 1;
+        var posZ = 0;
+
+        string size = EnvironmentView3DService.GetSize(id);        
+        switch (size)
+        {
+            case "small":
+                posZ = 0;
+                break;
+
+            case "medium":
+                posZ = 0;
+                break;
+
+            case "large":
+                posZ = -70;
+                break;
+        }
+
+        currentModelBig = Instantiate(prefab, modelContainerBig);
+        currentModelBig.transform.localScale = new Vector3(scaleBig, scaleBig, scaleBig);
+        currentModelBig.transform.localPosition = new Vector3(0, 0, posZ);
+        currentModelBig.name = "Model3D - " + id;
+    }
+
+    void LoadModelSmall(GameObject prefab, string id)
+    {
+        string size = EnvironmentView3DService.GetSize(id);
+
+        float scale = 0;
+
+        switch (size)
+        {
+            case "small":
+                scale = 0.09f;
+                break;
+
+            case "medium":
+                scale = 0.03f;
+                break;
+
+            case "large":
+                scale = 0.015f;
+                break;
+        }
+
+
+        currentModelSmall = Instantiate(prefab, modelContainerSmall);
+        currentModelSmall.transform.localScale = new Vector3(scale, scale, scale);
+        currentModelSmall.transform.localPosition = Vector3.zero;
+        currentModelSmall.name = "Model3D - " + id;
+    }
     void TeleportToIndex(int index)
     {
         Vector3 pos = _teleportPoints[index].ToVector3();
         playerRig.position = pos;
-
-        //if (arrowTransform != null && arrowYRotations.Length > 0)
-        //{
-        //    int rotIndex = index % arrowYRotations.Length;
-        //    Vector3 euler = arrowTransform.transform.localEulerAngles;
-        //    arrowTransform.transform.localRotation = Quaternion.Euler(
-        //        euler.x,
-        //        arrowYRotations[rotIndex],
-        //        euler.z
-        //    );
-        //}
     }
 
     void ClearCurrentModel()

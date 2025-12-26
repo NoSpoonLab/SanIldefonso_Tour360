@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class LanguageManager : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class LanguageManager : MonoBehaviour
     public delegate void LanguageChanged();
     public event LanguageChanged OnLanguageChanged;
 
-    //Desactivado el singleton
     #region SINGLETON 
     private void Awake()
     {
