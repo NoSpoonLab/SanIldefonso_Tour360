@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _position: {x: 0, y: 0, z: 0}
-  _size: {x: 0.512, y: 0.42, z: 0.05}
+  _size: {x: 0.3, y: 0.1, z: 0.02}
 --- !u!65 &6791123244400301072
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -4,137 +4,180 @@
     {
       "id": "Palacio de Valsaín",
       "name": "Palacio de Valsaín",
-      "size": "large",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
+      "descripcion": 
+      {
+        "es": "Durante el reinado de Enrique III se edificó la \"Casa Real del Bosque\", un refugio de monteros que tiempo después, Enrique IV agrandó convirtiéndolo en un palacete de caza. No sería hasta el reinado de Felipe II cuando se trasforma el pabellón de caza en un palacio de estilo flamenco de la mano del arquitecto Gaspar de Vega en 1562. La construcción se extendió durante la segunda mitad del siglo XVI.\n\nEn 1682, reinando Carlos II, se produjo un grave incendio que destruyó gran parte de la edificación y, aunque los daños no eran irreparables, la mala situación económica del país en esos momentos impidió su restauración. La nueva construcción del Palacio Real de La Granja supuso el deterioro y abandono del Palacio de Valsaín hasta nuestros días.\n\nAunque fue declarado Monumento Nacional en 1931, su deterioro es imparable. De la construcción regia solo quedan las ruinas de la Torre Nueva, el Patio de Vacas de la Reina o Caballerizas, La Casa de Oficios y los arcos de Juan Gómez de Mora (Maestro Mayor de las Obras Reales).",
+        "en": "During the reign of Henry III, the \"Royal House of the Forest\" was built, a hunters' refuge that later, Henry IV enlarged, turning it into a hunting lodge. It wasn't until the reign of Philip II that the hunting pavilion was transformed into a Flemish-style palace by architect Gaspar de Vega in 1562. Construction extended throughout the second half of the 16th century.\n\nIn 1682, during the reign of Charles II, a severe fire destroyed much of the building and, although the damage was not irreparable, the poor economic situation of the country at that time prevented its restoration. The new construction of the Royal Palace of La Granja led to the deterioration and abandonment of the Valsaín Palace to this day.\n\nAlthough it was declared a National Monument in 1931, its deterioration is unstoppable. Of the royal construction, only the ruins of the New Tower, the Queen's Cattle Courtyard or Stables, the Office House, and the arches of Juan Gómez de Mora (Master of Royal Works) remain."
+      },
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": -11, "y": 0, "z": -28 },
-        { "x": -44, "y": 0, "z": -42},
-        { "x": -21, "y": 0, "z": -68},
-        { "x": -61, "y": 0, "z": -150},
-        { "x": 46, "y": 0, "z": -76}
+        { "x": -44, "y": 0, "z": -42 },
+        { "x": -21, "y": 0, "z": -68 },
+        { "x": -61, "y": 0, "z": -150 },
+        { "x": 46, "y": 0, "z": -76 }
       ]
     },
     {
       "id": "Capilla de San Juan Nepomuceno",
       "name": "Capilla de San Juan Nepomuceno",
+      "descripcion": 
+      {
+        "es": "Los maestros vidrieros alemanes, que llegaron a La Granja a mediados del siglo XVIII, eran tan devotos de este mártir que fundaron la Real Congregación de San Juan Nepomuceno en 1766. Ellos mismos mandaron hacer una imagen del santo que colocaron, para su culto, en una barraca de pobre construcción que les había regalado la reina madre Isabel de Farnesio. Este edificio, situado posiblemente en el mismo lugar que la capilla actual, no ofrecía las condiciones requeridas por sus cofrades, cuyo número crecía por la incorporación de nuevos miembros, entre los que se encontraba el rey, Carlos III, y su familia. Esta es la causa por la que comenzó a levantarse un edificio nuevo en 1778, fecha en que también, según cuenta Santos Martín Sedeño, el Cabildo de Praga les regaló una reliquia del mismo santo.\n\nTampoco ésta era una construcción muy sólida, pues en el año 1793 se encontraba en ruinas e incluso había sido preciso sacar la imagen de esta capilla, según nos cuenta otro ilustre miembro de la cofradía, el Duque de Alba.\n\nLa capilla tiene planta rectangular y una sola nave; la capilla mayor se encontraba en el eje longitudinal y la decoraba un retablo. Al exterior el único elemento que le delata como religioso es la espadaña, pues el resto, incluida la sencilla puerta lateral, es extremadamente sobrio y sencillo; el único adorno son los revocos que imitan motivos arquitectónicos. Actualmente es un edificio privado y se utiliza como galería de arte.",
+        "en": "The German glassmaster craftsmen who arrived in La Granja in the mid-18th century were so devoted to this martyr that they founded the Royal Congregation of San Juan Nepomuceno in 1766. They commissioned an image of the saint which they placed, for worship, in a poorly constructed barracks that had been gifted to them by the queen mother Isabel de Farnesio. This building, possibly located in the same place as the current chapel, did not offer the conditions required by its members, whose number grew with the incorporation of new members, including the king, Charles III, and his family. This is why a new building began to be erected in 1778, the year when, according to Santos Martín Sedeño, the Prague Chapter also gifted them a relic of the same saint.\n\nThis construction was not very solid either, as by 1793 it was in ruins and it had even been necessary to remove the image from this chapel, as another illustrious member of the brotherhood, the Duke of Alba, tells us.\n\nThe chapel has a rectangular floor plan and a single nave; the main chapel was located on the longitudinal axis and was decorated with an altarpiece. On the exterior, the only element that reveals it as religious is the bell gable, as the rest, including the simple side door, is extremely sober and simple; the only ornament is the plasterwork imitating architectural motifs. It is currently a private building and is used as an art gallery."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
-        { "x": 0, "y": 0, "z": -18},
-        { "x": -44, "y": 0, "z": -42},
-        { "x": 0, "y": 0, "z": -82},
-        { "x": 44, "y": 0, "z": -42}
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": 0, "y": 0, "z": -18 },
+        { "x": -44, "y": 0, "z": -42 },
+        { "x": 0, "y": 0, "z": -82 },
+        { "x": 44, "y": 0, "z": -42 }
       ]
     },
     {
       "id": "Fábrica Antigua de Cristales Planos",
       "name": "Fábrica Antigua de Cristales Planos",
+      "descripcion": 
+      {
+        "es": "En este solar estuvo ubicada la antigua Fábrica de Cristales Planos o de Españoles, establecida en 1727 y dirigida por el maestro Ventura Sit. En ella se fabricaban vidrios para ventanas y espejos. La planta definitiva, consecuencia de sucesivas ampliaciones a cargo de los maestros de obras Manuel del Valle y José de la Calle, era de forma rectangular, con la fachada principal orientada al sur, hacia la actual Calle de la Calandria, donde estaban ubicados los hornos y templadores. Dicha forma y orientación se repetirá en todas las fábricas de vidrio de La Granja.\n\nLas cubiertas de los hornos eran de madera, muy vulnerables al fuego. Por esta causa la fábrica sufrió dos incendios, uno en 1753 y el otro en 1770. Después de este último se decidió trasladarla al exterior.\n\nEn 1780 se instala la Fábrica de Lienzos. Juan Sardinero realizó las reformas necesarias y las máquinas de batán y calandria, para hilar y prensar respectivamente.\n\nEl nombre de la calandria originó la denominación del edificio, y de la plaza y calle adyacentes.\n\nEsta fábrica se suprimió en 1795, y después de varios intentos para ponerla en funcionamiento, finalmente se cedió a las Religiosas Franciscanas de Ntra. Sra. del Triunfo para establecer un convento, del cual se conserva la iglesia. A principios del siglo XX se vendió a unos particulares que convirtieron el edificio en la Hospedería de la Calandria.",
+        "en": "On this site was located the old Flat Glass Factory or Spanish Factory, established in 1727 and directed by master Ventura Sit. It manufactured glass for windows and mirrors. The final layout, the result of successive expansions by master builders Manuel del Valle and José de la Calle, was rectangular in shape, with the main facade facing south, towards the current Calle de la Calandria, where the furnaces and tempering facilities were located. This shape and orientation would be repeated in all the glass factories of La Granja.\n\nThe furnace roofs were made of wood, very vulnerable to fire. For this reason, the factory suffered two fires, one in 1753 and another in 1770. After the latter, it was decided to move it to the exterior.\n\nIn 1780, the Linen Factory was installed. Juan Sardinero carried out the necessary reforms and the fulling mill and calender machines, for spinning and pressing respectively.\n\nThe name of the calender originated the denomination of the building, and of the adjacent square and street.\n\nThis factory was closed in 1795, and after several attempts to put it into operation, it was finally ceded to the Franciscan Sisters of Our Lady of Triumph to establish a convent, of which the church is preserved. At the beginning of the 20th century, it was sold to private individuals who converted the building into the Hospedería de la Calandria."
+      },
       "size": "large",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
-        { "x": 0, "y": 0, "z": -38},
-        { "x": 0, "y": 0, "z": -112},
-        { "x": 33, "y": 0, "z": -142},
-        { "x": 73, "y": 0, "z": -94}
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": 0, "y": 0, "z": -38 },
+        { "x": 0, "y": 0, "z": -112 },
+        { "x": 33, "y": 0, "z": -142 },
+        { "x": 73, "y": 0, "z": -94 }
       ]
     },
     {
       "id": "La Primera Casa del Pulimento",
       "name": "La Primera Casa del Pulimento",
+      "descripcion": 
+      {
+        "es": "En este solar, situado detrás de la Iglesia de los Dolores —frente a la antigua Fábrica de Cristales Planos—, se ubicaba la Casa del Pulimento, edificio que albergó la primera máquina hidráulica del pulimento, inventada por el maestro vidriero Ventura Sit y el maestro albañil Pedro Frontvilla en 1743. Esta máquina, alimentada por las aguas procedentes de los Jardines de Palacio, podía accionar un total de dieciséis pulidores para desbastar las lunas destinadas a la fabricación de espejos.\n\nEn el año 1747 fue ampliada por ambos lados y se levanta un edificio de planta rectangular muy alargada y tres alturas: un bajo destinado al raspamento, otro principal para el pulimento y buhardillas para viviendas.\n\nEn los primeros años de la década de 1760 el pulimento se traslada al exterior del recinto urbano, junto al Arroyo Cambrones. Por ello, en una parte de este edificio se establece en 1767 la Fábrica de Acero y Limas, dirigida por el ingeniero irlandés Juan Dowling. Fue extinguida en 1795, y durante el siglo XIX se construyeron viviendas.",
+        "en": "On this site, located behind the Church of Los Dolores—facing the old Flat Glass Factory—was the Polishing House, a building that housed the first hydraulic polishing machine, invented by master glassmaker Ventura Sit and master mason Pedro Frontvilla in 1743. This machine, powered by water from the Palace Gardens, could operate a total of sixteen polishers to rough down the glass panes destined for mirror manufacturing.\n\nIn 1747, it was expanded on both sides and a building with a very elongated rectangular floor plan and three floors was erected: a ground floor for scraping, a main floor for polishing, and attics for housing.\n\nIn the early 1760s, the polishing operation was moved to the exterior of the urban area, next to the Cambrones Stream. For this reason, in part of this building, the Steel and Files Factory was established in 1767, directed by Irish engineer Juan Dowling. It was closed in 1795, and during the 19th century, houses were built."
+      },
       "size": "large",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
-        { "x": -20, "y": 0, "z": -90},
-        { "x": -75, "y": 0, "z": -114},
-        { "x": 2, "y": 0, "z": -134},
-        { "x": 75, "y": 0, "z": -114}      
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": -20, "y": 0, "z": -90 },
+        { "x": -75, "y": 0, "z": -114 },
+        { "x": 2, "y": 0, "z": -134 },
+        { "x": 75, "y": 0, "z": -114 }
       ]
     },
     {
       "id": "Fábrica de Cristales Labrados y Entrefinos",
       "name": "Fábrica de Cristales Labrados y Entrefinos",
+      "descripcion": 
+      {
+        "es": "En este solar se localizaba la Fábrica de Cristales Labrados o de Franceses, y las dos de Entrefinos o de Alemanes. En todas ellas se elaboraban cristalerías, objetos de adorno, óptica y farmacia, siguiendo la técnica del vidrio soplado con caña.\n\nEn 1746 llega el maestro Dionisio Sibert con un grupo de vidrieros franceses. Comprobada su destreza, dos años después se realiza un proyecto con el fin de levantar una nueva Fábrica de Cristales Labrados en este lugar. Al poco tiempo se incorporan los maestros alemanes. El edificio contaba con varios patios en su interior para secar y almacenar la leña, así como viviendas para alojar a los artífices. Los hornos se ubican en la crujía meridional, como en todas las fábricas de La Granja. Sobre la puerta de entrada había un escudo con las armas de los Borbones.\n\nEl uso y los incendios originaron un deterioro progresivo del edificio, quedando en ruinas a mediados del siglo XIX. Poco después, el terreno que ocupaba la fábrica se vendió a particulares para construir viviendas. Este es el caso de D. Manuel Matéu Arias Dávila, quien construyó una casa noble, que aún se conserva, con un jardín en su interior.",
+        "en": "On this site was located the Carved Glass Factory or French Factory, and the two Entrefino or German Factories. In all of them, glassware, ornamental objects, optics, and pharmacy items were made, following the technique of blown glass with a blowpipe.\n\nIn 1746, master Dionisio Sibert arrived with a group of French glassmakers. Once their skill was verified, two years later a project was undertaken to build a new Carved Glass Factory in this place. Shortly after, German masters joined. The building had several interior courtyards for drying and storing wood, as well as housing for the craftsmen. The furnaces were located in the southern wing, as in all the factories of La Granja. Above the entrance door was a coat of arms with the Bourbon emblems.\n\nUse and fires caused progressive deterioration of the building, leaving it in ruins by the mid-19th century. Shortly after, the land occupied by the factory was sold to private individuals to build houses. This is the case of Don Manuel Matéu Arias Dávila, who built a noble house, which is still preserved, with a garden inside."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": 0, "y": 0, "z": -11 },
-        { "x": -32, "y": 0, "z": -42},
-        { "x": 0, "y": 0, "z": -80},
-        { "x": 32, "y": 0, "z": -42}
+        { "x": -32, "y": 0, "z": -42 },
+        { "x": 0, "y": 0, "z": -80 },
+        { "x": 32, "y": 0, "z": -42 }
       ]
     },
     {
       "id": "Cobertizos para la Leña",
       "name": "Cobertizos para la Leña",
+      "descripcion": 
+      {
+        "es": "Una de las razones fundamentales para el establecimiento de las Reales Fábricas de Cristales en La Granja fue la abundancia de bosques de coníferas en las proximidades, combustible imprescindible para alimentar los hornos.\n\nEn todas las fábricas de cristales era obligado reservar un gran espacio para cortar, orear y almacenar la leña. Estas superficies eran grandes patios con galerías cubiertas. Ahora bien, el edificio que tratamos es el único construido exclusivamente para este uso fuera del recinto de las fábricas. Suponemos que se levantó al mismo tiempo que la Fábrica de Labrados, situada al otro lado de la Calle de Postas. Se conserva un plano realizado por José Díaz Gamones en 1769, donde aparece un edificio de planta rectangular con un amplio cobertizo hacia el este, un gran patio, otro cobertizo muy alargado y dividido en tres naves, y un estrecho corredor.\n\nEste último era, antes de 1770, una callejuela situada entre la cerca del Real Sitio y los cobertizos, pero en ese año se incorpora al edificio para construir unas caballerizas. Para llevar a cabo estas reformas fue necesario rebajar la altura de esta cerca, hacer una cornisa de ladrillo y abrir ventanas al campo, transformaciones que son visibles en la actualidad desde el exterior.\n\nPara incrementar la vigilancia y evitar el acarreo de la leña por la Calle de Postas, intransitable durante el invierno, el Conde de Montarco decidió construir, por encima de esta calle, un pasadizo elevado desde la Fábrica de Labrados a los cobertizos de la leña. Los planos de este pasadizo fueron realizados por el aparejador Francisco de Pablos en el año de 1802.",
+        "en": "One of the fundamental reasons for establishing the Royal Glass Factories in La Granja was the abundance of coniferous forests nearby, essential fuel for feeding the furnaces.\n\nIn all glass factories, it was mandatory to reserve a large space for cutting, airing, and storing firewood. These areas were large courtyards with covered galleries. However, the building we are discussing is the only one built exclusively for this use outside the factory premises. We assume it was erected at the same time as the Carved Factory, located on the other side of Postas Street. A plan made by José Díaz Gamones in 1769 is preserved, showing a rectangular building with a large shed to the east, a large courtyard, another very elongated shed divided into three naves, and a narrow corridor.\n\nThe latter was, before 1770, a small street located between the Royal Site's wall and the sheds, but in that year it was incorporated into the building to build stables. To carry out these reforms, it was necessary to lower the height of this wall, make a brick cornice, and open windows to the countryside, transformations that are currently visible from the exterior.\n\nTo increase surveillance and avoid hauling firewood through Postas Street, impassable during winter, the Count of Montarco decided to build, above this street, an elevated passage from the Carved Factory to the firewood sheds. The plans for this passage were made by the foreman Francisco de Pablos in 1802."
+      },
       "size": "small",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": 0, "y": 0, "z": -34 },
-        { "x": -21, "y": 0, "z": -43},
-        { "x": 0, "y": 0, "z": -55},
-        { "x": 21, "y": 0, "z": -43}
+        { "x": -21, "y": 0, "z": -43 },
+        { "x": 0, "y": 0, "z": -55 },
+        { "x": 21, "y": 0, "z": -43 }
       ]
     },
     {
       "id": "Puerta del Horno",
       "name": "Puerta del Horno",
+      "descripcion": 
+      {
+        "es": "La población de La Granja de San Ildefonso se halla delimitada por una cerca de muro de mampostería, de unos tres metros de altura aproximadamente. En ella se abrieron varias puertas, recibiendo cada una de ellas un tratamiento diferente según su ubicación y su uso.\n\nLa Puerta del Horno se construyó en 1757 para facilitar el acarreo de materiales a la Fábrica de Labrados. El único testimonio gráfico con el que contamos para conocer su aspecto es el que aparece en un grabado realizado por Pedro Pérez en la primera mitad del siglo XIX. Por su carácter funcional era una obra sencilla y austera, con un único hueco adintelado y rematado por pirámides con bolas.\n\nLas puertas principales del Sitio tienen como fondo escenográfico la fachada de una iglesia, recurso éste muy utilizado en el urbanismo barroco. La Puerta del Horno, desde la cual arranca la calle del mismo nombre, tiene al fondo un edificio religioso, pero le falta ese carácter escenográfico, pues lo que vemos es la cabecera de la Iglesia del Rosario, más parecida a un edificio civil que religioso, y la torre de la misma.\n\nJunto a la Puerta del Horno estuvo situado durante algún tiempo el \"Fielato\", que era una caseta donde se controlaban los productos a la entrada de las poblaciones.",
+        "en": "The town of La Granja de San Ildefonso is delimited by a masonry wall enclosure, approximately three meters high. Several gates were opened in it, each receiving different treatment according to its location and use.\n\nThe Puerta del Horno (Oven Gate) was built in 1757 to facilitate the transport of materials to the Carved Factory. The only graphic testimony we have to know its appearance is that which appears in an engraving made by Pedro Pérez in the first half of the 19th century. Due to its functional character, it was a simple and austere work, with a single linteled opening topped by pyramids with balls.\n\nThe main gates of the Site have the facade of a church as a scenic background, a resource widely used in baroque urbanism. The Puerta del Horno, from which the street of the same name starts, has a religious building in the background, but it lacks that scenic character, as what we see is the apse of the Church of the Rosary, more similar to a civil than a religious building, and its tower.\n\nNext to the Puerta del Horno was located for some time the \"Fielato\", which was a booth where products were controlled at the entrance to towns."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
-        { "x": 0, "y": 0, "z": -26 },
-        { "x": -18, "y": 0, "z": -44},
-        { "x": 0, "y": 0, "z": -56},
-        { "x": 18, "y": 0, "z": -44}
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": 0, "y": 0, "z": -44 },
+        { "x": -18, "y": 0, "z": -44 },
+        { "x": 0, "y": 0, "z": -56 },
+        { "x": 18, "y": 0, "z": -44 }
       ]
     },
     {
       "id": "Real Fábrica de Cristales Planos de Carlos III",
       "name": "Real Fábrica de Cristales Planos de Carlos III",
+      "descripcion": 
+      {
+        "es": "Este edificio es uno de los ejemplos más importantes de la arquitectura industrial de la época de la Ilustración.\n\nDespués del incendio acaecido en la Fábrica de Planos situada en el interior de la población, en 1770, Carlos III dispuso que la nueva fábrica se levantara junto a la Fuente del Príncipe. El aparejador José Díaz Gamones fue el encargado de realizar el proyecto para un edificio en el que debían conjugarse utilidad y belleza. La planta ocupa una superficie sensiblemente rectangular, localizándose, de nuevo, los hornos y templadores en la crujía del mediodía. Las salas principales de esta fábrica se cubren con bóvedas de ladrillo para mayor seguridad frente a los incendios.\n\nEn 1785 el arquitecto Juan de Villanueva firma un proyecto para ampliar el edificio hacia el norte, con el fin de reunir en el interior de este recinto todas las fábricas de cristales del Real Sitio, aunque quedó sin terminar.\n\nA mediados del siglo XIX el edificio se arrienda a particulares. En los primeros años del XX la Cooperativa Obrera La Esperanza inicia una nueva línea de producción. En 1972 el edificio se abandona, y diez años más tarde se construye en él la Fundación Centro Nacional del Vidrio con el fin de restaurarle y albergar un Museo, Escuela y Centro de Producción.",
+        "en": "This building is one of the most important examples of industrial architecture from the Enlightenment era.\n\nAfter the fire that occurred in the Flat Factory located inside the town in 1770, Charles III ordered that the new factory be built next to the Prince's Fountain. The foreman José Díaz Gamones was in charge of carrying out the project for a building that had to combine utility and beauty. The floor plan occupies a noticeably rectangular area, with the furnaces and tempering facilities once again located in the southern wing. The main rooms of this factory are covered with brick vaults for greater security against fires.\n\nIn 1785, architect Juan de Villanueva signed a project to expand the building to the north, in order to gather all the glass factories of the Royal Site within this enclosure, although it was left unfinished.\n\nIn the mid-19th century, the building was leased to private individuals. In the early 20th century, the Workers' Cooperative La Esperanza started a new production line. In 1972, the building was abandoned, and ten years later, the National Glass Center Foundation was built in it to restore it and house a Museum, School, and Production Center."
+      },
       "size": "large",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
-        { "x": -50, "y": 0, "z": -13},
-        { "x": 24, "y": 0, "z": -60},
-        { "x": 41, "y": 0, "z": -90},
-        { "x": -23, "y": 0, "z": -122}
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": -50, "y": 0, "z": -13 },
+        { "x": 24, "y": 0, "z": -60 },
+        { "x": 41, "y": 0, "z": -90 },
+        { "x": -23, "y": 0, "z": -122 }
       ]
     },
     {
       "id": "Fuente del Príncipe",
       "name": "Fuente del Príncipe",
+      "descripcion": 
+      {
+        "es": "La Fuente del Príncipe fue un elemento emblemático para La Granja desde épocas muy tempranas. Aparece ya en uno de los planos más antiguos de este lugar, concretamente en un proyecto para la salida de San Ildefonso realizado por Fernando Méndez de Rao, en 1734. En otros planos del siglo XVIII dicha fuente se dibuja en el centro de una placita rodeada de árboles.\n\nSantos Martín Sedeño, Abad de la Colegiata y Cronista del Sitio a finales de ese siglo, relata que tenía una gran espadaña en el centro, donde figuraba una inscripción que rezaba: \"FERDINANDI PRINCIPIS FONS, AQUARUM PRINCEPS\" (Fuente del Príncipe Fernando, Príncipe de las Aguas), lo cual nos indica que fue realizada cuando Fernando VI era Príncipe.\n\nMartín Sedeño comenta también que, aunque su estado era bastante lamentable, tenía un pretil de mampostería y dos ramales de escalera de piedra. Sus aguas eran muy frescas en verano y templadas en invierno; en ese momento se realizó un análisis de las mismas y resultó ser delgada y aperitiva, con residuos alcalinos.\n\nEsta Fuente del Príncipe será también el elemento de referencia esencial cuando se decidió construir una nueva Fábrica de Cristales Planos en el exterior del recinto, por lo que se cita varias veces en la documentación original.",
+        "en": "The Prince's Fountain was an emblematic element for La Granja from very early times. It already appears in one of the oldest plans of this place, specifically in a project for the exit of San Ildefonso made by Fernando Méndez de Rao in 1734. In other 18th-century plans, this fountain is drawn in the center of a small square surrounded by trees.\n\nSantos Martín Sedeño, Abbot of the Collegiate Church and Chronicler of the Site at the end of that century, relates that it had a large bell gable in the center, where there was an inscription that read: \"FERDINANDI PRINCIPIS FONS, AQUARUM PRINCEPS\" (Fountain of Prince Ferdinand, Prince of Waters), which indicates that it was made when Ferdinand VI was Prince.\n\nMartín Sedeño also comments that, although its condition was quite lamentable, it had a masonry parapet and two stone staircase branches. Its waters were very fresh in summer and warm in winter; at that time, an analysis was performed and it turned out to be light and aperitive, with alkaline residues.\n\nThis Prince's Fountain would also be the essential reference element when it was decided to build a new Flat Glass Factory outside the enclosure, which is why it is cited several times in the original documentation."
+      },
       "size": "small",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": 0, "y": 0, "z": -37 },
-        { "x": -3.5, "y": 0, "z": -42},
-        { "x": 0, "y": 2, "z": -45},
-        { "x": 3.5, "y": 0, "z": -42}
+        { "x": -3.5, "y": 0, "z": -42 },
+        { "x": 3.5, "y": 0, "z": -42 }
       ]
     },
     {
       "id": "Casa de la Máquina del Pulimento de Dowling",
       "name": "Casa de la Máquina del Pulimento de Dowling",
+      "descripcion": 
+      {
+        "es": "En el interior de este edificio se encontraba la máquina del pulimento, una revolucionaria máquina hidráulica diseñada en 1761 por el ingeniero irlandés Juan Dowling.\n\nEsta máquina era capaz de accionar hasta un máximo de 100 pulidores a un mismo tiempo y desbastar las lunas de vidrio, con el consiguiente ahorro en los costes de producción. Se construyó con los restos de la antigua máquina del pulimento, ubicada detrás de la Iglesia de los Dolores. Resultó tan ventajosa que Juan Dowling fue nombrado Ingeniero Hidráulico de las Fábricas del Reino. Prueba de su importancia es que aparece dibujada en la Enciclopedia de Diderot y D'Alembert, como máquina modélica para el pulimento.\n\nEl edificio es una sobria construcción de planta ligeramente rectangular, y los muros de mampostería, cuyo único elemento destacable era la moldurada cornisa. Dicho edificio y la presa de la máquina fueron realizados por el maestro de obras Antonio Niño, bajo la supervisión del aparejador Miguel Núñez. Aún se conservan restos de los apoyos de las máquinas en su interior, así como la presa ubicada en lo alto de la ladera.\n\nEn el proceso de la fabricación del cristal se raspaban y pulían sólo las lunas que iban destinadas a la fabricación de espejos; en estas máquinas hidráulicas se desbastaban las lunas de menor tamaño, mientras que las de gran tamaño se desbastaban manualmente, dado el alto riesgo de roturas.",
+        "en": "Inside this building was the polishing machine, a revolutionary hydraulic machine designed in 1761 by Irish engineer Juan Dowling.\n\nThis machine was capable of operating up to a maximum of 100 polishers at the same time and roughing down glass panes, with the consequent savings in production costs. It was built with the remains of the old polishing machine, located behind the Church of Los Dolores. It proved so advantageous that Juan Dowling was appointed Hydraulic Engineer of the Kingdom's Factories. Proof of its importance is that it appears drawn in the Encyclopedia of Diderot and D'Alembert, as a model machine for polishing.\n\nThe building is a sober construction with a slightly rectangular floor plan, and masonry walls, whose only notable element was the molded cornice. This building and the machine's dam were made by master builder Antonio Niño, under the supervision of foreman Miguel Núñez. Remains of the machine supports are still preserved inside, as well as the dam located at the top of the slope.\n\nIn the glass manufacturing process, only the panes destined for mirror manufacturing were scraped and polished; in these hydraulic machines, smaller panes were roughed down, while large ones were roughed down manually, given the high risk of breakage."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": -24, "y": 0, "z": -10 },
-        { "x": 1, "y": 0, "z": -50},
-        { "x": 30, "y": 0, "z": -68},
-        { "x": 17, "y": 0, "z": -23}
+        { "x": 1, "y": 0, "z": -50 },
+        { "x": 30, "y": 0, "z": -68 },
+        { "x": 17, "y": 0, "z": -23 }
       ]
     },
     {
       "id": "Palacio Real y Colegiata",
       "name": "Palacio Real y Colegiata",
+      "descripcion": 
+      {
+        "es": "",
+        "en": ""
+      },
       "size": "medium",
       "teleportPoints": [
         { "x": 0, "y": 0, "z": 0 }
@@ -143,79 +186,101 @@
     {
       "id": "Iglesia del Convento",
       "name": "Iglesia del Convento",
+      "descripcion": 
+      {
+        "es": "Corresponde a la intersección de las carreteras de Villalba y Segovia y es la principal entrada de este Real Sitio. Delante de ella se extiende la alameda limitada por las Reales Caballerizas y Cuartel de Guardias y después sigue la Plaza de Palacio, cerrada también por calles y paseos laterales con árboles, y cuyo centro está adornado con un bien trazado jardín inglés. Al frente, en último término se apercibe el Real Palacio, realzado por dos torreones y en medio la Colegiala, con su esbelta cúpula acampanada de dos torres laterales. La perspectiva que se ofrece a la vista entrando por esta puerta es bellísima.\n\nLa Puerta de Segovia tiene tres entradas, que están siempre abiertas, la del centro es de mayores dimensiones que las laterales y sirve para los carruajes. Todas tienen puertas de hierro, rematándose su cerco por la parte superior con palmas enlazadas y las cifras del Rey fundador, cobijadas por una corona Real. A los costados hay verjas de hierro que se asientan sobre un zócalo corrido de sillería, y ocupan toda la longitud correspondiente a la anchura de la calle que en el interior de la población parte de esta puerta. La Puerta fue proyectada y diseñada por Juan Esteban, debido a la necesidad que desde 1767 se tenía de cerrar el entorno de la plaza de Palacio, el trabajo de forja fue encomendado al maestro herrero Silvestre Poderós. Fue trabajada en Bilbao y colocada el año 1774.",
+        "en": "It corresponds to the intersection of the Villalba and Segovia roads and is the main entrance to this Royal Site. In front of it extends the tree-lined avenue bordered by the Royal Stables and Guards Barracks, followed by the Palace Square, also enclosed by lateral tree-lined streets and promenades, with its center adorned by a well-designed English garden. In front, in the background, the Royal Palace can be seen, enhanced by two towers and in the middle the Collegiate Church, with its slender bell-shaped dome flanked by two lateral towers. The perspective offered to view when entering through this gate is beautiful.\n\nThe Segovia Gate has three entrances, which are always open; the central one is larger than the lateral ones and serves for carriages. All have iron doors, their frame topped at the top with intertwined palms and the cipher of the founding King, sheltered by a Royal crown. On the sides there are iron grilles that rest on a continuous ashlar plinth, occupying the entire length corresponding to the width of the street that inside the town starts from this gate. The Gate was designed by Juan Esteban, due to the need since 1767 to enclose the Palace square area; the forging work was entrusted to master blacksmith Silvestre Poderós. It was made in Bilbao and installed in 1774."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [        
-        { "x": 0, "y": 0, "z":0},
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": 0, "y": 0, "z": -25 },
-        { "x": -30, "y": 0, "z": -44},
-        { "x": 0, "y": 0, "z": -65},
-        { "x": 40, "y": 0, "z": -44}  
+        { "x": -30, "y": 0, "z": -44 },
+        { "x": 0, "y": 0, "z": -65 },
+        { "x": 40, "y": 0, "z": -44 }
       ]
     },
     {
       "id": "Iglesia de los Dolores",
       "name": "Iglesia de los Dolores",
+      "descripcion": {
+        "es": "Su construcción fue iniciativa de la Hermandad de los Dolores, fundada en 1737 por un grupo de trabajadores de los Jardines del Palacio, quienes deciden organizar a varios niños que se dedicaban a rezar el rosario algunos días de fiesta, nombrando como patrona a la Virgen de los Dolores.\n\nEn 1739 se levanta una pequeña ermita de reducidas dimensiones. En 1763, la Reina Isabel de Farnesio concedió permiso a la hermandad para construir el edificio que hoy vemos.\n\nLos planos fueron realizados por Miguel Núñez en 1764, proyectándose al exterior como un gran bloque de planta rectangular. Tiene en su interior nave única con capillas laterales de planta elíptica, forma que vuelve a repetirse en la bóveda de la capilla mayor. El uso de la elipse y el tratamiento de los muros interiores demuestran el gusto por las formas tradicionales del barroco en nuestro país.\n\nEn el interior se conserva una imagen de la Virgen de los Dolores, obra del escultor Luis Salvador Carmona.\n\nLa fachada destaca porque cumple una función muy importante como fondo de la perspectiva de la plaza y la Calle de la Reina, siendo el resto un enorme paralelepípedo cuyas lisas superficies se animan únicamente con revocos.",
+        "en": "Its construction was an initiative of the Brotherhood of Los Dolores, founded in 1737 by a group of workers from the Palace Gardens, who decided to organize several children who were dedicated to praying the rosary on some feast days, naming the Virgin of Los Dolores as patron.\n\nIn 1739, a small hermitage of reduced dimensions was erected. In 1763, Queen Isabel de Farnesio granted permission to the brotherhood to build the building we see today.\n\nThe plans were made by Miguel Núñez in 1764, projecting to the exterior as a large rectangular block. Inside it has a single nave with lateral chapels with an elliptical floor plan, a shape that is repeated in the vault of the main chapel. The use of the ellipse and the treatment of the interior walls demonstrate the taste for traditional baroque forms in our country.\n\nInside is preserved an image of the Virgin of Los Dolores, work of sculptor Luis Salvador Carmona.\n\nThe facade stands out because it fulfills a very important function as the background of the perspective of the square and Calle de la Reina, the rest being an enormous parallelepiped whose smooth surfaces are enlivened only with plasterwork."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": 0, "y": 0, "z": -20 },
-        { "x": -18, "y": 0, "z": -44},
-        { "x": 0, "y": 0, "z": -70},
-        { "x": 18, "y": 0, "z": -44}
+        { "x": -18, "y": 0, "z": -44 },
+        { "x": 0, "y": 0, "z": -70 },
+        { "x": 18, "y": 0, "z": -44 }
       ]
     },
     {
       "id": "Ayuntamiento",
       "name": "Ayuntamiento",
+      "descripcion": 
+      {
+        "es": "La Oficina de Turismo se encuentra en la Plaza de los Dolores, 1, en la planta baja del Ayuntamiento del Real Sitio, un inmueble histórico que ocupó desde 1725 el Hospital o Real Enfermería, proyectado por el arquitecto cortesano Procaccini; aunque ha tenido reformas, conserva en lo esencial su fisonomía original. Es el mejor punto para orientarse al llegar: aquí facilitan planos, rutas y la agenda local. Los horarios pueden variar según temporada y eventos, por lo que conviene confirmarlos antes de ir; dispones del teléfono 921 473 953 y del correo info@turismorealsitiodesanildefonso.com para consultar la apertura del día.",
+        "en": "The Tourist Office is located at Plaza de los Dolores, 1, on the ground floor of the Town Hall of the Royal Site, a historic building that since 1725 housed the Hospital or Royal Infirmary, designed by the court architect Procaccini; although it has undergone renovations, it essentially retains its original appearance. It is the best point to get oriented upon arrival: here they provide maps, routes, and the local agenda. Hours may vary depending on season and events, so it is advisable to confirm them before going; you have the phone number 921 473 953 and the email info@turismorealsitiodesanildefonso.com to check the opening hours of the day."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": 0, "y": 0, "z": -22.6 },
-        { "x": -62, "y": 0, "z": -44},
-        { "x": 0, "y": 0, "z": -73},
-        { "x": 62, "y": 0, "z": -44}
+        { "x": -62, "y": 0, "z": -44 },
+        { "x": 0, "y": 0, "z": -73 },
+        { "x": 62, "y": 0, "z": -44 }
       ]
     },
     {
       "id": "Iglesia de Nuestra Señora del Rosario o de Cristo",
       "name": "Iglesia de Nuestra Señora del Rosario o de Cristo",
+      "descripcion": 
+      {
+        "es": "Existían en 1724 varios devotos que se habían reunido para formar una Cofradía bajo la advocación de la Virgen del Rosario, quienes solicitaron colocar la imagen que les había regalado Isabel de Farnesio en una capilla de la Colegiata del Palacio, pero surgieron algunos problemas, sobre todo por la falta de espacio. En 1733 pensaron en construir una iglesia que, además de utilizarse por la cofradía, podría ser parroquia del sitio.\n\nEl autor del proyecto fue Sempronio Subissati, artista italiano que trabajaba en el Palacio. Es una iglesia de nave única con seis capillas laterales, tres a cada lado. En el interior, la nave se cubre con bóveda rebajada que arranca de una cornisa, y los muros laterales se articulan con pilastras toscanas pareadas.\n\nLas dos capillas centrales son más grandes debido a una promesa de Isabel de Farnesio, quien dispuso ampliarlas si el parto del Infante D. Luis salía bien, aunque las fechas no concuerdan, pues el infante referido más arriba, D. Luis Antonio, nació en 1727 y la iglesia no empezó a levantarse antes de 1735. Dichas capillas se cubrieron con cúpulas sobre pechinas y se adornaron con dos retablos de mármol hechos en Génova. En un principio la Reina decidió dedicar estas capillas a Santa Águeda y San Antonio, colocando en cada una de ellas un cuadro de los santos. Con el tiempo y debido a la humedad, éstos se retiraron y en su lugar se instalaron las actuales imágenes de Luis Salvador Carmona, el Cristo del Perdón en el lado del Evangelio, y la Soledad en el de la Epístola.\n\nEl atrio de esta iglesia fue el cementerio de la localidad hasta el año 1783 en que se construyó otro en el exterior del recinto.",
+        "en": "In 1724 there were several devotees who had gathered to form a Brotherhood under the invocation of the Virgin of the Rosary, who requested to place the image that Isabel de Farnesio had given them in a chapel of the Collegiate Church of the Palace, but some problems arose, especially due to lack of space. In 1733 they thought of building a church that, in addition to being used by the brotherhood, could be the parish of the site.\n\nThe author of the project was Sempronio Subissati, an Italian artist who worked at the Palace. It is a single-nave church with six lateral chapels, three on each side. Inside, the nave is covered with a lowered vault that springs from a cornice, and the lateral walls are articulated with paired Tuscan pilasters.\n\nThe two central chapels are larger due to a promise by Isabel de Farnesio, who ordered them to be enlarged if the birth of Infante D. Luis went well, although the dates do not match, as the infant referred to above, D. Luis Antonio, was born in 1727 and the church did not begin to be built before 1735. These chapels were covered with domes on pendentives and adorned with two marble altarpieces made in Genoa. Initially, the Queen decided to dedicate these chapels to Saint Agatha and Saint Anthony, placing a painting of the saints in each one. Over time and due to humidity, these were removed and replaced with the current images by Luis Salvador Carmona, the Christ of Forgiveness on the Gospel side, and the Solitude on the Epistle side.\n\nThe atrium of this church was the town's cemetery until 1783 when another one was built outside the enclosure."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
         { "x": 0, "y": 0, "z": -16 },
-        { "x": -22, "y": 0, "z": -44},
-        { "x": 0, "y": 0, "z": -80},
-        { "x": 22, "y": 0, "z": -44} 
+        { "x": -22, "y": 0, "z": -44 },
+        { "x": 0, "y": 0, "z": -80 },
+        { "x": 22, "y": 0, "z": -44 }
       ]
     },
     {
       "id": "Puerta de Segovia",
       "name": "Puerta de Segovia",
+      "descripcion": 
+      {
+        "es": "Corresponde a la intersección de las carreteras de Villalba y Segovia y es la principal entrada de este Real Sitio. Delante de ella se extiende la alameda limitada por las Reales Caballerizas y Cuartel de Guardias y después sigue la Plaza de Palacio, cerrada también por calles y paseos laterales con árboles, y cuyo centro está adornado con un bien trazado jardín inglés. Al frente, en último término se apercibe el Real Palacio, realzado por dos torreones y en medio la Colegiala, con su esbelta cúpula acampanada de dos torres laterales. La perspectiva que se ofrece a la vista entrando por esta puerta es bellísima.\n\nLa Puerta de Segovia tiene tres entradas, que están siempre abiertas, la del centro es de mayores dimensiones que las laterales y sirve para los carruajes. Todas tienen puertas de hierro, rematándose su cerco por la parte superior con palmas enlazadas y las cifras del Rey fundador, cobijadas por una corona Real. A los costados hay verjas de hierro que se asientan sobre un zócalo corrido de sillería, y ocupan toda la longitud correspondiente a la anchura de la calle que en el interior de la población parte de esta puerta. La Puerta fue proyectada y diseñada por Juan Esteban, debido a la necesidad que desde 1767 se tenía de cerrar el entorno de la plaza de Palacio, el trabajo de forja fue encomendado al maestro herrero Silvestre Poderós. Fue trabajada en Bilbao y colocada el año 1774.",
+        "en": "It corresponds to the intersection of the Villalba and Segovia roads and is the main entrance to this Royal Site. In front of it extends the tree-lined avenue bordered by the Royal Stables and Guards Barracks, followed by the Palace Square, also enclosed by lateral tree-lined streets and promenades, with its center adorned by a well-designed English garden. In front, in the background, the Royal Palace can be seen, enhanced by two towers and in the middle the Collegiate Church, with its slender bell-shaped dome flanked by two lateral towers. The perspective offered to view when entering through this gate is beautiful.\n\nThe Segovia Gate has three entrances, which are always open; the central one is larger than the lateral ones and serves for carriages. All have iron doors, their frame topped at the top with intertwined palms and the cipher of the founding King, sheltered by a Royal crown. On the sides there are iron grilles that rest on a continuous ashlar plinth, occupying the entire length corresponding to the width of the street that inside the town starts from this gate. The Gate was designed by Juan Esteban, due to the need since 1767 to enclose the Palace square area; the forging work was entrusted to master blacksmith Silvestre Poderós. It was made in Bilbao and installed in 1774."
+      },
       "size": "small",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
-        { "x": 0, "y": 0, "z": -26 },
-        { "x": -38, "y": 0, "z": -44},
-        { "x": 0, "y": 0, "z": -56},
-        { "x": 38, "y": 0, "z": -44}
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": 0, "y": 0, "z": -45 },
+        { "x": -38, "y": 0, "z": -44 },
+        { "x": 0, "y": 0, "z": -56 },
+        { "x": 38, "y": 0, "z": -44 }
       ]
     },
     {
       "id": "Puerta de la Reina",
       "name": "Puerta de la Reina",
+      "descripcion": {
+        "es": "Obra ilustrada de granito y rejería levantada en 1784. Esta puerta da acceso a la parte baja del casco histórico y fue diseñada a modo de arco del triunfo con tres arcos.\n\nAccediendo por ella aparece en último término la fachada principal de la Iglesia de Nuestra Señora de los Dolores y sus dos pequeñas torres laterales. Esta puerta es de sillería, compuesta de un cuerpo central más elevado y dos laterales. El primero, de estilo romano, está formado por dos pilastras toscanas, apoyadas en altos pedestales, y que sostienen un sencillo entablamento coronado por un frontón triangular. La puerta central se encuentra rematada por un arco de medio punto, que simula sostener el arquitrabe, la puerta se cierra por una verja de hierro. En el friso hay esculpidas las siguientes inscripciones, que indican la fecha en que esta puerta se construyó:\n\nEn la que mira a Oriente,\nAÑO DE MDCCLXXXIV.\nY en la de Poniente,\nREYNANDO CARLOS III.\n\nLas entradas laterales, que se cierran también con puertas de hierro, se terminan en la parte superior con un dintel recto de sillería.",
+        "en": "An enlightened work of granite and ironwork erected in 1784. This gate provides access to the lower part of the historic center and was designed as a triumphal arch with three arches.\n\nEntering through it, the main facade of the Church of Our Lady of Los Dolores and its two small lateral towers appear in the background. This gate is made of ashlar, composed of a higher central body and two lateral ones. The first, in Roman style, is formed by two Tuscan pilasters, resting on high pedestals, supporting a simple entablature crowned by a triangular pediment. The central gate is topped by a semicircular arch, which simulates supporting the architrave; the gate is closed by an iron grille. On the frieze are carved the following inscriptions, which indicate the date when this gate was built:\n\nOn the one facing East,\nYEAR MDCCLXXXIV.\nAnd on the one facing West,\nREIGN OF CHARLES III.\n\nThe lateral entrances, which are also closed with iron doors, end at the top with a straight ashlar lintel."
+      },
       "size": "medium",
-      "teleportPoints": 
-      [
-        { "x": 0, "y": 0, "z":0},
-        { "x": 0, "y": 0, "z": -26 },
-        { "x": -38, "y": 0, "z": -44},
-        { "x": 0, "y": 0, "z": -56},
-        { "x": 38, "y": 0, "z": -44}
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": 0, "y": 0, "z": -42 },
+        { "x": -38, "y": 0, "z": -44 },
+        { "x": 0, "y": 0, "z": -56 },
+        { "x": 38, "y": 0, "z": -44 }
       ]
     }
   ]

@@ -33,6 +33,9 @@ public class View3DController : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI title;
+
+    [Header("UI Localizada")]
+    public LocalizedTextContent descriptionUI;
     #endregion
 
     void Update()
@@ -110,6 +113,12 @@ public class View3DController : MonoBehaviour
         }
 
         ChangeTitle(id);
+
+        if (descriptionUI != null)
+        {
+            Model3D modelData = EnvironmentView3DService.GetModel(id);
+            descriptionUI.SetModel(modelData);
+        }
 
         LoadModelBig(prefab, id);
         LoadModelSmall(prefab, id);
@@ -278,6 +287,8 @@ public class View3DController : MonoBehaviour
             Destroy(currentModelSmall);
             currentModelSmall = null;
         }
+
+        descriptionUI.descriptionText.text = "";
     }
 
     void ChangeTitle(string tittleTxt)

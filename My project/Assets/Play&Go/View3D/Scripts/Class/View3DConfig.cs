@@ -16,6 +16,24 @@ public class View3DConfig
 }
 
 [System.Serializable]
+public class Model3D
+{
+    public string id;
+    public string name;
+    public Descripcion descripcion;
+    public string prefab;
+    public string size;
+    public Vector3Data[] teleportPoints;
+}
+
+[System.Serializable]
+public class Descripcion
+{
+    public string es;
+    public string en;
+}
+
+[System.Serializable]
 public class Vector3Data
 {
     public float x;
@@ -26,14 +44,4 @@ public class Vector3Data
     {
         return new Vector3(x, y, z);
     }
-}
-
-[System.Serializable]
-public class Model3D
-{
-    public string id;
-    public string name;
-    public string prefab;
-    public string size;
-    public Vector3Data[] teleportPoints;
 }
