@@ -9,18 +9,15 @@
       "hotspots": [
         {
           "target": "Interior del teatro",
-          "position": { "x": 2, "y": -1, "z": 1},
-          "rotation": { "x": 0, "y": 60, "z": 0 }
+          "position": { "x": 1, "y": -1, "z": 0}
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": 0, "y": -1, "z": 2},
-          "rotation": { "x": 0, "y": 0, "z": 0 }
+          "position": { "x": 0, "y": -1, "z": 1}
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": -1.5, "y": -1, "z": 1.5},
-          "rotation": { "x": 0, "y": -50, "z": 0 }
+          "position": { "x": -1, "y": -1, "z": 0}
         }
       ]
     },
@@ -32,18 +29,15 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": 1, "y": -1, "z": -1.5 },
-          "rotation": { "x": 0, "y": 145, "z": 0 }
+          "position": { "x": 1, "y": -1, "z": 0}
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": -2, "y": -1, "z": -0.5},
-          "rotation": { "x": 0, "y": 255, "z": 0 }
+          "position": { "x": 0, "y": -1, "z": -1}
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": -1, "y": -1, "z": -1.5},
-          "rotation": { "x": 0, "y": 213, "z": 0 }
+          "position": { "x": -1, "y": -1, "z": 0}
         }
       ]
     },
@@ -55,18 +49,15 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": -2, "y": -1, "z": 1 },
-          "rotation": { "x": 0, "y": 90, "z": 0 }
+          "position": { "x": -1, "y": -1, "z": 0 }
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": -1.5, "y": -1, "z": -1 },
-          "rotation": { "x": 0, "y": 90, "z": 0 }
+          "position": { "x": 0, "y": -1, "z": -1}
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": 0, "y": -1, "z": 2 },
-          "rotation": { "x": 0, "y": 90, "z": 0 }
+          "position": { "x": 0, "y": -1, "z": 1 }
         }
       ]
     },
@@ -78,18 +69,15 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": 1.5, "y": -1, "z": 0},
-          "rotation": { "x": 0, "y": 90, "z": 0 }
+          "position": { "x": 1, "y": -1, "z": -0.5}
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": 1, "y": -1, "z": 1.5},
-          "rotation": { "x": 0, "y": 34, "z": 0 }
+          "position": { "x": 1, "y": -1, "z": 0.5}
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": -0.5, "y": -1, "z": 1.5 },
-          "rotation": { "x": 0, "y": -20, "z": 0 }
+          "position": { "x": 0, "y": -1, "z": 1 }
         }
       ]
     }

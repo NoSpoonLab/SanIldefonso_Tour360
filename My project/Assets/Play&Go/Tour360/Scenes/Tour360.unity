@@ -2386,7 +2386,7 @@ MonoBehaviour:
   fadeCanvas: {fileID: 226432925}
   fadeDuration: 1
   title: {fileID: 1093171792}
-  hotspotPrefab: {fileID: 4501187014665783502, guid: c32d67699999f5c49bb2fd7fd840d7e3, type: 3}
+  hotspotPrefab: {fileID: 2460960305506855188, guid: d105db5ee04e8e94d8dbd4dfe0d8e598, type: 3}
   hotspotContainer: {fileID: 984839700}
 --- !u!1 &1469789702
 GameObject:
@@ -4536,7 +4536,7 @@ Transform:
   m_GameObject: {fileID: 3769177770450662143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0806, z: 0}
+  m_LocalPosition: {x: 100, y: 0.0806, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
