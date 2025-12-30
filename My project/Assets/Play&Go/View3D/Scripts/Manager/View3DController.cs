@@ -47,64 +47,6 @@ public class View3DController : MonoBehaviour
 
     void Update()
     {
-        if (Keyboard.current.qKey.wasPressedThisFrame)
-            LoadModel("Ayuntamiento");
-
-        if (Keyboard.current.wKey.wasPressedThisFrame)
-            LoadModel("Capilla de San Juan Nepomuceno");
-
-        if (Keyboard.current.eKey.wasPressedThisFrame)
-            LoadModel("Casa de la Máquina del Pulimento de Dowling");
-
-        if (Keyboard.current.rKey.wasPressedThisFrame)
-            LoadModel("Cobertizos para la Leña");
-
-        if (Keyboard.current.tKey.wasPressedThisFrame)
-            LoadModel("Fuente del Príncipe");
-
-        if (Keyboard.current.yKey.wasPressedThisFrame)
-            LoadModel("Fábrica de Cristales Labrados y Entrefinos");
-
-        if (Keyboard.current.uKey.wasPressedThisFrame)
-            LoadModel("Iglesia de los Dolores");
-
-        if (Keyboard.current.iKey.wasPressedThisFrame)
-            LoadModel("Iglesia de Nuestra Señora del Rosario o de Cristo");
-
-        if (Keyboard.current.oKey.wasPressedThisFrame)
-            LoadModel("Iglesia del Convento");
-
-        if (Keyboard.current.pKey.wasPressedThisFrame)
-            LoadModel("Puerta de la Reina");
-
-        if (Keyboard.current.aKey.wasPressedThisFrame)
-            LoadModel("Puerta de Segovia");
-
-        if (Keyboard.current.sKey.wasPressedThisFrame)
-            LoadModel("Puerta del Horno");
-
-        if (Keyboard.current.dKey.wasPressedThisFrame)
-            LoadModel("La Primera Casa del Pulimento");
-
-        if (Keyboard.current.fKey.wasPressedThisFrame)
-            LoadModel("Palacio de Valsaín");
-
-        if (Keyboard.current.gKey.wasPressedThisFrame)
-            LoadModel("Fábrica Antigua de Cristales Planos");
-
-        if (Keyboard.current.hKey.wasPressedThisFrame)
-            LoadModel("Real Fábrica de Cristales Planos de Carlos III");
-
-
-        if (Keyboard.current.zKey.wasPressedThisFrame)
-            PressButtonReset();
-
-        if (Keyboard.current.upArrowKey.wasPressedThisFrame)
-            TeleportNext();
-
-        if (Keyboard.current.mKey.wasPressedThisFrame)
-            PressButtonPlayPause();
-
         UpdateArrowMovement();
     }
 
