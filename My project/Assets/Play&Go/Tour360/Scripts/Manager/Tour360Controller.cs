@@ -15,10 +15,6 @@ public class Tour360Controller : MonoBehaviour
 
     public Action<string> OnPointChanged;
 
-    [Header("Fade UI")]
-    public CanvasGroup fadeCanvas;
-    public float fadeDuration = 1f;
-
     [Header("UI")]
     public TextMeshProUGUI title;
 
@@ -26,6 +22,8 @@ public class Tour360Controller : MonoBehaviour
     public GameObject hotspotPrefab;
     public Transform hotspotContainer;
     private List<GameObject> activeHotspots = new List<GameObject>();
+
+    private FadeTransition fadeTransition;
     #endregion
 
     #region MonoBehaviour Methods
@@ -41,6 +39,8 @@ public class Tour360Controller : MonoBehaviour
         {
             Debug.LogError("No hay startPoint definido en el JSON.");
         }
+
+        fadeTransition = FindAnyObjectByType<FadeTransition>();
     }
 
     #endregion
@@ -57,31 +57,16 @@ public class Tour360Controller : MonoBehaviour
         }
 
         if (anim)
-            StartCoroutine(Fade(0f, 1f));
+            StartCoroutine(fadeTransition.Fade(0f, 1f));
 
         ChangeTitle(point.title);
         SpawnHotspots(point);
         LoadImageToSphere(point.imageResource);
 
         if (anim)
-            StartCoroutine(Fade(1f, 0f));
+            StartCoroutine(fadeTransition.Fade(1f, 0f));
 
         OnPointChanged?.Invoke(id);
-    }
-
-    public IEnumerator Fade(float start, float end)
-    {
-        float t = 0f;
-
-        while (t < fadeDuration)
-        {
-            t += Time.deltaTime;
-            float alpha = Mathf.Lerp(start, end, t / fadeDuration);
-            fadeCanvas.alpha = alpha;
-            yield return null;
-        }
-
-        fadeCanvas.alpha = end;
     }
 
     #endregion

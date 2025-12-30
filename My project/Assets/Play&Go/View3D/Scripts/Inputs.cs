@@ -5,6 +5,7 @@ public class Inputs : MonoBehaviour
 {
     public View3DController view3DController;
     public AudioGuideController audioGuideController;
+    public TourNavigationController navigationArrowIndicator;
 
     // Update is called once per frame
     void Update()
@@ -62,7 +63,7 @@ public class Inputs : MonoBehaviour
             view3DController.PressButtonReset();
 
         if (Keyboard.current.upArrowKey.wasPressedThisFrame)
-            view3DController.TeleportNext();
+            navigationArrowIndicator.TeleportNext();
 
         if (Keyboard.current.mKey.wasPressedThisFrame)
             audioGuideController.PressButtonPlayPause();

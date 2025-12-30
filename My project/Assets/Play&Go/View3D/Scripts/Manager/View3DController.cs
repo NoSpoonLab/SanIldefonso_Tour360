@@ -9,12 +9,6 @@ using UnityEngine.UIElements;
 public class View3DController : MonoBehaviour
 {
     #region Variables
-    [Header("Player / Camera Rig")]
-    public Transform playerRig;
-    private Vector3Data[] _teleportPoints;
-    private int _currentTeleportIndex = 0;
-    public GameObject arrow;
-
     [Header("Model Parent")]
     public Transform modelContainerBig;
     public Transform modelContainerSmall;
@@ -25,11 +19,6 @@ public class View3DController : MonoBehaviour
 
     [Header("Objects")]
     public GameObject modelSanIldefonso;
-    public GameObject arrowTransform;
-
-    [Header("Fade UI")]
-    public CanvasGroup fadeCanvas;
-    public float fadeDuration = 1f;
 
     [Header("UI")]
     public TextMeshProUGUI title;
@@ -40,16 +29,14 @@ public class View3DController : MonoBehaviour
 
     [Header("AudioGuide")]
     public AudioGuideController audioGuideController;
+
+    [Header("NavigationArrowIndicator")]
+    public TourNavigationController tourNavigationController;
+
     #endregion
 
-    void Update()
-    {
-        UpdateArrowMovement();
-    }
-
     #region Public Methods
-
-    public void LoadModel(string id, bool anim = true)
+    public void LoadModel(string id)
     {
         ClearCurrentModel();
 
@@ -71,55 +58,12 @@ public class View3DController : MonoBehaviour
             descriptionUI.SetModel(modelData);
         }
 
+        tourNavigationController.LoadModel(id);
+
         LoadModelBig(prefab, id);
         LoadModelSmall(prefab, id);
 
-        _teleportPoints = EnvironmentView3DService.GetTeleportPoints(id);
-        _currentTeleportIndex = 0;
-
-        if (_teleportPoints != null && _teleportPoints.Length > 0)
-        {
-            arrow.gameObject.SetActive(true);
-            TeleportToIndex(0);
-        }
-        else
-        {
-            arrow.gameObject.SetActive(false);
-        }
-
         currentID = id;
-    }
-
-    public void TeleportNext()
-    {
-
-        if (_teleportPoints == null || _teleportPoints.Length == 0)
-            return;
-
-        StartCoroutine(Fade(0f, 1f));
-
-        _currentTeleportIndex++;
-        if (_currentTeleportIndex >= _teleportPoints.Length)
-            _currentTeleportIndex = 0;
-
-        TeleportToIndex(_currentTeleportIndex);
-
-        StartCoroutine(Fade(1f, 0f));
-    }
-
-    public IEnumerator Fade(float start, float end)
-    {
-        float t = 0f;
-
-        while (t < fadeDuration)
-        {
-            t += Time.deltaTime;
-            float alpha = Mathf.Lerp(start, end, t / fadeDuration);
-            fadeCanvas.alpha = alpha;
-            yield return null;
-        }
-
-        fadeCanvas.alpha = end;
     }
     #endregion
 
@@ -128,7 +72,7 @@ public class View3DController : MonoBehaviour
     {
         ClearCurrentModel();
         modelSanIldefonso.SetActive(true);
-        arrow.SetActive(false);
+        tourNavigationController.arrow.SetActive(false);
         title.text = "";
         audioGuideController.textPlay.SetActive(true);
         audioGuideController.textPause.SetActive(false);
@@ -141,32 +85,6 @@ public class View3DController : MonoBehaviour
     #endregion
 
     #region Private Methods
-    void UpdateArrowMovement()
-    {
-        if (arrowTransform == null || Camera.main == null)
-            return;
-
-        if (_teleportPoints == null || _teleportPoints.Length < 2)
-            return;
-
-        int nextIndex = _currentTeleportIndex + 1;
-        if (nextIndex >= _teleportPoints.Length)
-            nextIndex = 0;
-
-        Vector3 nextPos = _teleportPoints[nextIndex].ToVector3();
-
-        Vector3 camPos = Camera.main.transform.position;
-        camPos.y = arrowTransform.transform.position.y;
-
-        Vector3 direction = nextPos - camPos;
-        direction.y = 0f;
-
-        if (direction.sqrMagnitude < 0.001f)
-            return;
-
-        arrowTransform.transform.rotation = Quaternion.LookRotation(direction);
-
-    }
     void LoadModelBig(GameObject prefab, string id)
     {
         var scaleBig = 1;
@@ -221,11 +139,7 @@ public class View3DController : MonoBehaviour
         _currentModelSmall.transform.localPosition = Vector3.zero;
         _currentModelSmall.name = "Model3D - " + id;
     }
-    void TeleportToIndex(int index)
-    {
-        Vector3 pos = _teleportPoints[index].ToVector3();
-        playerRig.position = pos;
-    }
+
 
     void ClearCurrentModel()
     {

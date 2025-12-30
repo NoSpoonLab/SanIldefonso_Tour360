@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class VRUIFollowCamera : MonoBehaviour
+public class VRFollowCamera : MonoBehaviour
 {
     private Transform _cam;
 
