@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class Inputs : MonoBehaviour
 {
     public View3DController view3DController;
+    public AudioGuideController audioGuideController;
 
     // Update is called once per frame
     void Update()
@@ -64,6 +65,6 @@ public class Inputs : MonoBehaviour
             view3DController.TeleportNext();
 
         if (Keyboard.current.mKey.wasPressedThisFrame)
-            view3DController.PressButtonPlayPause();
+            audioGuideController.PressButtonPlayPause();
     }
 }

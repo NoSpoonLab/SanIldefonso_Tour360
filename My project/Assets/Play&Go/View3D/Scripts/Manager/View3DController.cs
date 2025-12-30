@@ -20,8 +20,8 @@ public class View3DController : MonoBehaviour
     public Transform modelContainerSmall;
 
     [Header("Current Model")]
-    private GameObject currentModelBig;
-    private GameObject currentModelSmall;
+    private GameObject _currentModelBig;
+    private GameObject _currentModelSmall;
 
     [Header("Objects")]
     public GameObject modelSanIldefonso;
@@ -33,16 +33,13 @@ public class View3DController : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI title;
-    private string currentID;
+    public string currentID;
 
     [Header("UI Localizada")]
     public LocalizedTextContent descriptionUI;
 
-    [Header("Audio")]
-    public AudioSource audioSource;
-    private bool isAudioPlaying = false;
-    public GameObject textPlay;
-    public GameObject textPause;
+    [Header("AudioGuide")]
+    public AudioGuideController audioGuideController;
     #endregion
 
     void Update()
@@ -66,7 +63,7 @@ public class View3DController : MonoBehaviour
 
         ChangeTitle(id);
 
-        LoadAudio(id);
+        audioGuideController.LoadAudio(id);
 
         if (descriptionUI != null)
         {
@@ -133,43 +130,13 @@ public class View3DController : MonoBehaviour
         modelSanIldefonso.SetActive(true);
         arrow.SetActive(false);
         title.text = "";
-        textPlay.SetActive(true);
-        textPause.SetActive(false);
+        audioGuideController.textPlay.SetActive(true);
+        audioGuideController.textPause.SetActive(false);
     }
 
     public void PressButtonBack(string scene) //Add in inspector ButtonBack in Interactable Unity Events
     {
         SceneHelper.LoadScene(scene);
-    }
-
-    public void ResetAudioInChangeLanguage() //Add in inspector Español and Ingles in Interactable Unity Events
-    {
-        audioSource.Stop();
-        isAudioPlaying = false;
-        LoadAudio(currentID);
-        textPlay.SetActive(true);
-        textPause.SetActive(false);
-    }   
-
-    public void PressButtonPlayPause() //Add in inspector ButtonPlayPause in Interactable Unity Events
-    {
-        if (audioSource == null || audioSource.clip == null)
-            return;
-
-        if (isAudioPlaying)
-        {
-            audioSource.Pause();
-            isAudioPlaying = false;
-            textPlay.SetActive(true);
-            textPause.SetActive(false);
-        }
-        else
-        {
-            audioSource.Play();
-            isAudioPlaying = true;
-            textPlay.SetActive(false);
-            textPause.SetActive(true);
-        }
     }
     #endregion
 
@@ -221,10 +188,10 @@ public class View3DController : MonoBehaviour
                 break;
         }
 
-        currentModelBig = Instantiate(prefab, modelContainerBig);
-        currentModelBig.transform.localScale = new Vector3(scaleBig, scaleBig, scaleBig);
-        currentModelBig.transform.localPosition = new Vector3(0, 0, posZ);
-        currentModelBig.name = "Model3D - " + id;
+        _currentModelBig = Instantiate(prefab, modelContainerBig);
+        _currentModelBig.transform.localScale = new Vector3(scaleBig, scaleBig, scaleBig);
+        _currentModelBig.transform.localPosition = new Vector3(0, 0, posZ);
+        _currentModelBig.name = "Model3D - " + id;
     }
 
     void LoadModelSmall(GameObject prefab, string id)
@@ -249,10 +216,10 @@ public class View3DController : MonoBehaviour
         }
 
 
-        currentModelSmall = Instantiate(prefab, modelContainerSmall);
-        currentModelSmall.transform.localScale = new Vector3(scale, scale, scale);
-        currentModelSmall.transform.localPosition = Vector3.zero;
-        currentModelSmall.name = "Model3D - " + id;
+        _currentModelSmall = Instantiate(prefab, modelContainerSmall);
+        _currentModelSmall.transform.localScale = new Vector3(scale, scale, scale);
+        _currentModelSmall.transform.localPosition = Vector3.zero;
+        _currentModelSmall.name = "Model3D - " + id;
     }
     void TeleportToIndex(int index)
     {
@@ -260,52 +227,25 @@ public class View3DController : MonoBehaviour
         playerRig.position = pos;
     }
 
-    void LoadAudio(string modelId)
-    {
-        if (audioSource == null)
-            return;
-
-        audioSource.Stop();
-        audioSource.clip = null;
-        isAudioPlaying = false;
-
-        string languageCode = LanguageManager.Instance.currentLanguage;
-        string path = "Audio/" + languageCode + "/" + modelId;
-
-        AudioClip clip = Resources.Load<AudioClip>(path);
-
-        if (clip == null)
-        {
-            Debug.LogWarning("No se encontró audio en el idioma " + languageCode + " para el modelo: " + modelId);
-            return;
-        }
-
-        audioSource.clip = clip;
-    }
-
     void ClearCurrentModel()
     {
         modelSanIldefonso.SetActive(false);
 
-        if (currentModelBig != null)
+        if (_currentModelBig != null)
         {
-            Destroy(currentModelBig);
-            currentModelBig = null;
+            Destroy(_currentModelBig);
+            _currentModelBig = null;
         }
 
-        if (currentModelSmall != null)
+        if (_currentModelSmall != null)
         {
-            Destroy(currentModelSmall);
-            currentModelSmall = null;
+            Destroy(_currentModelSmall);
+            _currentModelSmall = null;
         }
 
-        if (audioSource != null)
+        if (audioGuideController.audioSource != null)
         {
-            audioSource.Stop();
-            audioSource.clip = null;
-            isAudioPlaying = false;
-            textPlay.SetActive(true);
-            textPause.SetActive(false);
+            audioGuideController.Clear();
         }
 
         descriptionUI.descriptionText.text = "";

@@ -9550,8 +9550,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 649506349}
+  - component: {fileID: 649506351}
   - component: {fileID: 649506350}
   - component: {fileID: 649506348}
+  - component: {fileID: 649506352}
   m_Layer: 0
   m_Name: ---SCRIPTS---
   m_TagString: Untagged
@@ -9580,10 +9582,9 @@ MonoBehaviour:
   fadeCanvas: {fileID: 1725341391}
   fadeDuration: 1
   title: {fileID: 1461293642}
+  currentID: 
   descriptionUI: {fileID: 1732778036}
-  audioSource: {fileID: 1808819520}
-  textPlay: {fileID: 672062813609976660}
-  textPause: {fileID: 1870270080}
+  audioGuideController: {fileID: 649506352}
 --- !u!4 &649506349
 Transform:
   m_ObjectHideFlags: 0
@@ -9611,6 +9612,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8f3f3ec6b22314fb8b83c71b4e40fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JsonLoaderView3D
+--- !u!114 &649506351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649506347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77a04c8c6f3ff049adc04dca6656e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Inputs
+  view3DController: {fileID: 649506348}
+  audioGuideController: {fileID: 649506352}
+--- !u!114 &649506352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649506347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6757db630b06747b00b69eb7cb231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioGuideController
+  audioSource: {fileID: 1808819520}
+  isAudioPlaying: 0
+  textPlay: {fileID: 672062813609976660}
+  textPause: {fileID: 1870270080}
+  currentID: 
 --- !u!1 &651374687
 GameObject:
   m_ObjectHideFlags: 0
@@ -32454,8 +32486,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 649506348}
-        m_TargetAssemblyTypeName: View3DController, Assembly-CSharp
+      - m_Target: {fileID: 649506352}
+        m_TargetAssemblyTypeName: AudioGuideController, Assembly-CSharp
         m_MethodName: PressButtonPlayPause
         m_Mode: 1
         m_Arguments:
@@ -37755,7 +37787,7 @@ PrefabInstance:
     - target: {fileID: 5080286488471696707, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 649506348}
+      objectReference: {fileID: 649506352}
     - target: {fileID: 5080286488471696707, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -37766,7 +37798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5080286488471696707, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: View3DController, Assembly-CSharp
+      value: AudioGuideController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5080286488471696707, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -37803,7 +37835,7 @@ PrefabInstance:
     - target: {fileID: 7905725368206790803, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 649506348}
+      objectReference: {fileID: 649506352}
     - target: {fileID: 7905725368206790803, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -37814,7 +37846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7905725368206790803, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: View3DController, Assembly-CSharp
+      value: AudioGuideController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7905725368206790803, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
