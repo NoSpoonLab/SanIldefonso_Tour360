@@ -4,22 +4,21 @@ public class AudioGuideController : MonoBehaviour
 {
     [Header("Audio")]
     public AudioSource audioSource;
-    public bool isAudioPlaying = false;
+    private bool _isAudioPlaying = false;
     public GameObject textPlay;
     public GameObject textPause;
-
-    public string currentID;
+    private string _currentID;
 
     public void LoadAudio(string modelId)
     {
         if (audioSource == null)
             return;
 
-        currentID = modelId;
+        _currentID = modelId;
 
         audioSource.Stop();
         audioSource.clip = null;
-        isAudioPlaying = false;
+        _isAudioPlaying = false;
 
         string languageCode = LanguageManager.Instance.currentLanguage;
         string path = "Audio/" + languageCode + "/" + modelId;
@@ -39,7 +38,7 @@ public class AudioGuideController : MonoBehaviour
     {
         audioSource.Stop();
         audioSource.clip = null;
-        isAudioPlaying = false;
+        _isAudioPlaying = false;
         textPlay.SetActive(true);
         textPause.SetActive(false);
     }
@@ -49,17 +48,17 @@ public class AudioGuideController : MonoBehaviour
         if (audioSource == null || audioSource.clip == null)
             return;
 
-        if (isAudioPlaying)
+        if (_isAudioPlaying)
         {
             audioSource.Pause();
-            isAudioPlaying = false;
+            _isAudioPlaying = false;
             textPlay.SetActive(true);
             textPause.SetActive(false);
         }
         else
         {
             audioSource.Play();
-            isAudioPlaying = true;
+            _isAudioPlaying = true;
             textPlay.SetActive(false);
             textPause.SetActive(true);
         }
@@ -68,8 +67,8 @@ public class AudioGuideController : MonoBehaviour
     public void ResetAudioInChangeLanguage() //Add in inspector Español and Ingles in Interactable Unity Events
     {
         audioSource.Stop();
-        isAudioPlaying = false;
-        LoadAudio(currentID);
+        _isAudioPlaying = false;
+        LoadAudio(_currentID);
         textPlay.SetActive(true);
         textPause.SetActive(false);
     }
