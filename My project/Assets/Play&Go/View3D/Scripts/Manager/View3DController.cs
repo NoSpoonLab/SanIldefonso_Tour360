@@ -33,9 +33,16 @@ public class View3DController : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI title;
+    private string currentID;
 
     [Header("UI Localizada")]
     public LocalizedTextContent descriptionUI;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    private bool isAudioPlaying = false;
+    public GameObject textPlay;
+    public GameObject textPause;
     #endregion
 
     void Update()
@@ -95,6 +102,9 @@ public class View3DController : MonoBehaviour
         if (Keyboard.current.upArrowKey.wasPressedThisFrame)
             TeleportNext();
 
+        if (Keyboard.current.mKey.wasPressedThisFrame)
+            PressButtonPlayPause();
+
         UpdateArrowMovement();
     }
 
@@ -113,6 +123,8 @@ public class View3DController : MonoBehaviour
         }
 
         ChangeTitle(id);
+
+        LoadAudio(id);
 
         if (descriptionUI != null)
         {
@@ -135,6 +147,8 @@ public class View3DController : MonoBehaviour
         {
             arrow.gameObject.SetActive(false);
         }
+
+        currentID = id;
     }
 
     public void TeleportNext()
@@ -177,11 +191,43 @@ public class View3DController : MonoBehaviour
         modelSanIldefonso.SetActive(true);
         arrow.SetActive(false);
         title.text = "";
+        textPlay.SetActive(true);
+        textPause.SetActive(false);
     }
 
     public void PressButtonBack(string scene) //Add in inspector ButtonBack in Interactable Unity Events
     {
         SceneHelper.LoadScene(scene);
+    }
+
+    public void ResetAudioInChangeLanguage() //Add in inspector Español and Ingles in Interactable Unity Events
+    {
+        audioSource.Stop();
+        isAudioPlaying = false;
+        LoadAudio(currentID);
+        textPlay.SetActive(true);
+        textPause.SetActive(false);
+    }   
+
+    public void PressButtonPlayPause() //Add in inspector ButtonPlayPause in Interactable Unity Events
+    {
+        if (audioSource == null || audioSource.clip == null)
+            return;
+
+        if (isAudioPlaying)
+        {
+            audioSource.Pause();
+            isAudioPlaying = false;
+            textPlay.SetActive(true);
+            textPause.SetActive(false);
+        }
+        else
+        {
+            audioSource.Play();
+            isAudioPlaying = true;
+            textPlay.SetActive(false);
+            textPause.SetActive(true);
+        }
     }
     #endregion
 
@@ -272,6 +318,29 @@ public class View3DController : MonoBehaviour
         playerRig.position = pos;
     }
 
+    void LoadAudio(string modelId)
+    {
+        if (audioSource == null)
+            return;
+
+        audioSource.Stop();
+        audioSource.clip = null;
+        isAudioPlaying = false;
+
+        string languageCode = LanguageManager.Instance.currentLanguage;
+        string path = "Audio/" + languageCode + "/" + modelId;
+
+        AudioClip clip = Resources.Load<AudioClip>(path);
+
+        if (clip == null)
+        {
+            Debug.LogWarning("No se encontró audio en el idioma " + languageCode + " para el modelo: " + modelId);
+            return;
+        }
+
+        audioSource.clip = clip;
+    }
+
     void ClearCurrentModel()
     {
         modelSanIldefonso.SetActive(false);
@@ -286,6 +355,15 @@ public class View3DController : MonoBehaviour
         {
             Destroy(currentModelSmall);
             currentModelSmall = null;
+        }
+
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.clip = null;
+            isAudioPlaying = false;
+            textPlay.SetActive(true);
+            textPause.SetActive(false);
         }
 
         descriptionUI.descriptionText.text = "";

@@ -5,6 +5,8 @@
         { "key": "BACKMAP", "value": "Back to Map" },
         { "key": "EN", "value": "English" },
         { "key": "ES", "value": "Spain" },
-        { "key": "BACK", "value": "Back to menu" }
+        { "key": "BACK", "value": "Back to menu" },
+        { "key": "PLAY", "value": "Play" },
+        { "key": "PAUSE", "value": "Pause" }
     ]
 }

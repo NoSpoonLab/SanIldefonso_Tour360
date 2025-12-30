@@ -5,6 +5,8 @@
         { "key": "BACKMAP", "value": "Volver al Mapa" },
         { "key": "EN", "value": "Inglés" },
         { "key": "ES", "value": "Español" },
-        { "key": "BACK", "value": "Volver al menú" }
+        { "key": "BACK", "value": "Volver al menú" },
+        { "key": "PLAY", "value": "Reproducir" },
+        { "key": "PAUSE", "value": "Pausar" }
     ]
 }
