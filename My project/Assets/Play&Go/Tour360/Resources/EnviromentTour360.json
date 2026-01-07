@@ -9,7 +9,7 @@
       "hotspots": [
         {
           "target": "Interior del teatro",
-          "position": { "x": 1, "y": -1, "z": 0}
+          "position": { "x": 0, "y": -1, "z": -1}
         },
         {
           "target": "Plaza de los Dolores",
@@ -29,7 +29,7 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": 1, "y": -1, "z": 0}
+          "position": { "x": -1, "y": -1, "z": 0.5}
         },
         {
           "target": "Plaza de los Dolores",
@@ -37,7 +37,7 @@
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": -1, "y": -1, "z": 0}
+          "position": { "x": -1, "y": -1, "z": -0.5}
         }
       ]
     },
@@ -53,7 +53,7 @@
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": 0, "y": -1, "z": -1}
+          "position": { "x": -0.5, "y": -1, "z": -1}
         },
         {
           "target": "Calle de la Reina",
@@ -69,11 +69,11 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": 1, "y": -1, "z": -0.5}
+          "position": { "x": 1, "y": -1, "z": 0.5}
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": 1, "y": -1, "z": 0.5}
+          "position": { "x": 1, "y": -1, "z": -0.5}
         },
         {
           "target": "Plaza de los Dolores",
