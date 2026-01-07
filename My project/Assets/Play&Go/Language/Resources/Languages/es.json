@@ -7,6 +7,7 @@
         { "key": "ES", "value": "Español" },
         { "key": "BACK", "value": "Volver al menú" },
         { "key": "PLAY", "value": "Reproducir" },
-        { "key": "PAUSE", "value": "Pausar" }
+        { "key": "PAUSE", "value": "Pausar" },
+        { "key": "ROTATEMODEL", "value": "Pulsa para rotar el modelo 3D" }
     ]
 }

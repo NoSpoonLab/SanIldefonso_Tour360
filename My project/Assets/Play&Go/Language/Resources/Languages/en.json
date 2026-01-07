@@ -7,6 +7,7 @@
         { "key": "ES", "value": "Spain" },
         { "key": "BACK", "value": "Back to menu" },
         { "key": "PLAY", "value": "Play" },
-        { "key": "PAUSE", "value": "Pause" }
+        { "key": "PAUSE", "value": "Pause" },
+        { "key": "ROTATEMODEL", "value": "Click to rotate the 3D model" }
     ]
 }

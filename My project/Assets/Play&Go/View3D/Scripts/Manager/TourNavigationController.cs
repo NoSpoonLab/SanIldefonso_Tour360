@@ -5,17 +5,36 @@ public class TourNavigationController : MonoBehaviour
     public Transform playerRig;
     private Vector3Data[] _teleportPoints;
     public GameObject arrowTransform;
-    private int _currentTeleportIndex = 0;
+    public int _currentTeleportIndex = 0;
     public GameObject arrow;
 
     private FadeTransition fadeTransition;
 
+    private Vector3 arrowTransformLocalPosition;
+    private Quaternion arrowTransformLocalRotation;
+    private Vector3 arrowPosition;
+    private Quaternion arrowRotation;
+
+    private VRFollowCamera arrowFollowCamera;
+
     private void Start()
     {
         fadeTransition = FindAnyObjectByType<FadeTransition>();
+
+        //new
+        arrowTransformLocalPosition = arrowTransform.transform.localPosition;
+        arrowTransformLocalRotation = arrowTransform.transform.localRotation;
+        arrowPosition = arrow.transform.localPosition;
+        arrowRotation = arrow.transform.localRotation;
+
+        arrowFollowCamera = arrow.GetComponent<VRFollowCamera>();
     }
     void Update()
     {
+        //new
+        if (_currentTeleportIndex == 0)
+            return;
+
         UpdateArrowMovement();
     }
 
@@ -27,6 +46,7 @@ public class TourNavigationController : MonoBehaviour
         if (_teleportPoints != null && _teleportPoints.Length > 0)
         {
             arrow.gameObject.SetActive(true);
+            ApplyArrowState();
             TeleportToIndex(0);
         }
         else
@@ -48,11 +68,51 @@ public class TourNavigationController : MonoBehaviour
         if (_currentTeleportIndex >= _teleportPoints.Length)
             _currentTeleportIndex = 0;
 
+        ApplyArrowState();
         TeleportToIndex(_currentTeleportIndex);
 
         if (fadeTransition != null)
             StartCoroutine(fadeTransition.Fade(1f, 0f));
     }
+
+    //new
+    void ApplyArrowState()
+    {
+        if (arrowTransform == null)
+            return;
+
+        if (_currentTeleportIndex == 0)
+        {
+            arrowTransform.transform.localPosition = new Vector3(
+                arrowTransform.transform.localPosition.x,
+                arrowTransform.transform.localPosition.y,
+                -0.8f
+            );
+
+            arrowTransform.transform.localRotation = Quaternion.Euler(
+                arrowTransform.transform.localRotation.x,
+                -180f,
+                arrowTransform.transform.localRotation.z
+            );
+
+            if (arrowFollowCamera != null)
+                arrowFollowCamera.enabled = false;
+
+            arrow.transform.localPosition = arrowPosition;
+            arrow.transform.localRotation = arrowRotation;
+        }
+        else
+        {
+            arrowTransform.transform.localPosition = arrowTransformLocalPosition;
+            arrowTransform.transform.localRotation = arrowTransformLocalRotation;
+            arrow.transform.localPosition = arrowPosition;
+            arrow.transform.localRotation = arrowRotation;
+
+            if (arrowFollowCamera != null)
+                arrowFollowCamera.enabled = true;
+        }
+    }
+
 
     void TeleportToIndex(int index)
     {
