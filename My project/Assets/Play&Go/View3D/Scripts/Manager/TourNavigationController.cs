@@ -21,7 +21,6 @@ public class TourNavigationController : MonoBehaviour
     {
         fadeTransition = FindAnyObjectByType<FadeTransition>();
 
-        //new
         arrowTransformLocalPosition = arrowTransform.transform.localPosition;
         arrowTransformLocalRotation = arrowTransform.transform.localRotation;
         arrowPosition = arrow.transform.localPosition;
@@ -31,7 +30,6 @@ public class TourNavigationController : MonoBehaviour
     }
     void Update()
     {
-        //new
         if (_currentTeleportIndex == 0)
             return;
 
@@ -75,7 +73,6 @@ public class TourNavigationController : MonoBehaviour
             StartCoroutine(fadeTransition.Fade(1f, 0f));
     }
 
-    //new
     void ApplyArrowState()
     {
         if (arrowTransform == null)
