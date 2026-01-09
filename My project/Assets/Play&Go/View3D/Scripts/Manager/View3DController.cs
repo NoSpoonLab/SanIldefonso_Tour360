@@ -23,6 +23,7 @@ public class View3DController : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI title;
     public GameObject helpText;
+    public GameObject helpTextRotateYou;
     private string _currentID;
 
     [Header("UI Localizada")]
@@ -62,6 +63,7 @@ public class View3DController : MonoBehaviour
         tourNavigationController.LoadModel(id);
 
         helpText.gameObject.SetActive(true);
+        helpTextRotateYou.gameObject.SetActive(true);
 
         LoadModelBig(prefab, id);
         LoadModelSmall(prefab, id);
@@ -75,6 +77,7 @@ public class View3DController : MonoBehaviour
     {
         ClearCurrentModel();
         helpText.gameObject.SetActive(false);
+        helpTextRotateYou.gameObject.SetActive(false);
         modelSanIldefonso.SetActive(true);
         tourNavigationController.arrow.SetActive(false);
         title.text = "";
