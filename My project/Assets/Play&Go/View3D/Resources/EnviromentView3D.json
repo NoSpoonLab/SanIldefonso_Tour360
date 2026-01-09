@@ -162,13 +162,13 @@
         "es": "En el interior de este edificio se encontraba la máquina del pulimento, una revolucionaria máquina hidráulica diseñada en 1761 por el ingeniero irlandés Juan Dowling.\n\nEsta máquina era capaz de accionar hasta un máximo de 100 pulidores a un mismo tiempo y desbastar las lunas de vidrio, con el consiguiente ahorro en los costes de producción. Se construyó con los restos de la antigua máquina del pulimento, ubicada detrás de la Iglesia de los Dolores. Resultó tan ventajosa que Juan Dowling fue nombrado Ingeniero Hidráulico de las Fábricas del Reino. Prueba de su importancia es que aparece dibujada en la Enciclopedia de Diderot y D'Alembert, como máquina modélica para el pulimento.\n\nEl edificio es una sobria construcción de planta ligeramente rectangular, y los muros de mampostería, cuyo único elemento destacable era la moldurada cornisa. Dicho edificio y la presa de la máquina fueron realizados por el maestro de obras Antonio Niño, bajo la supervisión del aparejador Miguel Núñez. Aún se conservan restos de los apoyos de las máquinas en su interior, así como la presa ubicada en lo alto de la ladera.\n\nEn el proceso de la fabricación del cristal se raspaban y pulían sólo las lunas que iban destinadas a la fabricación de espejos; en estas máquinas hidráulicas se desbastaban las lunas de menor tamaño, mientras que las de gran tamaño se desbastaban manualmente, dado el alto riesgo de roturas.",
         "en": "Inside this building was the polishing machine, a revolutionary hydraulic machine designed in 1761 by Irish engineer Juan Dowling.\n\nThis machine was capable of operating up to a maximum of 100 polishers at the same time and roughing down glass panes, with the consequent savings in production costs. It was built with the remains of the old polishing machine, located behind the Church of Los Dolores. It proved so advantageous that Juan Dowling was appointed Hydraulic Engineer of the Kingdom's Factories. Proof of its importance is that it appears drawn in the Encyclopedia of Diderot and D'Alembert, as a model machine for polishing.\n\nThe building is a sober construction with a slightly rectangular floor plan, and masonry walls, whose only notable element was the molded cornice. This building and the machine's dam were made by master builder Antonio Niño, under the supervision of foreman Miguel Núñez. Remains of the machine supports are still preserved inside, as well as the dam located at the top of the slope.\n\nIn the glass manufacturing process, only the panes destined for mirror manufacturing were scraped and polished; in these hydraulic machines, smaller panes were roughed down, while large ones were roughed down manually, given the high risk of breakage."
       },
-      "size": "medium",
+      "size": "small",
       "teleportPoints": [
         { "x": 0, "y": 0, "z": 0 },
-        { "x": -24, "y": 0, "z": -10 },
-        { "x": 1, "y": 0, "z": -50 },
-        { "x": 30, "y": 0, "z": -68 },
-        { "x": 17, "y": 0, "z": -23 }
+        { "x": -7, "y": 0, "z": -26 },
+        { "x": 0, "y": 0, "z": -41 },
+        { "x": 10, "y": 0, "z": -47 },
+        { "x": 4.5, "y": 0, "z": -33 }
       ]
     },
     {
