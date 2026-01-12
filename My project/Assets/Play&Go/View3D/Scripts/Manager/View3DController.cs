@@ -56,6 +56,7 @@ public class View3DController : MonoBehaviour
 
         if (descriptionUI != null)
         {
+            descriptionUI.enabled = true;
             Model3D modelData = EnvironmentView3DService.GetModel(id);
             descriptionUI.SetModel(modelData);
         }
@@ -117,6 +118,21 @@ public class View3DController : MonoBehaviour
         _currentModelBig.transform.localScale = new Vector3(scaleBig, scaleBig, scaleBig);
         _currentModelBig.transform.localPosition = new Vector3(0, 0, posZ);
         _currentModelBig.name = "Model3D - " + id;
+
+        ActiveSoundFX(_currentModelBig);
+    }
+
+    void ActiveSoundFX(GameObject model)
+    {
+        if (model == null)
+            return;
+
+        if (model.transform.childCount > 0)
+        {
+            Transform child = model.transform.GetChild(0);
+            if (child != null)
+                child.gameObject.SetActive(true);
+        }
     }
 
     void LoadModelSmall(GameObject prefab, string id)
@@ -170,6 +186,7 @@ public class View3DController : MonoBehaviour
         }
 
         descriptionUI.descriptionText.text = "";
+        descriptionUI.enabled = false;
     }
 
     void ChangeTitle(string tittleTxt)
