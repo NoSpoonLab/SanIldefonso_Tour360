@@ -115,8 +115,10 @@ public class View3DController : MonoBehaviour
         }
 
         _currentModelBig = Instantiate(prefab, modelContainerBig);
-        _currentModelBig.transform.localScale = new Vector3(scaleBig, scaleBig, scaleBig);
-        _currentModelBig.transform.localPosition = new Vector3(0, 0, posZ);
+        _currentModelBig.transform.localScale = Vector3.one * scaleBig;
+        Vector3 pos = _currentModelBig.transform.localPosition;
+        pos.z = posZ;
+        _currentModelBig.transform.localPosition = pos;
         _currentModelBig.name = "Model3D - " + id;
 
         ActiveSoundFX(_currentModelBig);

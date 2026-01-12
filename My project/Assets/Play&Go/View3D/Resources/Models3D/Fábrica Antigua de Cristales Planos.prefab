@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 780afdc5a437dbc4191c14bf3cc95180, type: 2}
     - target: {fileID: 919132149155446097, guid: 3cb2dbbc8a0636a4aad585e90e7fc9cb, type: 3}
       propertyPath: m_Name
-      value: "F\xE1brica Antigua de Cristales Planos "
+      value: "F\xE1brica Antigua de Cristales Planos"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

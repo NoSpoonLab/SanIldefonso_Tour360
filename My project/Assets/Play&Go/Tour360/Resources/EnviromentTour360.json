@@ -9,15 +9,15 @@
       "hotspots": [
         {
           "target": "Interior del teatro",
-          "position": { "x": 0, "y": -1, "z": -1}
+          "position": { "x": 0, "y": -1, "z": -0.8}
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": 0, "y": -1, "z": 1}
+          "position": { "x": 0, "y": -1, "z": 0.8}
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": -1, "y": -1, "z": 0}
+          "position": { "x": -0.8, "y": -1, "z": 0}
         }
       ]
     },
@@ -29,15 +29,15 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": -1, "y": -1, "z": 0.5}
+          "position": { "x": -0.5, "y": -1, "z": 0.5}
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": 0, "y": -1, "z": -1}
+          "position": { "x": 0, "y": -1, "z": -0.8}
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": -1, "y": -1, "z": -0.5}
+          "position": { "x": -0.8, "y": -1, "z": -0.4}
         }
       ]
     },
@@ -49,15 +49,15 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": -1, "y": -1, "z": 0 }
+          "position": { "x": -0.8, "y": -1, "z": 0 }
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": -0.5, "y": -1, "z": -1}
+          "position": { "x": -0.3, "y": -1, "z": -0.8}
         },
         {
           "target": "Calle de la Reina",
-          "position": { "x": 0, "y": -1, "z": 1 }
+          "position": { "x": 0, "y": -1, "z": 0.8 }
         }
       ]
     },
@@ -69,15 +69,15 @@
       "hotspots": [
         {
           "target": "Plaza de España",
-          "position": { "x": 1, "y": -1, "z": 0.5}
+          "position": { "x": 0.8, "y": -1, "z": 0.45}
         },
         {
           "target": "Interior del teatro",
-          "position": { "x": 1, "y": -1, "z": -0.5}
+          "position": { "x": 0.8, "y": -1, "z": -0.4}
         },
         {
           "target": "Plaza de los Dolores",
-          "position": { "x": 0, "y": -1, "z": 1 }
+          "position": { "x": 0, "y": -1, "z": 0.8 }
         }
       ]
     }
