@@ -1,9 +1,39 @@
 fileFormatVersion: 2
-guid: bd3eb0dc62dbe3648a692148fe474358
+guid: a6c2c35359a5b804295c4e25b1bf6f8d
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Columnas
+    second: {fileID: 2100000, guid: fd1ff64824e65134c93da655c735f681, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Frontal
+    second: {fileID: 2100000, guid: 990f84e866d1cbf4caa7837bb214708f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Paredes
+    second: {fileID: 2100000, guid: 07dfe608345bd8a46870ef771c63a397, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Puerta
+    second: {fileID: 2100000, guid: 37280ceda028f3742bd1ab999f394741, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Tejado
+    second: {fileID: 2100000, guid: fcf24b5dc67a92143a77d314628a15d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Torres
+    second: {fileID: 2100000, guid: cf474ece5bd8fc042a8c138630a25001, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -283,6 +283,22 @@
         { "x": 0, "y": 0, "z": -56 },
         { "x": 38, "y": 0, "z": -44 }
       ]
+    },
+     {
+      "id": "Palacio Real y Colegiata",
+      "name": "Palacio Real y Colegiata",
+      "descripcion": {
+        "es": "Obra ilustrada de granito y rejería levantada en 1784. Esta puerta da acceso a la parte baja del casco histórico y fue diseñada a modo de arco del triunfo con tres arcos.\n\nAccediendo por ella aparece en último término la fachada principal de la Iglesia de Nuestra Señora de los Dolores y sus dos pequeñas torres laterales. Esta puerta es de sillería, compuesta de un cuerpo central más elevado y dos laterales. El primero, de estilo romano, está formado por dos pilastras toscanas, apoyadas en altos pedestales, y que sostienen un sencillo entablamento coronado por un frontón triangular. La puerta central se encuentra rematada por un arco de medio punto, que simula sostener el arquitrabe, la puerta se cierra por una verja de hierro. En el friso hay esculpidas las siguientes inscripciones, que indican la fecha en que esta puerta se construyó:\n\nEn la que mira a Oriente,\nAÑO DE MDCCLXXXIV.\nY en la de Poniente,\nREYNANDO CARLOS III.\n\nLas entradas laterales, que se cierran también con puertas de hierro, se terminan en la parte superior con un dintel recto de sillería.",
+        "en": "An enlightened work of granite and ironwork erected in 1784. This gate provides access to the lower part of the historic center and was designed as a triumphal arch with three arches.\n\nEntering through it, the main facade of the Church of Our Lady of Los Dolores and its two small lateral towers appear in the background. This gate is made of ashlar, composed of a higher central body and two lateral ones. The first, in Roman style, is formed by two Tuscan pilasters, resting on high pedestals, supporting a simple entablature crowned by a triangular pediment. The central gate is topped by a semicircular arch, which simulates supporting the architrave; the gate is closed by an iron grille. On the frieze are carved the following inscriptions, which indicate the date when this gate was built:\n\nOn the one facing East,\nYEAR MDCCLXXXIV.\nAnd on the one facing West,\nREIGN OF CHARLES III.\n\nThe lateral entrances, which are also closed with iron doors, end at the top with a straight ashlar lintel."
+      },
+      "size": "large",
+      "teleportPoints": [
+        { "x": 0, "y": 0, "z": 0 },
+        { "x": 0, "y": 0, "z": -42 },
+        { "x": -38, "y": 0, "z": -44 },
+        { "x": 0, "y": 0, "z": -56 },
+        { "x": 38, "y": 0, "z": -44 }
+      ]
     }
   ]
 }
