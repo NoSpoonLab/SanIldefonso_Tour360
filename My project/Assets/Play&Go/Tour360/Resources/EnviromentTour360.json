@@ -5,7 +5,11 @@
       "id": "Plaza de España",
       "imageResource": "Plaza de España",
       "title": "Plaza de España",
-      "description": "Bienvenido al lobby",
+      "descripcion": 
+      {
+        "es": "La Plaza de España del Real Sitio de San Ildefonso es el umbral urbano del conjunto palaciego de La Granja, creado por Felipe V en el siglo XVIII. Abierta y empedrada, funciona como vestíbulo entre el caserío y el Palacio Real, desde cuya fachada se accede a los célebres jardines barrocos con sus fuentes monumentales. A un lado asoma la Real Colegiata de la Santísima Trinidad, que completa la silueta monumental, y alrededor se disponen edificios históricos como la Casa de Oficios, huella del plan cortesano que organizó oficios y hospedajes al servicio de la residencia real. El arbolado maduro —cedros, pinsapos y, en el entorno, sequoias— aporta sombra y carácter paisajístico a un espacio muy frecuentado por visitantes que se orientan aquí antes de recorrer el palacio, los jardines o el casco histórico. Es un punto de partida ideal para obtener información, fotografiar las perspectivas hacia la Colegiata y los parterres, y planificar la visita a las fuentes (conviene comprobar horarios de funcionamiento) o combinar el recorrido con la Real Fábrica de Cristales, pieza clave para comprender el conjunto del Real Sitio.",
+        "en": "The Plaza de España of the Real Sitio de San Ildefonso is the urban threshold of the La Granja palace complex created by Philip V in the 18th century Open and cobbled it functions as a vestibule between the town and the Royal Palace from whose facade the famous baroque gardens with their monumental fountains are accessed To one side stands the Royal Collegiate Church of the Holy Trinity which completes the monumental silhouette and around it are historic buildings such as the Casa de Oficios a trace of the courtly plan that organized trades and lodgings at the service of the royal residence The mature trees—cedars Spanish firs and in the surroundings sequoias—provide shade and landscape character to a space much frequented by visitors who orient themselves here before touring the palace the gardens or the historic center It is an ideal starting point to obtain information photograph the perspectives toward the Collegiate Church and the parterres and plan the visit to the fountains (it is advisable to check operating schedules) or combine the tour with the Royal Glass Factory a key piece for understanding the complex of the Royal Site"
+      },
       "hotspots": [
         {
           "target": "Interior del teatro",
@@ -25,7 +29,11 @@
       "id": "Interior del teatro",
       "imageResource": "Interior del teatro",
       "title": "Interior del teatro",
-      "description": "",
+      "descripcion": 
+      {
+        "es": "En el Barrio Alto, la Plaza del Teatro conserva el nombre del antiguo coliseo cortesano que animó la vida del Real Sitio en el siglo XVIII: en 1735 la Compañía de Cómicos italiana obtuvo permiso para levantar un teatro y, pocos años después, se asentó aquí un edificio sobrio de tres plantas con tejado de pizarra. Su fachada tenía tres accesos —izquierda para mujeres, derecha para hombres y entrada central para los asientos preferentes— y dentro ofrecía un patio de butacas en herradura con cerca de seiscientas localidades. Pasó a la Corona en 1767, sufrió un incendio en 1817 y fue restaurado; en 1870 quedó en manos privadas, en 1917 se convirtió en cinematógrafo, cerró en 1965 y se demolió en 1969. Hoy el solar está ocupado por un inmueble sin interés, pero la plaza sigue siendo una parada tranquila dentro del caserío histórico para evocar aquel pasado teatral y enlazar rutas por el Barrio Alto (Capilla de San Juan Nepomuceno, Caballerizas Reales, Guardias de Corps).",
+        "en": "In the Barrio Alto, the Plaza del Teatro preserves the name of the old courtly coliseum that enlivened the life of the Real Sitio in the 18th century. In 1735, the Italian Compañía de Cómicos obtained permission to build a theater, and a few years later, a sober three-story building with a slate roof was established here. Its façade had three entrances—the left for women, the right for men, and a central entrance for preferred seating—while inside, it featured a horseshoe-shaped pit with nearly six hundred seats. It passed to the Crown in 1767, suffered a fire in 1817 and was restored; in 1870 it fell into private hands, and in 1917 it was converted into a cinema. It eventually closed in 1965 and was demolished in 1969. Today, the site is occupied by a building of little interest, but the square remains a quiet stop within the historic district to evoke that theatrical past and connect routes through the Barrio Alto (such as the Chapel of San Juan Nepomuceno, the Royal Stables, and the Guardias de Corps)."
+      },
       "hotspots": [
         {
           "target": "Plaza de España",
@@ -45,7 +53,11 @@
       "id": "Plaza de los Dolores",
       "imageResource": "Plaza de los Dolores",
       "title": "Plaza de los Dolores",
-      "description": "",
+      "descripcion": 
+      {
+        "es": "En el corazón del Real Sitio, la Plaza de los Dolores es la gran explanada cívica donde laten la vida diaria y los servicios del municipio: aquí se ubican el Ayuntamiento —en el antiguo hospital del Real Sitio, que también integra la oficina de turismo—, el Mercado Municipal de Abastos y la Iglesia de Nuestra Señora de los Dolores, que da nombre al espacio. Sus soportales y terrazas la convierten en parada natural para orientarse, pedir información o hacer un alto antes o después de visitar el Palacio y los jardines. Como ágora local, acoge actividades y ferias a lo largo del año, reforzando su papel de punto de encuentro entre residentes y visitantes.",
+        "en": "In the heart of the Real Sitio, Plaza de los Dolores is the great civic esplanade where daily life and municipal services thrive. Located here are the Town Hall—housed in the former hospital of the Real Sitio, which also includes the tourist office—the Municipal Food Market, and the Church of Nuestra Señora de los Dolores, which gives the square its name. Its porticos and terraces make it a natural stop for finding your bearings, asking for information, or taking a break before or after visiting the Palace and gardens. As a local agora, it hosts activities and fairs throughout the year, reinforcing its role as a meeting point for both residents and visitors."
+      },
       "hotspots": [
         {
           "target": "Plaza de España",
@@ -65,7 +77,11 @@
       "id": "Calle de la Reina",
       "imageResource": "Calle de la Reina",
       "title": "Calle de la Reina",
-      "description": "",
+      "descripcion": 
+      {
+        "es": "La Calle de la Reina es el eje que articula la parte baja del casco histórico: arranca en la Puerta de la Reina (1784), un arco de granito y rejería concebido como puerta triunfal de entrada al Real Sitio, y avanza entre casas tradicionales, comercios de proximidad y terrazas hasta conectar con las plazas y servicios municipales del entorno (mercado y ayuntamiento), funcionando como pasillo peatonal natural para orientarse antes de subir hacia el Palacio y los jardines. Su trazado corto y llano facilita el paseo, concentra paradas de bus cercanas y ofrece buenas perspectivas urbanas, con cruces hacia calles como Abastos o Cristo y accesos directos a la zona de la iglesia de Nuestra Señora de los Dolores. Es, en definitiva, la calle de bienvenida a La Granja: práctica, viva y fotogénica.",
+        "en": "Calle de la Reina is the axis that articulates the lower part of the historic center. It begins at the Puerta de la Reina (1784)—a granite and wrought-iron arch designed as a triumphal gateway to the Real Sitio—and advances past traditional houses, local shops, and terraces until it connects with the surrounding municipal squares and services (the market and Town Hall). It functions as a natural pedestrian corridor for finding one's bearings before heading up toward the Palace and gardens. Its short, flat layout makes for an easy stroll, concentrates nearby bus stops, and offers great urban perspectives, with crossings toward streets like Abastos or Cristo and direct access to the area of the Church of Nuestra Señora de los Dolores. It is, in short, the welcoming street to La Granja: practical, lively, and photogenic."
+      },
       "hotspots": [
         {
           "target": "Plaza de España",

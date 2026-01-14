@@ -4,14 +4,15 @@ using UnityEngine;
 public class LocalizedTextContent : MonoBehaviour
 {
     public TMP_Text descriptionText;
-    private Model3D currentModel;
+
+    private ILocalizedDescribable currentItem;
 
     private void OnEnable()
     {
         if (LanguageManager.Instance != null)
         {
             LanguageManager.Instance.OnLanguageChanged += UpdateUI;
-            UpdateDescription(); 
+            UpdateUI();
         }
     }
 
@@ -23,17 +24,17 @@ public class LocalizedTextContent : MonoBehaviour
         }
     }
 
-    public void SetModel(Model3D model)
+    public void SetItem(ILocalizedDescribable item)
     {
-        currentModel = model;
-        UpdateDescription();
+        currentItem = item;
+        UpdateUI();
     }
 
-    private void UpdateDescription()
+    private void UpdateUI()
     {
         if (descriptionText == null) return;
 
-        if (currentModel == null)
+        if (currentItem == null)
         {
             descriptionText.text = "";
             return;
@@ -42,20 +43,14 @@ public class LocalizedTextContent : MonoBehaviour
         if (LanguageManager.Instance == null)
         {
             Debug.LogWarning("LanguageManager.Instance es null");
-            descriptionText.text = currentModel.descripcion?.es ?? "Sin descripción";
+            descriptionText.text = currentItem.descripcion?.es ?? "Sin descripción";
             return;
         }
 
         string lang = LanguageManager.Instance.currentLanguage;
 
-        if (lang == "es")
-            descriptionText.text = currentModel.descripcion?.es ?? "Sin descripción";
-        else
-            descriptionText.text = currentModel.descripcion?.en ?? "No description";
-    }
-
-    private void UpdateUI()
-    {
-        UpdateDescription();
+        descriptionText.text = lang == "es"
+            ? currentItem.descripcion?.es ?? "Sin descripción"
+            : currentItem.descripcion?.en ?? "No description";
     }
 }

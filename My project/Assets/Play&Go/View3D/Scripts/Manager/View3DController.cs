@@ -58,7 +58,7 @@ public class View3DController : MonoBehaviour
         {
             descriptionUI.enabled = true;
             Model3D modelData = EnvironmentView3DService.GetModel(id);
-            descriptionUI.SetModel(modelData);
+            descriptionUI.SetItem(modelData);
         }
 
         tourNavigationController.LoadModel(id);

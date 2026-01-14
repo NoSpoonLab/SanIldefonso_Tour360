@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [Serializable]
 public class TourConfig
@@ -19,13 +20,27 @@ public class TourConfig
 }
 
 [Serializable]
-public class Point
+public class Point : ILocalizedDescribable
 {
     public string id;
     public string imageResource;
     public string title;
-    public string description;
     public Hotspot[] hotspots;
+    public Descripcion descripcion;
+
+    Descripcion ILocalizedDescribable.descripcion => descripcion;
+}
+
+[Serializable]
+public class Descripcion
+{
+    public string es;
+    public string en;
+
+    public string Get(string lang)
+    {
+        return lang == "es" ? es : en;
+    }
 }
 
 [Serializable]

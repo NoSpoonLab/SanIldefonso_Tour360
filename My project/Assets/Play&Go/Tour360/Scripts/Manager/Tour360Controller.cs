@@ -18,12 +18,18 @@ public class Tour360Controller : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI title;
 
+    [Header("UI Localizada")]
+    public LocalizedTextContent descriptionUI;
+
     [Header("Hotspots")]
     public GameObject hotspotPrefab;
     public Transform hotspotContainer;
     private List<GameObject> activeHotspots = new List<GameObject>();
 
     private FadeTransition fadeTransition;
+
+    [Header("AudioGuide")]
+    public AudioGuideController audioGuideController;
     #endregion
 
     #region MonoBehaviour Methods
@@ -63,6 +69,15 @@ public class Tour360Controller : MonoBehaviour
         SpawnHotspots(point);
         LoadImageToSphere(point.imageResource);
 
+        audioGuideController.LoadAudio(id);
+
+        if (descriptionUI != null)
+        {
+            descriptionUI.enabled = true;
+            Point modelData = EnvironmentTour360Service.GetPoint(id);
+            descriptionUI.SetItem(modelData);
+        }
+
         if (anim)
             StartCoroutine(fadeTransition.Fade(1f, 0f));
 
@@ -91,6 +106,9 @@ public class Tour360Controller : MonoBehaviour
 
         if (Keyboard.current.dKey.wasPressedThisFrame)
             LoadPoint("Calle de la Reina");
+
+        if (Keyboard.current.pKey.wasPressedThisFrame)
+            audioGuideController.PressButtonPlayPause();
     }
 
     #region Private Methods
@@ -129,7 +147,7 @@ public class Tour360Controller : MonoBehaviour
             if (targetPoint != null)
             {
                 data.image = targetPoint.imageResource;
-                data.description = targetPoint.description;
+                //data.description = targetPoint.description;
             }
 
             obj.name = "Hotspot " + hotspot.target;

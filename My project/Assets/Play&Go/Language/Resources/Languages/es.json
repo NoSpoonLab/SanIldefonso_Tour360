@@ -9,6 +9,8 @@
         { "key": "PLAY", "value": "Reproducir" },
         { "key": "PAUSE", "value": "Pausar" },
         { "key": "ROTATEMODEL", "value": "Pincha aquí para rotar el modelo 3D" },
-        { "key": "ROTATEYOU", "value": "¡Mira a tu alrededor! Explora el modelo 3D a tamaño real y navega por todos sus espacios." }
+        { "key": "ROTATEYOU", "value": "¡Mira a tu alrededor! Explora el modelo 3D a tamaño real y navega por todos sus espacios." },
+        { "key": "MAP", "value": "Mapa" },
+        { "key": "DESCRIPTION", "value": "Descripción" }
     ]
 }

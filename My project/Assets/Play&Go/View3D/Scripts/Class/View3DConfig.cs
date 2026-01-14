@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public class View3DConfig
@@ -16,21 +17,16 @@ public class View3DConfig
 }
 
 [System.Serializable]
-public class Model3D
+public class Model3D : ILocalizedDescribable
 {
     public string id;
     public string name;
-    public Descripcion descripcion;
     public string prefab;
     public string size;
     public Vector3Data[] teleportPoints;
-}
+    public Descripcion descripcion;
 
-[System.Serializable]
-public class Descripcion
-{
-    public string es;
-    public string en;
+    Descripcion ILocalizedDescribable.descripcion => descripcion;
 }
 
 [System.Serializable]

@@ -29,12 +29,6 @@ public static class EnvironmentTour360Service
         return p?.title;
     }
 
-    public static string GetDescription(string id)
-    {
-        var p = GetPoint(id);
-        return p?.description;
-    }
-
     public static string GetImageResource(string id)
     {
         var p = GetPoint(id);

@@ -9,6 +9,8 @@
         { "key": "PLAY", "value": "Play" },
         { "key": "PAUSE", "value": "Pause" },
         { "key": "ROTATEMODEL", "value": "Pinch here to rotate the 3D model" },
-        { "key": "ROTATEYOU", "value": "Look around you! Explore the 3D model at life-size and wander through all its spaces" }
+        { "key": "ROTATEYOU", "value": "Look around you! Explore the 3D model at life-size and wander through all its spaces" },
+        { "key": "MAP", "value": "Map" },
+        { "key": "DESCRIPTION", "value": "Description" }
     ]
 }
