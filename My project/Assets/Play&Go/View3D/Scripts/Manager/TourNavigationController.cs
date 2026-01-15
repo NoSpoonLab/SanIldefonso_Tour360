@@ -3,7 +3,7 @@ using UnityEngine;
 public class TourNavigationController : MonoBehaviour
 {
     public Transform playerRig;
-    private Vector3Data[] _teleportPoints;
+    public Vector3Data[] _teleportPoints;
     public GameObject arrowTransform;
     public int _currentTeleportIndex = 0;
     public GameObject arrow;

@@ -172,19 +172,6 @@
       ]
     },
     {
-      "id": "Palacio Real y Colegiata",
-      "name": "Palacio Real y Colegiata",
-      "descripcion": 
-      {
-        "es": "",
-        "en": ""
-      },
-      "size": "medium",
-      "teleportPoints": [
-        { "x": 0, "y": 0, "z": 0 }
-      ]
-    },
-    {
       "id": "Iglesia del Convento",
       "name": "Iglesia del Convento",
       "descripcion": 
@@ -291,13 +278,13 @@
         "es": "En 1720 Felipe V compró a los monjes Jerónimos de El Parral de Segovia la casa, ermita de San Ildefonso y otros terrenos que poseían en estos parajes y que les habían sido donados por los Reyes Católicos, con la idea de acondicionarlos para su retiro. El arquitecto Mayor Teodoro Ardemans es el encargado en 1720 de la adaptación de la antigua casa de los Jerónimos para acomodar a los reyes en su retiro y poco después, Felipe V decide levantar un edificio de nueva planta dando comienzo las obras del nuevo palacio en abril de 1721. Una nueva etapa comienza en 1724, tras la cual se lleva a cabo una nueva ampliación para convertir al palacio en una residencia regia para la estación del verano. En este segundo periodo intervinieron Andrea Procaccini y Juvarra, como arquitectos más destacados. La Colegiata fue construida por Teodoro Ardemans y ampliada por Andrea Procaccini, a quien se debe la fachada que da a la Plaza de Palacio. La Capilla de las Reliquias, situada en su interior, alberga un monumento funerario donde yacen los cuerpos de Felipe V e Isabel de Farnesio. Los jardines del Palacio ocupan una extensión de seis kilómetros, en donde se fusionan los parterres, los bosquetes, la arquitectura de jardín, la escultura y la propia naturaleza. En La Granja existen veintiséis fuentes monumentales, todas ellas basadas en la mitología clásica, aunque nunca han faltado fantásticas historias populares sobre cada una de las esculturas que relatan mezcolanza de deseos, trazos humanos, miedos presentidos…",
         "en": "En 1720, Philip V purchased from the Hieronymite monks of El Parral in Segovia the house, the hermitage of San Ildefonso, and other lands they owned in the area, which had been donated to them by the Catholic Monarchs, with the intention of adapting them for his retirement. In 1720, the Chief Architect Teodoro Ardemans was entrusted with the adaptation of the former Hieronymite house to accommodate the royal couple during their retreat, and shortly afterwards Philip V decided to build a completely new palace, with construction beginning in April 1721. A new phase began in 1724, after which a further expansion was carried out to transform the palace into a royal residence for the summer season. During this second period, Andrea Procaccini and Filippo Juvarra were the most prominent architects involved. The Collegiate Church was built by Teodoro Ardemans and later enlarged by Andrea Procaccini, to whom the façade facing the Palace Square is attributed. The Chapel of the Relics, located inside, houses a funerary monument where the bodies of Philip V and Elisabeth Farnese rest. The palace gardens cover an area of six kilometers, where parterres, groves, garden architecture, sculpture, and nature itself are harmoniously combined. At La Granja there are twenty-six monumental fountains, all based on classical mythology, although there has never been a lack of fantastic popular stories about each of the sculptures, recounting a blend of desires, human traits, and foreseen fears."
       },
-      "size": "large",
+      "size": "medium",
       "teleportPoints": [
         { "x": 0, "y": 0, "z": 0 },
-        { "x": 0, "y": 0, "z": -42 },
-        { "x": -38, "y": 0, "z": -44 },
-        { "x": 0, "y": 0, "z": -56 },
-        { "x": 38, "y": 0, "z": -44 }
+        { "x": 0, "y": 0, "z": -20 },
+        { "x": -15, "y": 0, "z": -30 },
+        { "x": 0, "y": 0, "z": -65 },
+        { "x": 15, "y": 0, "z": -30 }
       ]
     }
   ]

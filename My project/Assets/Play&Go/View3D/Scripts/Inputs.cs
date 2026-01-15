@@ -58,6 +58,8 @@ public class Inputs : MonoBehaviour
         if (Keyboard.current.hKey.wasPressedThisFrame)
             view3DController.LoadModel("Real Fábrica de Cristales Planos de Carlos III");
 
+        if (Keyboard.current.jKey.wasPressedThisFrame)
+            view3DController.LoadModel("Palacio Real y Colegiata");
 
         if (Keyboard.current.zKey.wasPressedThisFrame)
             view3DController.PressButtonReset();
