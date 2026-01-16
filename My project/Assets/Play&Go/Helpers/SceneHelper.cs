@@ -14,4 +14,18 @@ public static class SceneHelper
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);
     }
+    public static IEnumerator LoadSceneWithDelayAndFade(string sceneName, float delay, FadeTransition fade)
+    {
+        yield return new WaitForSeconds(delay);
+
+        yield return fade.Fade(0f, 1f);
+
+        SceneManager.LoadScene(sceneName);
+    }
+    public static IEnumerator LoadSceneWithFade(string sceneName, FadeTransition fade)
+    {
+        yield return fade.Fade(0f, 1f);
+
+        SceneManager.LoadScene(sceneName);
+    }
 }

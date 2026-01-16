@@ -33,6 +33,13 @@ public class Tour360Controller : MonoBehaviour
     #endregion
 
     #region MonoBehaviour Methods
+    private void Awake()
+    {
+        fadeTransition = FindAnyObjectByType<FadeTransition>();
+
+        StartCoroutine(fadeTransition.Fade(1f, 0f));
+
+    }
     void Start()
     {
         string start = EnvironmentTour360Service.GetStartPoint();
@@ -45,10 +52,7 @@ public class Tour360Controller : MonoBehaviour
         {
             Debug.LogError("No hay startPoint definido en el JSON.");
         }
-
-        fadeTransition = FindAnyObjectByType<FadeTransition>();
     }
-
     #endregion
 
     #region Public Methods
@@ -82,6 +86,8 @@ public class Tour360Controller : MonoBehaviour
             StartCoroutine(fadeTransition.Fade(1f, 0f));
 
         OnPointChanged?.Invoke(id);
+
+        audioGuideController.ResetAudioInChangeLanguage();
     }
 
     #endregion
@@ -89,7 +95,8 @@ public class Tour360Controller : MonoBehaviour
     #region Inputs Methods
     public void PressButtonBack(string scene) //Add in inspector ButtonBack in Interactable Unity Events
     {
-        SceneHelper.LoadScene(scene);
+        //SceneHelper.LoadScene(scene);
+        StartCoroutine(SceneHelper.LoadSceneWithFade(scene, fadeTransition));
     }
     #endregion
 

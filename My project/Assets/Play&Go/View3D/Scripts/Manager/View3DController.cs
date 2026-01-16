@@ -35,6 +35,18 @@ public class View3DController : MonoBehaviour
     [Header("NavigationArrowIndicator")]
     public TourNavigationController tourNavigationController;
 
+    private FadeTransition fadeTransition;
+
+    #endregion
+
+    #region MonoBehaviour Methods
+    private void Awake()
+    {
+        fadeTransition = FindAnyObjectByType<FadeTransition>();
+
+        StartCoroutine(fadeTransition.Fade(1f, 0f));
+
+    }
     #endregion
 
     #region Public Methods
@@ -88,7 +100,8 @@ public class View3DController : MonoBehaviour
 
     public void PressButtonBack(string scene) //Add in inspector ButtonBack in Interactable Unity Events
     {
-        SceneHelper.LoadScene(scene);
+        //SceneHelper.LoadScene(scene);
+        StartCoroutine(SceneHelper.LoadSceneWithFade(scene, fadeTransition));
     }
     #endregion
 
