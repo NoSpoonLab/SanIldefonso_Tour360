@@ -15,7 +15,7 @@ public class MenuController : MonoBehaviour
 
     public void Update()
     {
-        if (Keyboard.current.aKey.wasPressedThisFrame)
+        if (Keyboard.current.sKey.wasPressedThisFrame)
             PressButon("Tour360");
 
         if (Keyboard.current.aKey.wasPressedThisFrame)

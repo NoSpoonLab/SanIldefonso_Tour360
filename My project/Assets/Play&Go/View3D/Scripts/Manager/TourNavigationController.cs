@@ -3,9 +3,9 @@ using UnityEngine;
 public class TourNavigationController : MonoBehaviour
 {
     public Transform playerRig;
-    public Vector3Data[] _teleportPoints;
+    private Vector3Data[] _teleportPoints;
     public GameObject arrowTransform;
-    public int _currentTeleportIndex = 0;
+    private int _currentTeleportIndex = 0;
     public GameObject arrow;
 
     private FadeTransition fadeTransition;

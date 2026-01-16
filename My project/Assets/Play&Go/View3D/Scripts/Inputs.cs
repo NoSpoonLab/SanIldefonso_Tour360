@@ -61,6 +61,9 @@ public class Inputs : MonoBehaviour
         if (Keyboard.current.jKey.wasPressedThisFrame)
             view3DController.LoadModel("Palacio Real y Colegiata");
 
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            view3DController.PressButtonBack("Menu");
+
         if (Keyboard.current.zKey.wasPressedThisFrame)
             view3DController.PressButtonReset();
 

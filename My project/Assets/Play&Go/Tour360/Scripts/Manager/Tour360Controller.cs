@@ -100,24 +100,6 @@ public class Tour360Controller : MonoBehaviour
     }
     #endregion
 
-    void Update()
-    {
-        if (Keyboard.current.aKey.wasPressedThisFrame)
-            LoadPoint("Plaza de España");
-
-        if (Keyboard.current.bKey.wasPressedThisFrame)
-            LoadPoint("Interior del teatro");
-
-        if (Keyboard.current.cKey.wasPressedThisFrame)
-            LoadPoint("Plaza de los Dolores");
-
-        if (Keyboard.current.dKey.wasPressedThisFrame)
-            LoadPoint("Calle de la Reina");
-
-        if (Keyboard.current.pKey.wasPressedThisFrame)
-            audioGuideController.PressButtonPlayPause();
-    }
-
     #region Private Methods
     void SpawnHotspots(Point point)
     {
