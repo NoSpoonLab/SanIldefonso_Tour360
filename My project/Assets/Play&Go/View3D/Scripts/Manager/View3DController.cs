@@ -17,9 +17,6 @@ public class View3DController : MonoBehaviour
     private GameObject _currentModelBig;
     private GameObject _currentModelSmall;
 
-    [Header("Objects")]
-    public GameObject modelSanIldefonso;
-
     [Header("UI")]
     public TextMeshProUGUI title;
     public GameObject helpText;
@@ -34,6 +31,9 @@ public class View3DController : MonoBehaviour
 
     [Header("NavigationArrowIndicator")]
     public TourNavigationController tourNavigationController;
+
+    [Header("CityController")]
+    public CityController cityController;
 
     private FadeTransition fadeTransition;
 
@@ -91,7 +91,7 @@ public class View3DController : MonoBehaviour
         ClearCurrentModel();
         helpText.gameObject.SetActive(false);
         helpTextRotateYou.gameObject.SetActive(false);
-        modelSanIldefonso.SetActive(true);
+        cityController.modelSanIldefonso.SetActive(true);
         tourNavigationController.arrow.SetActive(false);
         title.text = "";
         audioGuideController.textPlay.SetActive(true);
@@ -181,7 +181,7 @@ public class View3DController : MonoBehaviour
 
     void ClearCurrentModel()
     {
-        modelSanIldefonso.SetActive(false);
+        cityController.modelSanIldefonso.SetActive(false);
 
         if (_currentModelBig != null)
         {
