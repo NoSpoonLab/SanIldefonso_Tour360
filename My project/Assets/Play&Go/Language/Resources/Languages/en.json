@@ -11,6 +11,8 @@
         { "key": "ROTATEMODEL", "value": "Pinch here to rotate the 3D model" },
         { "key": "ROTATEYOU", "value": "Look around you! Explore the 3D model at life-size and wander through all its spaces" },
         { "key": "MAP", "value": "Map" },
-        { "key": "DESCRIPTION", "value": "Description" }
+        { "key": "DESCRIPTION", "value": "Description" },
+        { "key": "HELPMENU", "value": "Hello and welcome!\nIf this is your first time using virtual reality, don’t worry: it’s very easy.\nIn front of you, you will see a menu with several buttons. To press them, you can use two methods:\n\n• Touch the button:\nMove your finger close to the button and press it as if it were a real button.\n\n• Finger gesture:\nBring your thumb and index finger together, forming a pinch gesture. Point at the button you want, and when you bring your fingers together, it will be selected automatically.\n\nThis menu will appear in the different scenes of the experience, such as: 'Glass Route' and 'Upper Town and Lower Town Route'. In each scene, the buttons will perform different actions. Take your time, try without fear, and enjoy the experience.\n\nTo close this help menu, simply stop showing the palm of your hand." },
+        { "key": "HELPPALM", "value": "If you need help, turn your left hand toward you and show the palm of your hand.\n\nWhen you do this, the help panel will appear automatically.\n\nIt’s a natural gesture, like looking at the palm of your hand." }
     ]
 }

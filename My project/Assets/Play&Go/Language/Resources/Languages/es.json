@@ -11,6 +11,8 @@
         { "key": "ROTATEMODEL", "value": "Pincha aquí para rotar el modelo 3D" },
         { "key": "ROTATEYOU", "value": "¡Mira a tu alrededor! Explora el modelo 3D a tamaño real y navega por todos sus espacios." },
         { "key": "MAP", "value": "Mapa" },
-        { "key": "DESCRIPTION", "value": "Descripción" }
+        { "key": "DESCRIPTION", "value": "Descripción" },
+        { "key": "HELPMENU", "value": "¡Hola y bienvenido/a!\nSi es tu primera vez usando realidad virtual, no te preocupes: es muy fácil.\nDelante de ti verás un menú con varios botones. Para pulsarlos, puedes hacerlo de dos formas:\n\n• Tocar el botón:\nAcerca tu dedo al botón y presiónalo como si fuera un botón real.\n\n• Gesto con los dedos:\nJunta el dedo pulgar y el índice formando una especie de pinza. Apunta al botón que quieras y, al juntar los dedos, se seleccionará automáticamente.\n\nEste menú aparecerá en las diferentes escenas de la experiencia, como: 'Ruta del Vidrio' y 'Ruta del Barrio Alto y Barrio Bajo'.En cada escena, los botones realizarán acciones distintas. Tómate tu tiempo, prueba sin miedo y disfruta de la experiencia.\n\n Para cerrar este menú de ayuda, simplemente deja de mostrar la palma de tu mano." },
+        { "key": "HELPPALM", "value": "Si necesitas ayuda, gira la mano izquierda hacia ti y muestra la palma.\n\nAl hacerlo, un panel de ayuda aparecerá automáticamente.\n\nEs un gesto natural, como si miraras la palma de tu mano." }
     ]
 }
