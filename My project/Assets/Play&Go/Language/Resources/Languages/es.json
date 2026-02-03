@@ -12,7 +12,10 @@
         { "key": "ROTATEYOU", "value": "¡Mira a tu alrededor! Explora el modelo 3D a tamaño real y navega por todos sus espacios." },
         { "key": "MAP", "value": "Mapa" },
         { "key": "DESCRIPTION", "value": "Descripción" },
-        { "key": "HELPMENU", "value": "¡Hola y bienvenido/a!\nSi es tu primera vez usando realidad virtual, no te preocupes: es muy fácil.\nDelante de ti verás un menú con varios botones. Para pulsarlos, puedes hacerlo de dos formas:\n\n• Tocar el botón:\nAcerca tu dedo al botón y presiónalo como si fuera un botón real.\n\n• Gesto con los dedos:\nJunta el dedo pulgar y el índice formando una especie de pinza. Apunta al botón que quieras y, al juntar los dedos, se seleccionará automáticamente.\n\nEste menú aparecerá en las diferentes escenas de la experiencia, como: 'Ruta del Vidrio' y 'Ruta del Barrio Alto y Barrio Bajo'.En cada escena, los botones realizarán acciones distintas. Tómate tu tiempo, prueba sin miedo y disfruta de la experiencia.\n\n Para cerrar este menú de ayuda, simplemente deja de mostrar la palma de tu mano." },
-        { "key": "HELPPALM", "value": "Si necesitas ayuda, gira la mano izquierda hacia ti y muestra la palma.\n\nAl hacerlo, un panel de ayuda aparecerá automáticamente.\n\nEs un gesto natural, como si miraras la palma de tu mano." }
+        { "key": "HELPMENU0", "value": "<color=#555555>¡Hola y bienvenido!\n\nSi es tu primera vez usando realidad virtual, no te\npreocupes: </color><color=#00A3D9><b>es muy fácil.</b></color>\n\n<color=#555555>Puedes interactuar de dos formas con los botones\nque veas </color><color=#00A3D9><b>solo con tus manos.</b></color>" },
+        { "key": "HELPMENU1", "value": "<color=#00A3D9><b>Toca</b></color>\n<color=#555555>Acerca el dedo como si fuera\nun botón real.</color>" },
+        { "key": "HELPMENU2", "value": "<color=#00A3D9><b>Gesto</b></color>\n<color=#555555>Forma una pizca con el pulgar e\níndice y apunta al botón.</color>"},
+        { "key": "HELPMENU3", "value": "<color=#555555>Tómate tu tiempo para </color><color=#00A3D9><b>experimentar y disfrutar</b></color>\n<color=#555555>de la experiencia.</color>"},
+        { "key": "HELPPALM", "value": "<color=#00A3D9><b>Gira la mano</b></color>\n<color=#555555>Mira la palma de tu mano\nizquierda para más ayuda.</color>" }
     ]
 }
