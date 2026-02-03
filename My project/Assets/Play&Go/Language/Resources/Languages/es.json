@@ -16,6 +16,7 @@
         { "key": "HELPMENU1", "value": "<color=#00A3D9><b>Toca</b></color>\n<color=#555555>Acerca el dedo como si fuera\nun botón real.</color>" },
         { "key": "HELPMENU2", "value": "<color=#00A3D9><b>Gesto</b></color>\n<color=#555555>Forma una pizca con el pulgar e\níndice y apunta al botón.</color>"},
         { "key": "HELPMENU3", "value": "<color=#555555>Tómate tu tiempo para </color><color=#00A3D9><b>experimentar y disfrutar</b></color>\n<color=#555555>de la experiencia.</color>"},
-        { "key": "HELPPALM", "value": "<color=#00A3D9><b>Gira la mano</b></color>\n<color=#555555>Mira la palma de tu mano\nizquierda para más ayuda.</color>" }
+        { "key": "HELPPALM", "value": "<color=#00A3D9><b>Gira la mano</b></color>\n<color=#555555>Mira la palma de tu mano\nizquierda para más ayuda.</color>" },
+        { "key": "TEXTEMPTY", "value": "<color=#555555>Selecciona un punto de interés para ver su descripción.</color>" }
     ]
 }
