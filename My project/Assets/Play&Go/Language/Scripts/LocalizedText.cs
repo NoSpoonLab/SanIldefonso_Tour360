@@ -47,12 +47,20 @@ public class LocalizedText : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    //private void OnDestroy()
+    //{
+    //    if (LanguageManager.Instance != null)
+    //        LanguageManager.Instance.OnLanguageChanged -= UpdateText;
+    //}
+
+    private void OnEnable()
     {
         if (LanguageManager.Instance != null)
-            LanguageManager.Instance.OnLanguageChanged -= UpdateText;
+        {
+            UpdateText();
+            LanguageManager.Instance.OnLanguageChanged += UpdateText;
+        }
     }
-
     private void UpdateText()
     {
         if (text == null)

@@ -25,6 +25,7 @@ public class View3DController : MonoBehaviour
 
     [Header("UI Localizada")]
     public LocalizedTextContent descriptionUI;
+    public GameObject descriptionText;
 
     [Header("AudioGuide")]
     public AudioGuideController audioGuideController;
@@ -68,6 +69,7 @@ public class View3DController : MonoBehaviour
 
         if (descriptionUI != null)
         {
+            descriptionText.GetComponent<LocalizedText>().enabled = false;
             descriptionUI.enabled = true;
             Model3D modelData = EnvironmentView3DService.GetModel(id);
             descriptionUI.SetItem(modelData);
@@ -200,7 +202,7 @@ public class View3DController : MonoBehaviour
             audioGuideController.Clear();
         }
 
-        descriptionUI.descriptionText.text = "";
+        descriptionText.GetComponent<LocalizedText>().enabled = true;
         descriptionUI.enabled = false;
     }
 

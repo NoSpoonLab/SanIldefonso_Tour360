@@ -6,6 +6,7 @@ public class InputsTour360 : MonoBehaviour
     public Tour360Controller tour360Controller;
     public AudioGuideController audioGuideController;
 
+
     // Update is called once per frame
     void Update()
     {
@@ -26,5 +27,11 @@ public class InputsTour360 : MonoBehaviour
 
         if (Keyboard.current.pKey.wasPressedThisFrame)
             audioGuideController.PressButtonPlayPause();
+
+        if (Keyboard.current.eKey.wasPressedThisFrame)
+            LanguageManager.Instance.LoadLanguage("es");
+
+        if (Keyboard.current.iKey.wasPressedThisFrame)
+            LanguageManager.Instance.LoadLanguage("en");
     }
 }

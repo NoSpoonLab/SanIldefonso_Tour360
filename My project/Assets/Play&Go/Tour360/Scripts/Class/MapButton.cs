@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MapButton : MonoBehaviour
 {
@@ -7,12 +8,25 @@ public class MapButton : MonoBehaviour
 
     [Header("Visuals")]
     public Image background;
-    public Color normalColor = Color.white;
-    public Color selectedColor = Color.yellow;
+    public TMP_Text label;
+
+    public Color normalTextColor;
+    public Color selectedTextColor;
+
+    [Header("Background Sprites")]
+    public Sprite normalSprite;   
+    public Sprite selectedSprite; 
 
     public void SetSelected(bool selected)
     {
         if (background != null)
-            background.color = selected ? selectedColor : normalColor;
+        {
+            background.sprite = selected ? selectedSprite : normalSprite;
+        }
+
+        if (label != null)
+        {
+            label.color = selected ? selectedTextColor : normalTextColor;
+        }
     }
 }

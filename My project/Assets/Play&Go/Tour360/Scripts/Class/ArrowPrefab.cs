@@ -17,6 +17,7 @@ public class ArrowPrefab : MonoBehaviour
     public GameObject canvas;
     public TextMeshProUGUI idTxt;
     public Image imageUI;
+    public GameObject imageGameObject;
 
     private Camera _cam;
 
@@ -40,7 +41,7 @@ public class ArrowPrefab : MonoBehaviour
 
     public void ActiveOrDesactiveImage(bool active) //Add in inspector to CirclePoint in Interactable Unity Event Wrapper
     {
-        imageUI.gameObject.SetActive(active);
+        imageGameObject.gameObject.SetActive(active);
     }
 
     private void LoadSprite()
