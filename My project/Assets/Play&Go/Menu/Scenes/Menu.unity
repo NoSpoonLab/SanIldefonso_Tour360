@@ -734,8 +734,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ruta del Vidrio
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
+  m_sharedMaterial: {fileID: -8579433429008785600, guid: 0e8b93960873b3d499da01042b905850, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -759,8 +759,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3247,8 +3247,8 @@ MonoBehaviour:
   m_text: "<color=#00A3D9><b>Gira la mano</b></color>\\n<color=#555555>Mira la palma
     de tu mano\\nizquierda para m\xE1s ayuda.</color>\""
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
+  m_sharedMaterial: {fileID: -8579433429008785600, guid: 0e8b93960873b3d499da01042b905850, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3877,7 +3877,7 @@ MonoBehaviour:
   m_text: "<color=#00A3D9><b>Toca</b></color>\\n<color=#555555>Acerca el dedo como
     si fuera\\nun bot\xF3n real.</color>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3943,7 +3943,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1406085825
@@ -4132,6 +4132,7 @@ GameObject:
   - component: {fileID: 1464471118}
   - component: {fileID: 1464471122}
   - component: {fileID: 1464471121}
+  - component: {fileID: 1464471123}
   m_Layer: 5
   m_Name: MenuRotate&Language
   m_TagString: Untagged
@@ -4152,7 +4153,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1744166929}
-  - {fileID: 2101840013}
+  - {fileID: 8763718795337142578}
   m_Father: {fileID: 2493844614984106446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4218,7 +4219,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -4245,6 +4246,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1464471116}
   m_CullTransparentMesh: 1
+--- !u!114 &1464471123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464471116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d24d65772ae45104293491ea844a647d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1497725178
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,7 +4626,7 @@ MonoBehaviour:
   m_text: "<color=#555555>T\xF3mate tu tiempo para </color><color=#00A3D9><b>experimentar
     y disfrutar</b></color>\\n<color=#555555>de la experiencia.</color>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4661,7 +4692,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1522330868
@@ -4748,7 +4779,7 @@ MonoBehaviour:
     interactuar de dos formas con los botones\\nque veas </color><color=#00A3D9><b>solo
     con tus manos.</b></color>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4814,7 +4845,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1634881352
@@ -5564,8 +5595,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
+  m_sharedMaterial: {fileID: -8579433429008785600, guid: 0e8b93960873b3d499da01042b905850, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5589,8 +5620,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5849,7 +5880,7 @@ MonoBehaviour:
   m_text: "<color=#00A3D9><b>Gesto</b></color>\\n<color=#555555>Forma una pizca con
     el pulgar e\\n\xEDndice y apunta al bot\xF3n.</color>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5915,7 +5946,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1970777541
@@ -6071,11 +6102,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5272512961321674018, guid: c7473fb1da1a13f4988f66bafb148953, type: 3}
   m_PrefabInstance: {fileID: 2069755729}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2101840013 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4659487777056453844, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
-  m_PrefabInstance: {fileID: 4122808779614283238}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &66473666638431243
 AudioSource:
@@ -6628,26 +6654,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1464471117}
     m_Modifications:
-    - target: {fileID: 1787289819009599002, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3350053702080896372, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4659487777056453844, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2100.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4659487777056453844, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4659487777056453844, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 4659487777056453844, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1538267
@@ -6688,9 +6694,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7009062295661698315, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
+      propertyPath: _canvas
+      value: 
+      objectReference: {fileID: 1464471120}
+    - target: {fileID: 8381800080569278943, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
+    - target: {fileID: 8381800080569278943, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8579433429008785600, guid: 0e8b93960873b3d499da01042b905850, type: 2}
+    - target: {fileID: 8381800080569278943, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8999712758456609028, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
       propertyPath: m_Name
       value: MenuLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000918741926706908, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e8b93960873b3d499da01042b905850, type: 2}
+    - target: {fileID: 9000918741926706908, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8579433429008785600, guid: 0e8b93960873b3d499da01042b905850, type: 2}
+    - target: {fileID: 9000918741926706908, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7584,6 +7618,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8586382937431479694}
   m_CullTransparentMesh: 1
+--- !u!4 &8763718795337142578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4659487777056453844, guid: 0c0de86a54d4623498eaef1872e94b9e, type: 3}
+  m_PrefabInstance: {fileID: 4122808779614283238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8792609461051604211
 RectTransform:
   m_ObjectHideFlags: 0
