@@ -12,7 +12,7 @@
         { "key": "ROTATEYOU", "value": "¡Mira a tu alrededor! Explora el modelo 3D a tamaño real y navega por todos sus espacios." },
         { "key": "MAP", "value": "Mapa" },
         { "key": "DESCRIPTION", "value": "Descripción" },
-        { "key": "HELPMENU0", "value": "<color=#555555>¡Hola y bienvenido!\n\nSi es tu primera vez usando realidad virtual, no te\npreocupes: </color><color=#00A3D9><b>es muy fácil.</b></color>\n\n<color=#555555>Puedes interactuar de dos formas con los botones\nque veas </color><color=#00A3D9><b>solo con tus manos.</b></color>" },
+        { "key": "HELPMENU0", "value": "<color=#555555><b>¡Hola y bienvenido!</b>\n\nSi es tu primera vez usando realidad virtual, no te\npreocupes: </color><color=#00A3D9><b>es muy fácil.</b></color>\n\n<color=#555555>Puedes interactuar de dos formas con los botones\nque veas </color><color=#00A3D9><b>solo con tus manos.</b></color>" },
         { "key": "HELPMENU1", "value": "<color=#00A3D9><b>Toca</b></color>\n<color=#555555>Acerca el dedo como si fuera\nun botón real.</color>" },
         { "key": "HELPMENU2", "value": "<color=#00A3D9><b>Gesto</b></color>\n<color=#555555>Forma una pizca con el pulgar e\níndice y apunta al botón.</color>"},
         { "key": "HELPMENU3", "value": "<color=#555555>Tómate tu tiempo para </color><color=#00A3D9><b>experimentar y disfrutar</b></color>\n<color=#555555>de la experiencia.</color>"},

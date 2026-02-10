@@ -12,7 +12,7 @@
         { "key": "ROTATEYOU", "value": "Look around you! Explore the 3D model at life-size and wander through all its spaces" },
         { "key": "MAP", "value": "Map" },
         { "key": "DESCRIPTION", "value": "Description" },
-        { "key": "HELPMENU0", "value": "<color=#555555>Hello and welcome!\n\nIf this is your first time using virtual reality, don't\nworry: </color><color=#00A3D9><b>it's very easy.</b></color>\n\n<color=#555555>You can interact in two ways with the buttons\nyou see </color><color=#00A3D9><b>only with your hands.</b></color>" },
+        { "key": "HELPMENU0", "value": "<color=#555555><b>Hello and welcome!</b>\n\nIf this is your first time using virtual reality, don't\nworry: </color><color=#00A3D9><b>it's very easy.</b></color>\n\n<color=#555555>You can interact in two ways with the buttons\nyou see </color><color=#00A3D9><b>only with your hands.</b></color>" },
         { "key": "HELPMENU1", "value": "<color=#00A3D9><b>Touch</b></color>\n<color=#555555>Bring your finger close as if it\nwere a real button.</color>" },
         { "key": "HELPMENU2", "value": "<color=#00A3D9><b>Gesture</b></color>\n<color=#555555>Pinch with your thumb and\nindex finger and point at the button.</color>"},
         { "key": "HELPMENU3", "value": "<color=#555555>Take your time to </color><color=#00A3D9><b>experiment and enjoy</b></color>\n<color=#555555>the experience.</color>"},
