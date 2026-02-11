@@ -17,6 +17,9 @@
         { "key": "HELPMENU2", "value": "<color=#00A3D9><b>Gesture</b></color>\n<color=#555555>Pinch with your thumb and\nindex finger and point at the button.</color>"},
         { "key": "HELPMENU3", "value": "<color=#555555>Take your time to </color><color=#00A3D9><b>experiment and enjoy</b></color>\n<color=#555555>the experience.</color>"},
         { "key": "HELPPALM", "value": "<color=#00A3D9><b>Rotate your hand</b></color>\n<color=#555555>Look at the palm of your left hand\nfor more help.</color>"},
-        { "key": "TEXTEMPTY", "value": "<color=#555555>Select a point of interest to view its description.</color>"}
+        {"key": "TEXTEMPTY","value": "<color=#555555>Select a point of interest to see its description and play the audio guide.</color>"},
+        {"key": "HELPMENUEXPLORE1","value": "<b>Explore</b>\nLook around you and explore the 3D model at <color=#00A3D9><b>real size.</b></color>\n<color=#555555>Navigate through all its spaces by touching the </color><color=#00A3D9><b>direction</b></color><color=#555555> arrows.</color>"},
+        { "key": "HELPMENUEXPLORE2","value": "<color=#00A3D9><b>Look</b></color>\n<color=#555555>Turn around to find the </color><color=#00A3D9><b>3D model.</b></color>"},
+        { "key": "HELPMENUEXPLORE3","value": "<color=#555555>Take your time to </color><color=#00A3D9><b>experiment and enjoy</b></color>\n<color=#555555>the experience.</color>"}
     ]
 }

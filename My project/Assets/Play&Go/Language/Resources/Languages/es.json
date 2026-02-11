@@ -17,6 +17,9 @@
         { "key": "HELPMENU2", "value": "<color=#00A3D9><b>Gesto</b></color>\n<color=#555555>Forma una pizca con el pulgar e\níndice y apunta al botón.</color>"},
         { "key": "HELPMENU3", "value": "<color=#555555>Tómate tu tiempo para </color><color=#00A3D9><b>experimentar y disfrutar</b></color>\n<color=#555555>de la experiencia.</color>"},
         { "key": "HELPPALM", "value": "<color=#00A3D9><b>Gira la mano</b></color>\n<color=#555555>Mira la palma de tu mano\nizquierda para más ayuda.</color>" },
-        { "key": "TEXTEMPTY", "value": "<color=#555555>Selecciona un punto de interés para ver su descripción.</color>" }
+        { "key": "TEXTEMPTY", "value": "<color=#555555>Selecciona un punto de interés para ver su descripción y poder reproducir el audioguia.</color>" },
+        {"key": "HELPMENUEXPLORE1","value": "<b>Explora</b>\n¡Mira a tu alrededor y explora el modelo 3D a <color=#00A3D9><b>tamaño real.</b></color>\n<color=#555555>Navega por todos sus espacios tocando las flechas de </color><color=#00A3D9><b>dirección.</b></color>"},
+        { "key": "HELPMENUEXPLORE2","value": "<color=#00A3D9><b>Mira</b></color>\n<color=#555555>Date la vuelta para encontrar el modelo </color><color=#00A3D9><b>3D.</b></color>"},
+        { "key": "HELPMENUEXPLORE3","value": "<color=#555555>Tómate tu tiempo para </color><color=#00A3D9><b>experimentar y disfrutar</b></color>\n<color=#555555>de la experiencia.</color>"}
     ]
 }
