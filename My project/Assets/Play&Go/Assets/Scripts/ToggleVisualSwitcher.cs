@@ -24,10 +24,7 @@ public class ToggleVisualSwitcher : MonoBehaviour
 
     private void Start()
     {
-        // Sincronizar estado inicial
         SyncWithLanguageManager();
-
-        // Escuchar cambios
         toggle.onValueChanged.AddListener(OnToggleChanged);
         LanguageManager.Instance.OnLanguageChanged += SyncWithLanguageManager;
     }
@@ -35,7 +32,6 @@ public class ToggleVisualSwitcher : MonoBehaviour
     private void OnDestroy()
     {
         toggle.onValueChanged.RemoveListener(OnToggleChanged);
-
         if (LanguageManager.Instance != null)
             LanguageManager.Instance.OnLanguageChanged -= SyncWithLanguageManager;
     }
@@ -43,13 +39,18 @@ public class ToggleVisualSwitcher : MonoBehaviour
     private void SyncWithLanguageManager()
     {
         bool isActiveLanguage = LanguageManager.Instance.currentLanguage == languageCode;
-
         toggle.SetIsOnWithoutNotify(isActiveLanguage);
         UpdateVisual(isActiveLanguage);
     }
 
     private void OnToggleChanged(bool isOn)
     {
+        if (!isOn && LanguageManager.Instance.currentLanguage == languageCode)
+        {
+            toggle.SetIsOnWithoutNotify(true);
+            return;
+        }
+
         UpdateVisual(isOn);
 
         if (isOn && LanguageManager.Instance.currentLanguage != languageCode)
@@ -62,7 +63,6 @@ public class ToggleVisualSwitcher : MonoBehaviour
     {
         if (targetImage != null)
             targetImage.sprite = isActive ? activeSprite : inactiveSprite;
-
         if (targetText != null)
             targetText.color = isActive ? activeTextColor : inactiveTextColor;
     }
